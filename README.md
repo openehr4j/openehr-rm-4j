@@ -6,16 +6,16 @@ This repository contains the Java interface types for the openEHR [RM specificat
 
 ## Overview
 
-| **Subproject**             | **Description |
-|----------------------------|---------------|
-| openehr-rm-common          | TBD           |
-| openehr-rm-data-structures | TBD           |
-| openehr-rm-data-types      | TBD           |
-| openehr-rm-demographic     | TBD           |
-| openehr-rm-ehr             | TBD           |
-| openehr-rm-ehr-extract     | TBD           |
-| openehr-rm-integration     | TBD           |
-| openehr-rm-support         | TBD           |
+| **Subproject**             | **Description** |
+|----------------------------|-----------------|
+| openehr-rm-common          | TBD             |
+| openehr-rm-data-structures | TBD             |
+| openehr-rm-data-types      | TBD             |
+| openehr-rm-demographic     | TBD             |
+| openehr-rm-ehr             | TBD             |
+| openehr-rm-ehr-extract     | TBD             |
+| openehr-rm-integration     | TBD             |
+| openehr-rm-support         | TBD             |
 
 ## Usage
 
