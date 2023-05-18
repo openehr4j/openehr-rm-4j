@@ -35,7 +35,7 @@ How to create such an access token is described here: [docs.github.com](https://
 
 ### Gradle
 
-The GitHub access token should be registered in the global Gradle properties, e.g.:
+For Gradle, the GitHub username and access token should be added to the global Gradle properties.
 
 `~/.gradle/gradle.properties`:
 
@@ -44,7 +44,7 @@ gpr.user=jdoe
 gpr.key=ghp_**********************************
 ```
 
-After the configuration of the GitHub Maven repository, the  
+After the configuration of the GitHub Maven repository, the dependency on the required package can be declared as for any other package.
 
 `build.gradle`:
 
@@ -71,6 +71,8 @@ dependencies {
 ## Development
 
 ### Publish to Maven Local
+
+For testing purposes, the packages of this project can be published to [Maven Local](https://www.baeldung.com/maven-local-repository).
 
 ```
 ./gradlew publishToMavenLocal
