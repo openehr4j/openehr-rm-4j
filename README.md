@@ -1,4 +1,4 @@
-# openehr-rm-java
+# openEHR RM Java
 
 This repository contains the Java interface types for the openEHR [RM specifications](https://specifications.openehr.org/releases/RM).
 
