@@ -1,4 +1,4 @@
 package org.openehr.rm_data_types.date_time;
 
-public interface DvDate 
+public interface DvDate {
 }
