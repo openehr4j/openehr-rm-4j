@@ -1,4 +1,4 @@
-# openehr-rm-java [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
+# openehr-rm-java <img width=60%/> [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
 This repository contains the Java interface types for the openEHR [RM specifications](https://specifications.openehr.org/releases/RM).
 
