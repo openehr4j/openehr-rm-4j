@@ -23,7 +23,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_ENCAPSULATED",
+        "base_types": [
+            "DV_ENCAPSULATED"
+        ],
         "classifier": "Class",
         "description": "Encapsulated data expressed as a parsable String. The internal model of the data item is not described in the openEHR model in common with other encapsulated types, but in this case, the form of the data is assumed to be plaintext, rather than compressed or other types of large binary data.",
         "name": "DV_PARSABLE"

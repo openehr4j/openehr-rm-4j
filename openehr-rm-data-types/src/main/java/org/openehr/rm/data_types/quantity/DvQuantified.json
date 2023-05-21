@@ -57,7 +57,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_ORDERED",
+        "base_types": [
+            "DV_ORDERED"
+        ],
         "classifier": "Class",
         "description": "Abstract class defining the concept of true quantified values, i.e. values which are not only ordered, but which have a precise magnitude.",
         "name": "DV_QUANTIFIED"

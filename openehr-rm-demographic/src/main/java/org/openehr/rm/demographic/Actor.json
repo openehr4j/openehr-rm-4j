@@ -16,7 +16,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PARTY",
+        "base_types": [
+            "PARTY"
+        ],
         "classifier": "Class",
         "description": "Ancestor of all real-world types, including people and organisations. An actor is any real-world entity capable of taking on a role.",
         "name": "ACTOR"

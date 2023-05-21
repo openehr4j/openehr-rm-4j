@@ -17,7 +17,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "Address of contact, which may be electronic or geographic.",
         "name": "ADDRESS"

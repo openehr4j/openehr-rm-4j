@@ -78,7 +78,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_AMOUNT",
+        "base_types": [
+            "DV_AMOUNT"
+        ],
         "classifier": "Class",
         "description": "Countable quantities. Used for countable types such as pregnancies and steps (taken by a physiotherapy patient), number of cigarettes smoked in a day.",
         "name": "DV_COUNT"

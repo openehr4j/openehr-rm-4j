@@ -3,7 +3,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "X_VERSIONED_OBJECT",
+        "base_types": [
+            "X_VERSIONED_OBJECT"
+        ],
         "classifier": "Class",
         "description": "Form of `X_VERSIONED_OBJECT` for `PARTY` demographic object.",
         "name": "X_VERSIONED_PARTY"

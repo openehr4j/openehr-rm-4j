@@ -44,7 +44,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_QUANTIFIED",
+        "base_types": [
+            "DV_QUANTIFIED"
+        ],
         "classifier": "Class",
         "description": "Abstract class defining the concept of quantified entities whose values are absolute with respect to an origin. Dates and Times are the main example.",
         "name": "DV_ABSOLUTE_QUANTITY"

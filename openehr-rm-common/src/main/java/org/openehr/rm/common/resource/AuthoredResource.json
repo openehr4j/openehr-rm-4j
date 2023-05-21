@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "RESOURCE_ITEM",
+        "base_types": [
+            "RESOURCE_ITEM"
+        ],
         "classifier": "Class",
         "description": "A description of how to use one or more real Entities for a purpose within the context of some work process.",
         "name": "RESOURCE"

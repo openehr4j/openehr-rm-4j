@@ -3,7 +3,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PARTY_PROXY",
+        "base_types": [
+            "PARTY_PROXY"
+        ],
         "classifier": "Class",
         "description": "Party proxy representing the subject of the record. Used to indicate that the party is the owner of the record. May or may not have `_external_ref_` set.",
         "name": "PARTY_SELF"

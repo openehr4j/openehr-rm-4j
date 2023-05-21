@@ -28,7 +28,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "CARE_ENTRY",
+        "base_types": [
+            "CARE_ENTRY"
+        ],
         "classifier": "Class",
         "description": "Used to record a clinical action that has been performed, which may have been ad hoc, or due to the execution of an Activity in an Instruction workflow. Every Action corresponds to a careflow step of some kind or another.",
         "name": "ACTION"

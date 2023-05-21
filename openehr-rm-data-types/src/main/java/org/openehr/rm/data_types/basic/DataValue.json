@@ -3,7 +3,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "OPENEHR_DEFINITIONS",
+        "base_types": [
+            "OPENEHR_DEFINITIONS"
+        ],
         "classifier": "Class",
         "description": "Abstract parent of all `DV_` data value types.",
         "name": "DATA_VALUE"

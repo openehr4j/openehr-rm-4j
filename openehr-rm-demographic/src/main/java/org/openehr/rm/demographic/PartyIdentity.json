@@ -17,7 +17,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "An identity  of a Social entity, such as a person name or company name, and which is used by the party to identify itself. Actual structure is archetyped.",
         "name": "PARTY_IDENTITY"

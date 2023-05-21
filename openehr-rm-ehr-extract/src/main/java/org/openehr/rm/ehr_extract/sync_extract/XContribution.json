@@ -22,7 +22,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Serialised form of Contribution for an Extract.",
         "name": "X_CONTRIBUTION"

@@ -51,7 +51,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "List of identifiers for code sets in the openEHR terminology.",
         "name": "OPENEHR_CODE_SET_IDENTIFIERS"

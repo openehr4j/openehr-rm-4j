@@ -22,7 +22,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "Generic model of a Request for an Extract, containing an Extract specification.",
         "name": "EXTRACT_ACTION_REQUEST"

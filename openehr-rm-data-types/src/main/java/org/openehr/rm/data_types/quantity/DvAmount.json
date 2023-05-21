@@ -89,7 +89,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_QUANTIFIED",
+        "base_types": [
+            "DV_QUANTIFIED"
+        ],
         "classifier": "Class",
         "description": "Abstract class defining the concept of relative quantified  'amounts'. For relative quantities, the  `+` and  `-` operators are defined (unlike descendants of `DV_ABSOLUTE_QUANTITY`, such as the date/time types).",
         "name": "DV_AMOUNT"

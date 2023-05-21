@@ -57,7 +57,10 @@
         }
     ],
     "meta_info": {
-        "base_type": "<Ordered",
+        "base_types": [
+            "DATA_VALUE",
+            "Ordered"
+        ],
         "classifier": "Class",
         "description": "Abstract class defining the concept of ordered values, which includes ordinals as well as true quantities. It defines the functions  `<` and `_is_strictly_comparable_to()_`, the latter of which must evaluate to `True` for instances being compared with the  `<` function, or used as limits in the `DV_INTERVAL<T>` class.",
         "name": "DV_ORDERED"

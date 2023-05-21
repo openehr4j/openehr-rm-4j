@@ -28,7 +28,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Specification of the how the request should be processed by server. The request can be persisted in the server, meaning that a) it can be re-activated by the requesting system simply by indicating Request id, and b) that a changes-only pattern of Extract updates can be set up. To achieve this, the server has to remember what was sent in the previous response.",
         "name": "EXTRACT_UPDATE_SPEC"

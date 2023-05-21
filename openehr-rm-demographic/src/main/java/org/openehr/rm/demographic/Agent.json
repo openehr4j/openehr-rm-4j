@@ -16,7 +16,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PARTY",
+        "base_types": [
+            "PARTY"
+        ],
         "classifier": "Class",
         "description": "An _intentional_ real-world agent, equivalent to a mind, either individual or aggregate. An Agent may have one or more Personae, each of which is characterised by one or more Capabilities.",
         "name": "AGENT"

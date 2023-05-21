@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "CONTENT_ITEM",
+        "base_types": [
+            "CONTENT_ITEM"
+        ],
         "classifier": "Class",
         "description": "Represents a heading in a heading structure, or  section tree.  Created according to archetyped structures for typical headings such as SOAP,  physical examination, but also pathology result heading structures.  Should not be used instead of `ENTRY` hierarchical structures.",
         "name": "SECTION"

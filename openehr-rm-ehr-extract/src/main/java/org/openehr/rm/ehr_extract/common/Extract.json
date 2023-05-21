@@ -46,7 +46,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "Generic model of an Extract of some information from a repository.",
         "name": "EXTRACT"

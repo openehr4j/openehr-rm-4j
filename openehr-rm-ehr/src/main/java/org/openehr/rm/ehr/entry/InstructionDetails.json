@@ -22,7 +22,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PATHABLE",
+        "base_types": [
+            "PATHABLE"
+        ],
         "classifier": "Class",
         "description": "Used to record details of the Instruction causing an Action.",
         "name": "INSTRUCTION_DETAILS"

@@ -17,7 +17,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "EHR-wide access control object. All access decisions to data in the EHR must be made in accordance with the policies and rules in this object.",
         "name": "EHR_ACCESS"

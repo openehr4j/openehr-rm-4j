@@ -34,7 +34,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "The manifest for one entity (e.g. EHR subject), identifying the entity and optionally specifying top-level items to be included in the Extract. The list actually included may be modified by the `_version_spec_` part of the specification, and also by the link_depth attribute. In repeat (standing order) requests, the final inclusion may be modified by the send_changes_only value for `EXTRACT_UPDATE_SPEC._update_method_`.",
         "name": "EXTRACT_ENTITY_MANIFEST"

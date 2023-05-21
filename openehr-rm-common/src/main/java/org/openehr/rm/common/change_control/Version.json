@@ -65,7 +65,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Abstract model of one Version within a Version container, containing data, commit audit trail, and the identifier of its Contribution.",
         "name": "VERSION"

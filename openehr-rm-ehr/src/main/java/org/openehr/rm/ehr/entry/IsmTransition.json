@@ -28,7 +28,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PATHABLE",
+        "base_types": [
+            "PATHABLE"
+        ],
         "classifier": "Class",
         "description": "Model of a transition in the Instruction State Machine, caused by a careflow step. The attributes document the careflow step as well as the ISM transition.",
         "name": "ISM_TRANSITION"

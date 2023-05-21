@@ -28,7 +28,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Class providing details of a natural language translation.",
         "name": "TRANSLATION_DETAILS"

@@ -16,7 +16,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "MESSAGE_CONTENT",
+        "base_types": [
+            "MESSAGE_CONTENT"
+        ],
         "classifier": "Class",
         "description": "",
         "name": "SYNC_EXTRACT"

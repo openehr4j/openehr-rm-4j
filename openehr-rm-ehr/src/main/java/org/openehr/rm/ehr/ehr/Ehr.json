@@ -64,7 +64,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "The EHR object is the root object and access point of an EHR for a subject of care.",
         "name": "EHR"

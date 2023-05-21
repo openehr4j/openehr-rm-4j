@@ -16,7 +16,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "Capability of a role, such as  ehr modifier,  health care provider. Capability should be backed up by credentials.",
         "name": "CAPABILITY"

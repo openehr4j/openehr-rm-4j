@@ -3,7 +3,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "DV_URI",
+        "base_types": [
+            "DV_URI"
+        ],
         "classifier": "Class",
         "description": "A `DV_EHR_URI` is a `DV_URI` which has the scheme name 'ehr', and which can only reference items in EHRs.",
         "name": "DV_EHR_URI"

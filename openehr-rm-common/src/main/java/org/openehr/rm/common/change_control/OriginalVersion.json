@@ -47,7 +47,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "VERSION",
+        "base_types": [
+            "VERSION"
+        ],
         "classifier": "Class",
         "description": "A Version containing locally created content and optional attestations.",
         "name": "ORIGINAL_VERSION"

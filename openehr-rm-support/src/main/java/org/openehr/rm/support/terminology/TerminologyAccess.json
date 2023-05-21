@@ -59,7 +59,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Interface",
         "description": "Defines an object providing proxy access to a terminology.",
         "name": "TERMINOLOGY_ACCESS"

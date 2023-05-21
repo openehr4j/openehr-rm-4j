@@ -232,7 +232,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Version control abstraction, defining semantics for versioning one complex object.",
         "name": "VERSIONED_OBJECT"

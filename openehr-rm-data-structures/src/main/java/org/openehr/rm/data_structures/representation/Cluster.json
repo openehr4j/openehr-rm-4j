@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "ITEM",
+        "base_types": [
+            "ITEM"
+        ],
         "classifier": "Class",
         "description": "The grouping variant of `ITEM`, which may contain further instances of `ITEM`, in an ordered list.",
         "name": "CLUSTER"

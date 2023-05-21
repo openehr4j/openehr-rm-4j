@@ -23,7 +23,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "Description of a means of contact of a Party. Actual structure is archetyped.",
         "name": "CONTACT"

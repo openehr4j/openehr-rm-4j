@@ -3,7 +3,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "The abstract parent of `CLUSTER` and `ELEMENT` representation classes.",
         "name": "ITEM"

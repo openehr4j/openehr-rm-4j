@@ -22,7 +22,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "A fully coordinated (i.e. all coordination has been performed) term from a terminology service (as distinct from a particular terminology).",
         "name": "CODE_PHRASE"

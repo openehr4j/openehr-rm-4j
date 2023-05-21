@@ -76,7 +76,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "EXTRACT_CONTENT_ITEM",
+        "base_types": [
+            "EXTRACT_CONTENT_ITEM"
+        ],
         "classifier": "Class",
         "description": "Single item in generic extract, designed for 13606 and CDA data.",
         "name": "GENERIC_CONTENT_ITEM"

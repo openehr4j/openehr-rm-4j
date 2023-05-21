@@ -22,7 +22,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "LOCATABLE",
+        "base_types": [
+            "LOCATABLE"
+        ],
         "classifier": "Class",
         "description": "Defines a single activity within an Instruction, such as a medication administration.",
         "name": "ACTIVITY"

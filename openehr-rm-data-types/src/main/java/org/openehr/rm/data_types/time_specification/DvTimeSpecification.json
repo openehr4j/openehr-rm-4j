@@ -29,7 +29,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DATA_VALUE",
+        "base_types": [
+            "DATA_VALUE"
+        ],
         "classifier": "Class",
         "description": "This is an abstract class of which all timing specifications are specialisations. Specifies points in time, possibly linked to the calendar, or a real world repeating event, such as  breakfast.",
         "name": "DV_TIME_SPECIFICATION"

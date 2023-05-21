@@ -23,7 +23,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Purpose Defines the notion of a revision history of audit items, each associated with the version for which that audit was committed. The list is in most-recent-first order.",
         "name": "REVISION_HISTORY"

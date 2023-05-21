@@ -28,7 +28,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_TIME_SPECIFICATION",
+        "base_types": [
+            "DV_TIME_SPECIFICATION"
+        ],
         "classifier": "Class",
         "description": "Specifies periodic points in time, linked to the calendar (phase-linked), or a real world repeating event, such as  breakfast  (event-linked). Based on the HL7v3 data types `PIVL<T>` and `EIVL<T>`.",
         "name": "DV_PERIODIC_TIME_SPECIFICATION"

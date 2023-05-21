@@ -46,7 +46,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Defines the descriptive meta-data of a resource.",
         "name": "RESOURCE_DESCRIPTION"

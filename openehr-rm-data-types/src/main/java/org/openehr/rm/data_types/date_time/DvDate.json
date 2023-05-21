@@ -83,7 +83,10 @@
         }
     ],
     "meta_info": {
-        "base_type": "<Iso8601_date",
+        "base_types": [
+            "DV_TEMPORAL",
+            "Iso8601_date"
+        ],
         "classifier": "Class",
         "description": "Represents an absolute point in time, as measured on the Gregorian calendar, and specified only to the day. Semantics defined by ISO 8601. Used for recording dates in real world time. The partial form is used for approximate birth dates, dates of death, etc.",
         "name": "DV_DATE"

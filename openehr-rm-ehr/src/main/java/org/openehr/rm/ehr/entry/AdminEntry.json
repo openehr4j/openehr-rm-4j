@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "ENTRY",
+        "base_types": [
+            "ENTRY"
+        ],
         "classifier": "Class",
         "description": "Entry subtype for administrative information, i.e. information about setting up the clinical process, but not itself clinically relevant. Archetypes will define contained information.",
         "name": "ADMIN_ENTRY"

@@ -10,7 +10,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Specification of the candidate entities and optionally top-level items (e.g. Compositions) to be included in the Extract.",
         "name": "EXTRACT_MANIFEST"

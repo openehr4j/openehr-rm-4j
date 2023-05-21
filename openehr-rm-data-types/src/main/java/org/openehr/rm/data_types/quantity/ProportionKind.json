@@ -41,7 +41,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Class of enumeration constants defining types of proportion for the `DV_PROPORTION` class.",
         "name": "PROPORTION_KIND"

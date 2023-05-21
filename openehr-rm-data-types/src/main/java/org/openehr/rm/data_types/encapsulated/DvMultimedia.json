@@ -83,7 +83,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_ENCAPSULATED",
+        "base_types": [
+            "DV_ENCAPSULATED"
+        ],
         "classifier": "Class",
         "description": "A specialisation of `DV_ENCAPSULATED` for audiovisual and bio-signal types. Includes further metadata relating to multimedia types which are not applicable to other subtypes of `DV_ENCAPSULATED`.",
         "name": "DV_MULTIMEDIA"

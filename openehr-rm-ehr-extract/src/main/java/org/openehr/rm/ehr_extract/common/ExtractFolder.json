@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "EXTRACT_ITEM",
+        "base_types": [
+            "EXTRACT_ITEM"
+        ],
         "classifier": "Class",
         "description": "Folder in local Folder structure in an Extract. Empty Folders are allowed.",
         "name": "EXTRACT_FOLDER"

@@ -22,7 +22,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "ENTITY_RELATIONSHIP",
+        "base_types": [
+            "ENTITY_RELATIONSHIP"
+        ],
         "classifier": "Class",
         "description": "A relationship between parties. In BFO terms, a Relational quality, i.e. a Quality that s-depends on the parties of the relation.",
         "name": "PARTY_RELATIONSHIP"

@@ -122,7 +122,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "ITEM_STRUCTURE",
+        "base_types": [
+            "ITEM_STRUCTURE"
+        ],
         "classifier": "Class",
         "description": "Logical relational database style table data structure, in which columns are named and ordered with respect to each other. Implemented using Cluster-per-row encoding. Each row Cluster must have an identical number of Elements, each of which in turn must have identical names and value types in the corresponding positions in each row.",
         "name": "ITEM_TABLE"

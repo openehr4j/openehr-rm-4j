@@ -108,7 +108,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_AMOUNT",
+        "base_types": [
+            "DV_AMOUNT"
+        ],
         "classifier": "Class",
         "description": "Quantitified type representing  scientific  quantities, i.e. quantities expressed as a magnitude and units. Units are expressed in the UCUM syntax (http://unitsofmeasure.org/ucum.html[Unified Code for Units of Measure (UCUM)], by Gunther Schadow and Clement J. McDonald of The Regenstrief Institute)  (case-sensitive form) by default, or another system if `_units_system_` is set.",
         "name": "DV_QUANTITY"

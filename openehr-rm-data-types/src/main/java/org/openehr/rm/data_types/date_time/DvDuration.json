@@ -78,7 +78,10 @@
         }
     ],
     "meta_info": {
-        "base_type": "<Iso8601_duration",
+        "base_types": [
+            "DV_AMOUNT",
+            "Iso8601_duration"
+        ],
         "classifier": "Class",
         "description": "Represents a period of time with respect to a notional point in time, which is not specified. A sign may be used to indicate the duration is  backwards  in time rather than forwards.",
         "name": "DV_DURATION"

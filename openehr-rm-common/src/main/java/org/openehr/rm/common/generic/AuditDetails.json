@@ -34,7 +34,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "The set of attributes required to document the committal of an information item to a repository.",
         "name": "AUDIT_DETAILS"

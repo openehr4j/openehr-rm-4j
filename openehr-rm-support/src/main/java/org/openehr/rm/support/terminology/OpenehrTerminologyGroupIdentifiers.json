@@ -91,7 +91,7 @@
         }
     ],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "List of identifiers for groups in the openEHR terminology.",
         "name": "OPENEHR_TERMINOLOGY_GROUP_IDENTIFIERS"

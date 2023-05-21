@@ -72,7 +72,10 @@
         }
     ],
     "meta_info": {
-        "base_type": "<Iso8601_time",
+        "base_types": [
+            "DV_TEMPORAL",
+            "Iso8601_time"
+        ],
         "classifier": "Class",
         "description": "Represents an absolute point in time from an origin usually interpreted as meaning the start of the current day, specified to a fraction of a second. Semantics defined by ISO 8601.",
         "name": "DV_TIME"

@@ -51,7 +51,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "ITEM_STRUCTURE",
+        "base_types": [
+            "ITEM_STRUCTURE"
+        ],
         "classifier": "Class",
         "description": "Logical list data structure, where each item has a value and can be referred to by a name and a positional index in the list. The list may be empty.",
         "name": "ITEM_LIST"

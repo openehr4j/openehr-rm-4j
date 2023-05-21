@@ -16,7 +16,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "DATA_VALUE",
+        "base_types": [
+            "DATA_VALUE"
+        ],
         "classifier": "Class",
         "description": "Abstract class defining the common meta-data of all types of encapsulated data.",
         "name": "DV_ENCAPSULATED"

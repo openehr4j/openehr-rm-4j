@@ -40,7 +40,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "DATA_VALUE",
+        "base_types": [
+            "DATA_VALUE"
+        ],
         "classifier": "Class",
         "description": "A text item, which may contain any amount of legal characters arranged as e.g. words, sentences etc (i.e. one `DV_TEXT` may be more than one word). Visual formatting and hyperlinks may be included via markdown.",
         "name": "DV_TEXT"

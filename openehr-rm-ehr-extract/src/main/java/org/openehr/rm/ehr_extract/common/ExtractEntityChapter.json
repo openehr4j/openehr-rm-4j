@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "EXTRACT_CHAPTER",
+        "base_types": [
+            "EXTRACT_CHAPTER"
+        ],
         "classifier": "Class",
         "description": "Type of chapter that contains information relating to a single demographic entity.",
         "name": "EXTRACT_ENTITY_CHAPTER"

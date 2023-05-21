@@ -29,7 +29,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "ITEM",
+        "base_types": [
+            "ITEM"
+        ],
         "classifier": "Class",
         "description": "The leaf variant of `ITEM`, to which a `DATA_VALUE` instance is attached.",
         "name": "ELEMENT"

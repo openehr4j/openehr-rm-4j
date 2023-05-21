@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "EXTRACT_CONTENT_ITEM",
+        "base_types": [
+            "EXTRACT_CONTENT_ITEM"
+        ],
         "classifier": "Class",
         "description": "Form of `EHR EXTRACT_ITEM` containing openEHR serialised `VERSIONED_OBJECTs`.",
         "name": "OPENEHR_CONTENT_ITEM"

@@ -72,7 +72,10 @@
         }
     ],
     "meta_info": {
-        "base_type": "<Iso8601_date_time",
+        "base_types": [
+            "DV_TEMPORAL",
+            "Iso8601_date_time"
+        ],
         "classifier": "Class",
         "description": "Represents an absolute point in time, specified to the second. Semantics defined by ISO 8601.",
         "name": "DV_DATE_TIME"

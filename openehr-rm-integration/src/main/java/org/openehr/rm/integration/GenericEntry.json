@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "CONTENT_ITEM",
+        "base_types": [
+            "CONTENT_ITEM"
+        ],
         "classifier": "Class",
         "description": "This class is used to create intermediate representations of data from sources not otherwise conforming to openEHR classes, such as HL7 messages, relational databases and so on.",
         "name": "GENERIC_ENTRY"

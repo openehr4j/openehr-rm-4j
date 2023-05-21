@@ -29,7 +29,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "EVENT",
+        "base_types": [
+            "EVENT"
+        ],
         "classifier": "Class",
         "description": "Defines a single interval event in a series.",
         "name": "INTERVAL_EVENT"

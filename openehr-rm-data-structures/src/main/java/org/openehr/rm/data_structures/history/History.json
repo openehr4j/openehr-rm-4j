@@ -41,7 +41,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DATA_STRUCTURE",
+        "base_types": [
+            "DATA_STRUCTURE"
+        ],
         "classifier": "Class",
         "description": "Root object of a linear history, i.e. time series structure. This is a generic class whose type parameter must be a descendant of `ITEM_STRUCTURE`, ensuring that each Event in the `_events_` of a given instance is of the same structural type, i.e. `ITEM_TREE`, `ITEM_LIST` etc.",
         "name": "HISTORY"

@@ -34,7 +34,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "AUDIT_DETAILS",
+        "base_types": [
+            "AUDIT_DETAILS"
+        ],
         "classifier": "Class",
         "description": "Record an attestation of a party (the committer) to item(s) of record content. An attestation is an explicit signing by one healthcare agent of particular content for various particular purposes, including:",
         "name": "ATTESTATION"

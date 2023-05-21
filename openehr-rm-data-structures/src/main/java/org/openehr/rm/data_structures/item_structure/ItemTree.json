@@ -39,7 +39,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "ITEM_STRUCTURE",
+        "base_types": [
+            "ITEM_STRUCTURE"
+        ],
         "classifier": "Class",
         "description": "Logical tree data structure. The tree may be empty. Used for representing data which are logically a tree such as audiology results, microbiology results, biochemistry results.",
         "name": "ITEM_TREE"

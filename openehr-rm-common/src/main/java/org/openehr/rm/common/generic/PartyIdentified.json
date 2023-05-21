@@ -16,7 +16,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PARTY_PROXY",
+        "base_types": [
+            "PARTY_PROXY"
+        ],
         "classifier": "Class",
         "description": "Proxy data for an identified party other than the subject of the record, minimally consisting of human-readable identifier(s), such as name, formal (and possibly computable) identifiers such as NHS number, and an optional link to external data. There must be at least one of name, identifier or external_ref present.",
         "name": "PARTY_IDENTIFIED"

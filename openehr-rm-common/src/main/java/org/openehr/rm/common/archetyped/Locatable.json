@@ -53,7 +53,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "PATHABLE",
+        "base_types": [
+            "PATHABLE"
+        ],
         "classifier": "Class",
         "description": "Root class of all information model classes that can be archetyped. Most classes in the openEHR reference model inherit from the `LOCATABLE` class, which defines the idea of  locatability in an archetyped structure. `LOCATABLE` defines a runtime name and an `_archetype_node_id_`.",
         "name": "LOCATABLE"

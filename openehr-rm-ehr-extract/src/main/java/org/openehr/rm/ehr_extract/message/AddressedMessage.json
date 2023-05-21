@@ -34,7 +34,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "The concept of a message addressed to nominated recipients.",
         "name": "ADDRESSED_MESSAGE"

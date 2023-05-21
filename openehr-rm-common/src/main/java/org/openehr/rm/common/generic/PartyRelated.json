@@ -10,7 +10,9 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": "PARTY_IDENTIFIED",
+        "base_types": [
+            "PARTY_IDENTIFIED"
+        ],
         "classifier": "Class",
         "description": "Proxy type for identifying a party and its relationship to the subject of the record. Use where the relationship between the party and the subject of the record must be known.",
         "name": "PARTY_RELATED"

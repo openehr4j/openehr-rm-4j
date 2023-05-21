@@ -39,7 +39,9 @@
         }
     ],
     "meta_info": {
-        "base_type": "DV_ORDERED",
+        "base_types": [
+            "DV_ORDERED"
+        ],
         "classifier": "Class",
         "description": "A data type that represents scale values, where there is:",
         "name": "DV_SCALE"

@@ -22,7 +22,7 @@
     "constants": [],
     "functions": [],
     "meta_info": {
-        "base_type": null,
+        "base_types": null,
         "classifier": "Class",
         "description": "Documents a Contribution (change set) of one or more versions added to a change-controlled repository.",
         "name": "CONTRIBUTION"
