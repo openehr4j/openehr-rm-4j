@@ -40,13 +40,13 @@
             "description": "URIs of original clinical document(s) or description of which resource is a formalisation, in the language of this description item; keyed by meaning.",
             "multiplicity": "0..1",
             "name": "original_resource_uri",
-            "type": "String>"
+            "type": "Hash<String, String>"
         },
         {
             "description": "Additional language-senstive resource metadata, as a list of name/value pairs.",
             "multiplicity": "0..1",
             "name": "other_details",
-            "type": "String>"
+            "type": "Hash<String, String>"
         }
     ],
     "constants": [],
