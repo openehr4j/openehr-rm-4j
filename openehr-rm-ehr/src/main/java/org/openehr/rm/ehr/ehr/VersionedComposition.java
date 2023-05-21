@@ -1,4 +1,4 @@
-package org.openehr.ehr.ehr;
+package org.openehr.rm.ehr.ehr;
 
 public interface VersionedComposition {
 }
