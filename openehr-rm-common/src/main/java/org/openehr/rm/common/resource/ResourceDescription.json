@@ -4,7 +4,7 @@
             "description": "Original author of this resource, with all relevant details, including organisation.",
             "multiplicity": "1..1",
             "name": "original_author",
-            "type": "Hash<String, String>"
+            "type": "Hash<String,String>"
         },
         {
             "description": "Other contributors to the resource, probably listed in  `'name <email>'`  form.",
@@ -28,7 +28,7 @@
             "description": "Additional non language-sensitive resource meta-data, as a list of name/value pairs.",
             "multiplicity": "0..1",
             "name": "other_details",
-            "type": "Hash<String, String>"
+            "type": "Hash<String,String>"
         },
         {
             "description": "Reference to owning resource.",

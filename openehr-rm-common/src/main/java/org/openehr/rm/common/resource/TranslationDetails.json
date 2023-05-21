@@ -10,7 +10,7 @@
             "description": "Translator name and other demographic details.",
             "multiplicity": "1..1",
             "name": "author",
-            "type": "Hash<String, String>"
+            "type": "Hash<String,String>"
         },
         {
             "description": "Accreditation of translator, usually a national translator's registration or association membership id.",
@@ -22,7 +22,7 @@
             "description": "Any other meta-data.",
             "multiplicity": "0..1",
             "name": "other_details",
-            "type": "Hash<String, String>"
+            "type": "Hash<String,String>"
         }
     ],
     "constants": [],

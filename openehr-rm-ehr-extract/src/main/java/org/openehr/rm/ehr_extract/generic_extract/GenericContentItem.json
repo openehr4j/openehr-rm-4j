@@ -64,7 +64,7 @@
             "description": "Other details about the content item.",
             "multiplicity": "0..1",
             "name": "other_details",
-            "type": "Hash<String, String>"
+            "type": "Hash<String,String>"
         },
         {
             "description": "Content object.",
