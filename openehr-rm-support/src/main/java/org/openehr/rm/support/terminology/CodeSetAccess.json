@@ -20,7 +20,7 @@
             "parameters": [
                 {
                     "name": "a_lang",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -31,7 +31,7 @@
             "parameters": [
                 {
                     "name": "a_code",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

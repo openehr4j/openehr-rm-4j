@@ -57,7 +57,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_PROPORTION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_PROPORTION"
@@ -68,7 +68,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_PROPORTION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_PROPORTION"
@@ -79,7 +79,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_PROPORTION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -90,7 +90,7 @@
             "parameters": [
                 {
                     "name": "factor",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_PROPORTION"
@@ -101,7 +101,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_PROPORTION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -112,7 +112,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_ORDERED[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

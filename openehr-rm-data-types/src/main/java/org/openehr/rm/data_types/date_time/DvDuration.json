@@ -15,7 +15,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DURATION"
@@ -26,7 +26,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DURATION"
@@ -37,7 +37,7 @@
             "parameters": [
                 {
                     "name": "factor",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DURATION"
@@ -48,7 +48,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -59,7 +59,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

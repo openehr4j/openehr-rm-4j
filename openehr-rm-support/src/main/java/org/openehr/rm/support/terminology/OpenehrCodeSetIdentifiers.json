@@ -44,7 +44,7 @@
             "parameters": [
                 {
                     "name": "an_id",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

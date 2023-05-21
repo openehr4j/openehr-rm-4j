@@ -21,7 +21,7 @@
             "parameters": [
                 {
                     "name": "number",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_ordered_numeric_class[Ordered_Numeric][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -32,7 +32,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_AMOUNT[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_AMOUNT"
@@ -43,7 +43,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_AMOUNT[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_AMOUNT"
@@ -54,7 +54,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_AMOUNT[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -65,7 +65,7 @@
             "parameters": [
                 {
                     "name": "factor",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_AMOUNT"
@@ -82,7 +82,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_AMOUNT[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

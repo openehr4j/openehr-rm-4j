@@ -39,7 +39,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_QUANTIFIED[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -50,7 +50,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_QUANTIFIED[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

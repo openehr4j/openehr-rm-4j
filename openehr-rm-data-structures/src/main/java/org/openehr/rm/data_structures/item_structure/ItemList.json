@@ -27,7 +27,7 @@
             "parameters": [
                 {
                     "name": "a_name",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "ELEMENT"
@@ -38,7 +38,7 @@
             "parameters": [
                 {
                     "name": "i",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_integer_class[Integer][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "ELEMENT"

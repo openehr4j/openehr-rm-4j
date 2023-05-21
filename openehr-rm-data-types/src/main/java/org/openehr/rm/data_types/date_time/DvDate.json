@@ -21,7 +21,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_QUANTIFIED[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -32,7 +32,7 @@
             "parameters": [
                 {
                     "name": "a_diff",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DATE"
@@ -43,7 +43,7 @@
             "parameters": [
                 {
                     "name": "a_diff",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DATE"
@@ -54,7 +54,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DATE[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DURATION"
@@ -65,7 +65,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DATE[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -76,7 +76,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DATE[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

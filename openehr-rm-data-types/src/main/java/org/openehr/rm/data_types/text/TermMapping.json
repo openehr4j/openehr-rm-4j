@@ -51,7 +51,7 @@
             "parameters": [
                 {
                     "name": "c",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_character_class[Character][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

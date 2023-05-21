@@ -15,7 +15,7 @@
             "parameters": [
                 {
                     "name": "a_diff",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_TEMPORAL"
@@ -26,7 +26,7 @@
             "parameters": [
                 {
                     "name": "a_diff",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_TEMPORAL"
@@ -37,7 +37,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_TEMPORAL[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DURATION"

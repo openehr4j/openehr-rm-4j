@@ -39,7 +39,7 @@
             "parameters": [
                 {
                     "name": "i",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_integer_class[Integer][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "CLUSTER"
@@ -50,7 +50,7 @@
             "parameters": [
                 {
                     "name": "a_key",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -61,7 +61,7 @@
             "parameters": [
                 {
                     "name": "a_key",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -72,7 +72,7 @@
             "parameters": [
                 {
                     "name": "a_key",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "CLUSTER"
@@ -83,7 +83,7 @@
             "parameters": [
                 {
                     "name": "keys",
-                    "type": "String>[0..1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -94,7 +94,7 @@
             "parameters": [
                 {
                     "name": "keys",
-                    "type": "String>[0..1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "CLUSTER"
@@ -105,11 +105,11 @@
             "parameters": [
                 {
                     "name": "i",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_integer_class[Integer][1]"
+                    "type": "Object"
                 },
                 {
                     "name": "j",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_integer_class[Integer][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "ELEMENT"

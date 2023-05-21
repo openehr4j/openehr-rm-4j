@@ -14,7 +14,7 @@
             "parameters": [
                 {
                     "name": "a_path",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Any"
@@ -25,7 +25,7 @@
             "parameters": [
                 {
                     "name": "a_path",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "List<Any>"
@@ -36,7 +36,7 @@
             "parameters": [
                 {
                     "name": "a_path",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -47,7 +47,7 @@
             "parameters": [
                 {
                     "name": "a_path",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -58,7 +58,7 @@
             "parameters": [
                 {
                     "name": "a_loc",
-                    "type": "PATHABLE[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "String"

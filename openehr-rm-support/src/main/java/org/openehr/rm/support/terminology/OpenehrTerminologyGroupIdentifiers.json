@@ -84,7 +84,7 @@
             "parameters": [
                 {
                     "name": "an_id",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_boolean_class[Boolean][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

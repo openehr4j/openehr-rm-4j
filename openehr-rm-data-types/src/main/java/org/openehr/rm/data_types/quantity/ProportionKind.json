@@ -34,7 +34,7 @@
             "parameters": [
                 {
                     "name": "nq",
-                    "type": "/releases/BASE/{base_release}/foundation_types.html#_integer_class[Integer][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

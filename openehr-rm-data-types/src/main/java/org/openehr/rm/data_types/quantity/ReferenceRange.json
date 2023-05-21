@@ -21,7 +21,7 @@
             "parameters": [
                 {
                     "name": "v",
-                    "type": "DV_ORDERED[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

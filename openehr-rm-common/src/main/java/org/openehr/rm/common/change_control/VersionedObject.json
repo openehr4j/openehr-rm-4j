@@ -45,7 +45,7 @@
             "parameters": [
                 {
                     "name": "a_time",
-                    "type": "/releases/RM/{rm_release}/data_types.html#_dv_date_time_class[DV_DATE_TIME][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -56,7 +56,7 @@
             "parameters": [
                 {
                     "name": "a_version_uid",
-                    "type": "/releases/BASE/{base_release}/base_types.html#_object_version_id_class[OBJECT_VERSION_ID][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -67,7 +67,7 @@
             "parameters": [
                 {
                     "name": "a_version_uid",
-                    "type": "/releases/BASE/{base_release}/base_types.html#_object_version_id_class[OBJECT_VERSION_ID][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "VERSION"
@@ -78,7 +78,7 @@
             "parameters": [
                 {
                     "name": "a_version_uid",
-                    "type": "/releases/BASE/{base_release}/base_types.html#_object_version_id_class[OBJECT_VERSION_ID][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -89,7 +89,7 @@
             "parameters": [
                 {
                     "name": "a_time",
-                    "type": "/releases/RM/{rm_release}/data_types.html#_dv_date_time_class[DV_DATE_TIME][1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "VERSION"
@@ -124,31 +124,31 @@
             "parameters": [
                 {
                     "name": "a_contribution",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_new_version_uid",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_preceding_version_id",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "an_audit",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_lifecycle_state",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_data",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "signing_key",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "void"
@@ -159,35 +159,35 @@
             "parameters": [
                 {
                     "name": "a_contribution",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_new_version_uid",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_preceding_version_id",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "an_audit",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_lifecycle_state",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_data",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "an_other_input_uids",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "signing_key",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "void"
@@ -198,15 +198,15 @@
             "parameters": [
                 {
                     "name": "a_contribution",
-                    "type": "ORIGINAL_VERSION[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "an_audit",
-                    "type": "ORIGINAL_VERSION[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_version",
-                    "type": "ORIGINAL_VERSION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "void"
@@ -217,15 +217,15 @@
             "parameters": [
                 {
                     "name": "an_attestation",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "a_ver_id",
-                    "type": "String[1]"
+                    "type": "Object"
                 },
                 {
                     "name": "signing_key",
-                    "type": "String[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "void"

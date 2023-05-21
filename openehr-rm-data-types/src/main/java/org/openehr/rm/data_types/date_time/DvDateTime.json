@@ -21,7 +21,7 @@
             "parameters": [
                 {
                     "name": "a_diff",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DATE_TIME"
@@ -32,7 +32,7 @@
             "parameters": [
                 {
                     "name": "a_diff",
-                    "type": "DV_DURATION[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DATE_TIME"
@@ -43,7 +43,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DATE_TIME[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "DV_DURATION"
@@ -54,7 +54,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DATE_TIME[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -65,7 +65,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_DATE_TIME[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"

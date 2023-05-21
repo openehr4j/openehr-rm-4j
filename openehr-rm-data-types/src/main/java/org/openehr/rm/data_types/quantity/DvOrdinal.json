@@ -21,7 +21,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_ORDINAL[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
@@ -32,7 +32,7 @@
             "parameters": [
                 {
                     "name": "other",
-                    "type": "DV_ORDINAL[1]"
+                    "type": "Object"
                 }
             ],
             "return_type": "Boolean"
