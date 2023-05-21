@@ -1,73 +1,73 @@
 {
-  "meta_info": {
-    "base_type": "Any",
-    "name": "PATHABLE",
-    "classifier": "Class",
-    "description": "The `PATHABLE` class defines the pathing capabilities used by nearly all classes in the openEHR reference model, mostly via inheritance of `LOCATABLE`. The defining characteristics of `PATHABLE` objects are that they can locate child objects using paths, and they know their parent object in a compositional hierarchy. The parent feature is defined as abstract in the model, and may be implemented in any way convenient."
-  },
-  "functions": [
-    {
-      "name": "parent",
-      "parameters": [],
-      "return_type": "PATHABLE",
-      "meaning": "Parent of this node in a compositional hierarchy."
-    },
-    {
-      "name": "item_at_path",
-      "parameters": [
+    "attributes": [],
+    "constants": [],
+    "functions": [
         {
-          "name": "a_path",
-          "type": "String[1]"
-        }
-      ],
-      "return_type": "Any",
-      "meaning": "The item at a path (relative to this item); only valid for unique paths, i.e. paths that resolve to a single item."
-    },
-    {
-      "name": "items_at_path",
-      "parameters": [
+            "meaning": "Parent of this node in a compositional hierarchy.",
+            "name": "parent",
+            "parameters": [],
+            "return_type": "PATHABLE"
+        },
         {
-          "name": "a_path",
-          "type": "String[1]"
-        }
-      ],
-      "return_type": "List<Any>",
-      "meaning": "List of items corresponding to a non-unique path."
-    },
-    {
-      "name": "path_exists",
-      "parameters": [
+            "meaning": "The item at a path (relative to this item); only valid for unique paths, i.e. paths that resolve to a single item.",
+            "name": "item_at_path",
+            "parameters": [
+                {
+                    "name": "a_path",
+                    "type": "String[1]"
+                }
+            ],
+            "return_type": "Any"
+        },
         {
-          "name": "a_path",
-          "type": "String[1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True if the path exists in the data with respect to the current item."
-    },
-    {
-      "name": "path_unique",
-      "parameters": [
+            "meaning": "List of items corresponding to a non-unique path.",
+            "name": "items_at_path",
+            "parameters": [
+                {
+                    "name": "a_path",
+                    "type": "String[1]"
+                }
+            ],
+            "return_type": "List<Any>"
+        },
         {
-          "name": "a_path",
-          "type": "String[1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True if the path corresponds to a single item in the data."
-    },
-    {
-      "name": "path_of_item",
-      "parameters": [
+            "meaning": "True if the path exists in the data with respect to the current item.",
+            "name": "path_exists",
+            "parameters": [
+                {
+                    "name": "a_path",
+                    "type": "String[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
         {
-          "name": "a_loc",
-          "type": "PATHABLE[1]"
+            "meaning": "True if the path corresponds to a single item in the data.",
+            "name": "path_unique",
+            "parameters": [
+                {
+                    "name": "a_path",
+                    "type": "String[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "The path to an item relative to the root of this archetyped structure.",
+            "name": "path_of_item",
+            "parameters": [
+                {
+                    "name": "a_loc",
+                    "type": "PATHABLE[1]"
+                }
+            ],
+            "return_type": "String"
         }
-      ],
-      "return_type": "String",
-      "meaning": "The path to an item relative to the root of this archetyped structure."
+    ],
+    "meta_info": {
+        "base_type": "Any",
+        "classifier": "Class",
+        "description": "The `PATHABLE` class defines the pathing capabilities used by nearly all classes in the openEHR reference model, mostly via inheritance of `LOCATABLE`. The defining characteristics of `PATHABLE` objects are that they can locate child objects using paths, and they know their parent object in a compositional hierarchy. The parent feature is defined as abstract in the model, and may be implemented in any way convenient.",
+        "name": "PATHABLE"
     }
-  ],
-  "attributes": [],
-  "constants": []
 }

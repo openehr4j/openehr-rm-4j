@@ -1,42 +1,42 @@
 {
-  "meta_info": {
-    "base_type": null,
-    "name": "ADDRESSED_MESSAGE",
-    "classifier": "Class",
-    "description": "The concept of a message addressed to nominated recipients."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "sender",
-      "multiplicity": "1..1",
-      "type": "String",
-      "description": "Party sending the message."
-    },
-    {
-      "name": "sender_reference",
-      "multiplicity": "1..1",
-      "type": "String",
-      "description": "Identification of message used by sender. This will be the same no matter how many times this message is sent to these recipients."
-    },
-    {
-      "name": "addressees",
-      "multiplicity": "1..1",
-      "type": "List<String>",
-      "description": "Intended recipients, in the form of internet addresses."
-    },
-    {
-      "name": "urgency",
-      "multiplicity": "0..1",
-      "type": "Integer",
-      "description": "Urgency with which destination should deal with message:"
-    },
-    {
-      "name": "message",
-      "multiplicity": "1..1",
-      "type": "MESSAGE",
-      "description": "The content of the message."
+    "attributes": [
+        {
+            "description": "Party sending the message.",
+            "multiplicity": "1..1",
+            "name": "sender",
+            "type": "String"
+        },
+        {
+            "description": "Identification of message used by sender. This will be the same no matter how many times this message is sent to these recipients.",
+            "multiplicity": "1..1",
+            "name": "sender_reference",
+            "type": "String"
+        },
+        {
+            "description": "Intended recipients, in the form of internet addresses.",
+            "multiplicity": "1..1",
+            "name": "addressees",
+            "type": "List<String>"
+        },
+        {
+            "description": "Urgency with which destination should deal with message:",
+            "multiplicity": "0..1",
+            "name": "urgency",
+            "type": "Integer"
+        },
+        {
+            "description": "The content of the message.",
+            "multiplicity": "1..1",
+            "name": "message",
+            "type": "MESSAGE"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": null,
+        "classifier": "Class",
+        "description": "The concept of a message addressed to nominated recipients.",
+        "name": "ADDRESSED_MESSAGE"
     }
-  ],
-  "constants": []
 }

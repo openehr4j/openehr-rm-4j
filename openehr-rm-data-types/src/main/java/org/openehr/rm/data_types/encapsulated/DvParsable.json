@@ -1,31 +1,31 @@
 {
-  "meta_info": {
-    "base_type": "DV_ENCAPSULATED",
-    "name": "DV_PARSABLE",
-    "classifier": "Class",
-    "description": "Encapsulated data expressed as a parsable String. The internal model of the data item is not described in the openEHR model in common with other encapsulated types, but in this case, the form of the data is assumed to be plaintext, rather than compressed or other types of large binary data."
-  },
-  "functions": [
-    {
-      "name": "size",
-      "parameters": [],
-      "return_type": "Integer",
-      "meaning": "Size in bytes of value."
+    "attributes": [
+        {
+            "description": "The string, which may validly be empty in some syntaxes.",
+            "multiplicity": "1..1",
+            "name": "value",
+            "type": "String"
+        },
+        {
+            "description": "Name of the formalism, e.g.  GLIF 1.0 ,  Proforma  etc.",
+            "multiplicity": "1..1",
+            "name": "formalism",
+            "type": "String"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "Size in bytes of value.",
+            "name": "size",
+            "parameters": [],
+            "return_type": "Integer"
+        }
+    ],
+    "meta_info": {
+        "base_type": "DV_ENCAPSULATED",
+        "classifier": "Class",
+        "description": "Encapsulated data expressed as a parsable String. The internal model of the data item is not described in the openEHR model in common with other encapsulated types, but in this case, the form of the data is assumed to be plaintext, rather than compressed or other types of large binary data.",
+        "name": "DV_PARSABLE"
     }
-  ],
-  "attributes": [
-    {
-      "name": "value",
-      "multiplicity": "1..1",
-      "type": "String",
-      "description": "The string, which may validly be empty in some syntaxes."
-    },
-    {
-      "name": "formalism",
-      "multiplicity": "1..1",
-      "type": "String",
-      "description": "Name of the formalism, e.g.  GLIF 1.0 ,  Proforma  etc."
-    }
-  ],
-  "constants": []
 }

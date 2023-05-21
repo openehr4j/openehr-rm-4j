@@ -1,36 +1,36 @@
 {
-  "meta_info": {
-    "base_type": "EXTRACT_ITEM",
-    "name": "EXTRACT_CONTENT_ITEM",
-    "classifier": "Class",
-    "description": "Abstract model of a wrapper for one content item in an Extract, containing various meta-data. Indicates whether it was part of the primary set and what its original path was. Intended to be subtyped for wrappers of specific types of content."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "is_primary",
-      "multiplicity": "1..1",
-      "type": "Boolean",
-      "description": "True if the content item carried in this container was part of the primary set for the Extract, i.e. not added due to link-following."
-    },
-    {
-      "name": "is_changed",
-      "multiplicity": "0..1",
-      "type": "Boolean",
-      "description": "True if the content item carried in this container is any kind of change since last send, in repeat sending situations."
-    },
-    {
-      "name": "is_masked",
-      "multiplicity": "0..1",
-      "type": "Boolean",
-      "description": "True if the content of this item has not been included due to insufficient access rights of requestor."
-    },
-    {
-      "name": "item",
-      "multiplicity": "0..1",
-      "type": "Any",
-      "description": "Content object."
+    "attributes": [
+        {
+            "description": "True if the content item carried in this container was part of the primary set for the Extract, i.e. not added due to link-following.",
+            "multiplicity": "1..1",
+            "name": "is_primary",
+            "type": "Boolean"
+        },
+        {
+            "description": "True if the content item carried in this container is any kind of change since last send, in repeat sending situations.",
+            "multiplicity": "0..1",
+            "name": "is_changed",
+            "type": "Boolean"
+        },
+        {
+            "description": "True if the content of this item has not been included due to insufficient access rights of requestor.",
+            "multiplicity": "0..1",
+            "name": "is_masked",
+            "type": "Boolean"
+        },
+        {
+            "description": "Content object.",
+            "multiplicity": "0..1",
+            "name": "item",
+            "type": "Any"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "EXTRACT_ITEM",
+        "classifier": "Class",
+        "description": "Abstract model of a wrapper for one content item in an Extract, containing various meta-data. Indicates whether it was part of the primary set and what its original path was. Intended to be subtyped for wrappers of specific types of content.",
+        "name": "EXTRACT_CONTENT_ITEM"
     }
-  ],
-  "constants": []
 }

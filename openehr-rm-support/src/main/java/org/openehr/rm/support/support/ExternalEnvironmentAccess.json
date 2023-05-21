@@ -1,0 +1,11 @@
+{
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "TERMINOLOGY_SERVICE`, `MEASUREMENT_SERVICE",
+        "classifier": "Class",
+        "description": "A mixin class providing access to services in the external environment.",
+        "name": "EXTERNAL_ENVIRONMENT_ACCESS"
+    }
+}

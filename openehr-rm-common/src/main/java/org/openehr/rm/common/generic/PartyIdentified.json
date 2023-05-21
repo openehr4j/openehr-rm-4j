@@ -1,25 +1,24 @@
 {
-  "meta_info": {
-    "base_type": "LOCATABLE",
-    "name": "PARTY_IDENTITY",
-    "classifier": "Class",
-    "description": "An identity  owned  by a Party, such as a person name or company name, and which is used by the Party to identify itself. Actual structure is archetyped."
-  },
-  "functions": [
-    {
-      "name": "purpose",
-      "parameters": [],
-      "return_type": "DV_TEXT",
-      "meaning": "Purpose of identity, e.g. legal ,  stagename,  nickname,  tribal name,  trading name. Taken from value of inherited `_name_` attribute."
+    "attributes": [
+        {
+            "description": "Optional human-readable name (in String form).",
+            "multiplicity": "0..1",
+            "name": "name",
+            "type": "String"
+        },
+        {
+            "description": "One or more formal identifiers (possibly computable).",
+            "multiplicity": "0..1",
+            "name": "identifiers",
+            "type": "List<DV_IDENTIFIER>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "PARTY_PROXY",
+        "classifier": "Class",
+        "description": "Proxy data for an identified party other than the subject of the record, minimally consisting of human-readable identifier(s), such as name, formal (and possibly computable) identifiers such as NHS number, and an optional link to external data. There must be at least one of name, identifier or external_ref present.",
+        "name": "PARTY_IDENTIFIED"
     }
-  ],
-  "attributes": [
-    {
-      "name": "details",
-      "multiplicity": "1..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "The value of the identity. This will often taken the form of a parseable string or a small structure of strings."
-    }
-  ],
-  "constants": []
 }

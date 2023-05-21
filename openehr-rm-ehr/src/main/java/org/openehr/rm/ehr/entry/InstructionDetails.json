@@ -1,30 +1,30 @@
 {
-  "meta_info": {
-    "base_type": "PATHABLE",
-    "name": "INSTRUCTION_DETAILS",
-    "classifier": "Class",
-    "description": "Used to record details of the Instruction causing an Action."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "instruction_id",
-      "multiplicity": "1..1",
-      "type": "LOCATABLE_REF",
-      "description": "Reference to causing Instruction."
-    },
-    {
-      "name": "activity_id",
-      "multiplicity": "1..1",
-      "type": "String",
-      "description": "Identifier of Activity within Instruction, in the form of its archetype path."
-    },
-    {
-      "name": "wf_details",
-      "multiplicity": "0..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "Various workflow engine state details, potentially including such things as:"
+    "attributes": [
+        {
+            "description": "Reference to causing Instruction.",
+            "multiplicity": "1..1",
+            "name": "instruction_id",
+            "type": "LOCATABLE_REF"
+        },
+        {
+            "description": "Identifier of Activity within Instruction, in the form of its archetype path.",
+            "multiplicity": "1..1",
+            "name": "activity_id",
+            "type": "String"
+        },
+        {
+            "description": "Various workflow engine state details, potentially including such things as:",
+            "multiplicity": "0..1",
+            "name": "wf_details",
+            "type": "ITEM_STRUCTURE"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "PATHABLE",
+        "classifier": "Class",
+        "description": "Used to record details of the Instruction causing an Action.",
+        "name": "INSTRUCTION_DETAILS"
     }
-  ],
-  "constants": []
 }

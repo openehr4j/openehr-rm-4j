@@ -1,37 +1,37 @@
 {
-  "meta_info": {
-    "base_type": "ITEM",
-    "name": "ELEMENT",
-    "classifier": "Class",
-    "description": "The leaf variant of `ITEM`, to which a `DATA_VALUE` instance is attached."
-  },
-  "functions": [
-    {
-      "name": "is_null",
-      "parameters": [],
-      "return_type": "Boolean",
-      "meaning": "True if value logically not known, e.g. if indeterminate, not asked etc."
+    "attributes": [
+        {
+            "description": "Flavour of null value, e.g. `253&#124;unknown&#124;`, `271&#124;no information&#124;`, `272&#124;masked&#124;`, and `273&#124;not applicable&#124;`.",
+            "multiplicity": "0..1",
+            "name": "null_flavour",
+            "type": "DV_CODED_TEXT"
+        },
+        {
+            "description": "Property representing leaf value object of `ELEMENT`. In real data, any concrete subtype of `DATA_VALUE` can be used.",
+            "multiplicity": "0..1",
+            "name": "value",
+            "type": "DATA_VALUE"
+        },
+        {
+            "description": "Optional specific reason for null value; if set, `_null_flavour_` must be set. Null reason may apply only to a minority of clinical data, commonly needed in reporting contexts.",
+            "multiplicity": "0..1",
+            "name": "null_reason",
+            "type": "DV_TEXT"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if value logically not known, e.g. if indeterminate, not asked etc.",
+            "name": "is_null",
+            "parameters": [],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_type": "ITEM",
+        "classifier": "Class",
+        "description": "The leaf variant of `ITEM`, to which a `DATA_VALUE` instance is attached.",
+        "name": "ELEMENT"
     }
-  ],
-  "attributes": [
-    {
-      "name": "null_flavour",
-      "multiplicity": "0..1",
-      "type": "DV_CODED_TEXT",
-      "description": "Flavour of null value, e.g. `253&#124;unknown&#124;`, `271&#124;no information&#124;`, `272&#124;masked&#124;`, and `273&#124;not applicable&#124;`."
-    },
-    {
-      "name": "value",
-      "multiplicity": "0..1",
-      "type": "DATA_VALUE",
-      "description": "Property representing leaf value object of `ELEMENT`. In real data, any concrete subtype of `DATA_VALUE` can be used."
-    },
-    {
-      "name": "null_reason",
-      "multiplicity": "0..1",
-      "type": "DV_TEXT",
-      "description": "Optional specific reason for null value; if set, `_null_flavour_` must be set. Null reason may apply only to a minority of clinical data, commonly needed in reporting contexts."
-    }
-  ],
-  "constants": []
 }

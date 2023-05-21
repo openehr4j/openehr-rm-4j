@@ -1,0 +1,18 @@
+{
+    "attributes": [
+        {
+            "description": "List of Folders and content items in this Folder.",
+            "multiplicity": "0..1",
+            "name": "items",
+            "type": "List<EXTRACT_ITEM>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "EXTRACT_ITEM",
+        "classifier": "Class",
+        "description": "Folder in local Folder structure in an Extract. Empty Folders are allowed.",
+        "name": "EXTRACT_FOLDER"
+    }
+}

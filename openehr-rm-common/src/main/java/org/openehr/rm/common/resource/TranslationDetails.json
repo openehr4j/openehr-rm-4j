@@ -1,36 +1,36 @@
 {
-  "meta_info": {
-    "base_type": null,
-    "name": "TRANSLATION_DETAILS",
-    "classifier": "Class",
-    "description": "Class providing details of a natural language translation."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "language",
-      "multiplicity": "1..1",
-      "type": "CODE_PHRASE",
-      "description": "Language of the translation."
-    },
-    {
-      "name": "author",
-      "multiplicity": "1..1",
-      "type": "String>",
-      "description": "Translator name and other demographic details."
-    },
-    {
-      "name": "accreditaton",
-      "multiplicity": "0..1",
-      "type": "String",
-      "description": "Accreditation of translator, usually a national translator's registration or association membership id."
-    },
-    {
-      "name": "other_details",
-      "multiplicity": "0..1",
-      "type": "String>",
-      "description": "Any other meta-data."
+    "attributes": [
+        {
+            "description": "Language of the translation.",
+            "multiplicity": "1..1",
+            "name": "language",
+            "type": "CODE_PHRASE"
+        },
+        {
+            "description": "Translator name and other demographic details.",
+            "multiplicity": "1..1",
+            "name": "author",
+            "type": "String>"
+        },
+        {
+            "description": "Accreditation of translator, usually a national translator's registration or association membership id.",
+            "multiplicity": "0..1",
+            "name": "accreditaton",
+            "type": "String"
+        },
+        {
+            "description": "Any other meta-data.",
+            "multiplicity": "0..1",
+            "name": "other_details",
+            "type": "String>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": null,
+        "classifier": "Class",
+        "description": "Class providing details of a natural language translation.",
+        "name": "TRANSLATION_DETAILS"
     }
-  ],
-  "constants": []
 }

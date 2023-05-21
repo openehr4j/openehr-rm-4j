@@ -1,47 +1,47 @@
 {
-  "meta_info": {
-    "base_type": "DV_ORDERED",
-    "name": "DV_ORDINAL",
-    "classifier": "Class",
-    "description": "A data type that represents integral score values, e.g. pain, Apgar values, etc, where there is:"
-  },
-  "functions": [
-    {
-      "name": "less_than",
-      "parameters": [
+    "attributes": [
         {
-          "name": "other",
-          "type": "DV_ORDINAL[1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True if this Ordinal value is less than `_other_`."
-    },
-    {
-      "name": "is_strictly_comparable_to",
-      "parameters": [
+            "description": "Coded textual representation of this value in the enumeration, which may be strings made from  +  symbols, or other enumerations of terms such as  `mild`, `moderate`, `severe`, or even the same number series as the values, e.g. 1, 2, 3.",
+            "multiplicity": "1..1",
+            "name": "symbol",
+            "type": "DV_CODED_TEXT"
+        },
         {
-          "name": "other",
-          "type": "DV_ORDINAL[1]"
+            "description": "Value in ordered enumeration of values. Any integer value can be used.",
+            "multiplicity": "1..1",
+            "name": "value",
+            "type": "Integer"
         }
-      ],
-      "return_type": "Boolean",
-      "meaning": "Test if this Ordinal is strictly comparable to `_other_`."
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "True if this Ordinal value is less than `_other_`.",
+            "name": "less_than",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_ORDINAL[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Test if this Ordinal is strictly comparable to `_other_`.",
+            "name": "is_strictly_comparable_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_ORDINAL[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_type": "DV_ORDERED",
+        "classifier": "Class",
+        "description": "A data type that represents integral score values, e.g. pain, Apgar values, etc, where there is:",
+        "name": "DV_ORDINAL"
     }
-  ],
-  "attributes": [
-    {
-      "name": "symbol",
-      "multiplicity": "1..1",
-      "type": "DV_CODED_TEXT",
-      "description": "Coded textual representation of this value in the enumeration, which may be strings made from  +  symbols, or other enumerations of terms such as  `mild`, `moderate`, `severe`, or even the same number series as the values, e.g. 1, 2, 3."
-    },
-    {
-      "name": "value",
-      "multiplicity": "1..1",
-      "type": "Integer",
-      "description": "Value in ordered enumeration of values. Any integer value can be used."
-    }
-  ],
-  "constants": []
 }

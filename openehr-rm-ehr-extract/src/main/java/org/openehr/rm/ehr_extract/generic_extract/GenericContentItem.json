@@ -1,0 +1,84 @@
+{
+    "attributes": [
+        {
+            "description": "Identifier of model or schema used to create the content.",
+            "multiplicity": "0..1",
+            "name": "item_type",
+            "type": "DV_CODED_TEXT"
+        },
+        {
+            "description": "Version of model or schema used to create the content item.",
+            "multiplicity": "0..1",
+            "name": "item_type_version",
+            "type": "String"
+        },
+        {
+            "description": "Reference to a demographic entity elsewhere in this Extract representing the author of the item version. The reference should be a UID corresponding to the UID of a `GENERIC_CONTENT_ITEM` containing the demographic information.",
+            "multiplicity": "0..1",
+            "name": "author",
+            "type": "String"
+        },
+        {
+            "description": "Time of creation of this item version on the original system. This may be an earlier commit time, or it may be the time at which the item was created during the Extract generation process.",
+            "multiplicity": "0..1",
+            "name": "creation_time",
+            "type": "Iso8601_date_time"
+        },
+        {
+            "description": "Reference to a demographic entity elsewhere in this Extract representing an authoriser of the item version, if relevant. The reference should be a UID corresponding to the UID of a `GENERIC_CONTENT_ITEM` containing the demographic information.",
+            "multiplicity": "0..1",
+            "name": "authoriser",
+            "type": "String"
+        },
+        {
+            "description": "Time of authorisation of this item version on the original system where relevant.",
+            "multiplicity": "0..1",
+            "name": "authorisation_time",
+            "type": "Iso8601_date_time"
+        },
+        {
+            "description": "Coded lifecycle status of the item.",
+            "multiplicity": "0..1",
+            "name": "item_status",
+            "type": "DV_CODED_TEXT"
+        },
+        {
+            "description": "Version id of this item in original system.",
+            "multiplicity": "0..1",
+            "name": "version_id",
+            "type": "String"
+        },
+        {
+            "description": "Version set id of this item in original system, where applicable.",
+            "multiplicity": "0..1",
+            "name": "version_set_id",
+            "type": "String"
+        },
+        {
+            "description": "Identifier of EMR or other system from which the item was created / extracted. Typically in the form of a domain name.",
+            "multiplicity": "0..1",
+            "name": "system_id",
+            "type": "String"
+        },
+        {
+            "description": "Other details about the content item.",
+            "multiplicity": "0..1",
+            "name": "other_details",
+            "type": "String>"
+        },
+        {
+            "description": "Content object.",
+            "multiplicity": "0..1",
+            "name": "item",
+            "type": "LOCATABLE"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "EXTRACT_CONTENT_ITEM",
+        "classifier": "Class",
+        "description": "Single item in generic extract, designed for 13606 and CDA data.",
+        "name": "GENERIC_CONTENT_ITEM"
+    }
+}

@@ -1,97 +1,97 @@
 {
-  "meta_info": {
-    "base_type": "DV_QUANTIFIED",
-    "name": "DV_AMOUNT",
-    "classifier": "Class",
-    "description": "Abstract class defining the concept of relative quantified  'amounts'. For relative quantities, the  `+` and  `-` operators are defined (unlike descendants of `DV_ABSOLUTE_QUANTITY`, such as the date/time types)."
-  },
-  "functions": [
-    {
-      "name": "valid_percentage",
-      "parameters": [
+    "attributes": [
         {
-          "name": "number",
-          "type": "/releases/BASE/{base_release}/foundation_types.html#_ordered_numeric_class[Ordered_Numeric][1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "Test whether a number is a valid percentage, i.e. between 0 and 100."
-    },
-    {
-      "name": "add",
-      "parameters": [
+            "description": "If `True`, indicates that when this object was created, `_accuracy_` was recorded as a percent value; if `False`, as an absolute quantity value.",
+            "multiplicity": "0..1",
+            "name": "accuracy_is_percent",
+            "type": "Boolean"
+        },
         {
-          "name": "other",
-          "type": "DV_AMOUNT[1]"
+            "description": "Accuracy of measurement, expressed either as a half-range percent value (`_accuracy_is_percent_` = `True`) or a half-range quantity. A value of `0` means that accuracy is 100%, i.e. no error.",
+            "multiplicity": "0..1",
+            "name": "accuracy",
+            "type": "Real"
         }
-      ],
-      "return_type": "DV_AMOUNT",
-      "meaning": "Sum of this amount and another. The value of accuracy in the result is either:"
-    },
-    {
-      "name": "subtract",
-      "parameters": [
+    ],
+    "constants": [],
+    "functions": [
         {
-          "name": "other",
-          "type": "DV_AMOUNT[1]"
-        }
-      ],
-      "return_type": "DV_AMOUNT",
-      "meaning": "Difference of this amount and another. The value of `_accuracy_` in the result is either:"
-    },
-    {
-      "name": "is_equal",
-      "parameters": [
+            "meaning": "Test whether a number is a valid percentage, i.e. between 0 and 100.",
+            "name": "valid_percentage",
+            "parameters": [
+                {
+                    "name": "number",
+                    "type": "/releases/BASE/{base_release}/foundation_types.html#_ordered_numeric_class[Ordered_Numeric][1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
         {
-          "name": "other",
-          "type": "DV_AMOUNT[1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "Return True if this `DV_AMOUNT` is considered equal to `_other_`."
-    },
-    {
-      "name": "multiply",
-      "parameters": [
+            "meaning": "Sum of this amount and another. The value of accuracy in the result is either:",
+            "name": "add",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_AMOUNT[1]"
+                }
+            ],
+            "return_type": "DV_AMOUNT"
+        },
         {
-          "name": "factor",
-          "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
-        }
-      ],
-      "return_type": "DV_AMOUNT",
-      "meaning": "Product of this Amount and `_factor_`."
-    },
-    {
-      "name": "negative",
-      "parameters": [],
-      "return_type": "DV_AMOUNT",
-      "meaning": "Negated version of current object, such as used for representing a difference, e.g. a weight loss."
-    },
-    {
-      "name": "less_than",
-      "parameters": [
+            "meaning": "Difference of this amount and another. The value of `_accuracy_` in the result is either:",
+            "name": "subtract",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_AMOUNT[1]"
+                }
+            ],
+            "return_type": "DV_AMOUNT"
+        },
         {
-          "name": "other",
-          "type": "DV_AMOUNT[1]"
+            "meaning": "Return True if this `DV_AMOUNT` is considered equal to `_other_`.",
+            "name": "is_equal",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_AMOUNT[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "Product of this Amount and `_factor_`.",
+            "name": "multiply",
+            "parameters": [
+                {
+                    "name": "factor",
+                    "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+                }
+            ],
+            "return_type": "DV_AMOUNT"
+        },
+        {
+            "meaning": "Negated version of current object, such as used for representing a difference, e.g. a weight loss.",
+            "name": "negative",
+            "parameters": [],
+            "return_type": "DV_AMOUNT"
+        },
+        {
+            "meaning": "True if this object is less than `_other_`. Based on comparison of `_magnitude_`.",
+            "name": "less_than",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_AMOUNT[1]"
+                }
+            ],
+            "return_type": "Boolean"
         }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True if this object is less than `_other_`. Based on comparison of `_magnitude_`."
+    ],
+    "meta_info": {
+        "base_type": "DV_QUANTIFIED",
+        "classifier": "Class",
+        "description": "Abstract class defining the concept of relative quantified  'amounts'. For relative quantities, the  `+` and  `-` operators are defined (unlike descendants of `DV_ABSOLUTE_QUANTITY`, such as the date/time types).",
+        "name": "DV_AMOUNT"
     }
-  ],
-  "attributes": [
-    {
-      "name": "accuracy_is_percent",
-      "multiplicity": "0..1",
-      "type": "Boolean",
-      "description": "If `True`, indicates that when this object was created, `_accuracy_` was recorded as a percent value; if `False`, as an absolute quantity value."
-    },
-    {
-      "name": "accuracy",
-      "multiplicity": "0..1",
-      "type": "Real",
-      "description": "Accuracy of measurement, expressed either as a half-range percent value (`_accuracy_is_percent_` = `True`) or a half-range quantity. A value of `0` means that accuracy is 100%, i.e. no error."
-    }
-  ],
-  "constants": []
 }

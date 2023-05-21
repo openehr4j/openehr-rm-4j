@@ -1,11 +1,11 @@
 {
-  "meta_info": {
-    "base_type": "DATA_STRUCTURE",
-    "name": "ITEM_STRUCTURE",
-    "classifier": "Class",
-    "description": "Abstract parent class of all spatial data types."
-  },
-  "functions": [],
-  "attributes": [],
-  "constants": []
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "DATA_STRUCTURE",
+        "classifier": "Class",
+        "description": "Abstract parent class of all spatial data types.",
+        "name": "ITEM_STRUCTURE"
+    }
 }

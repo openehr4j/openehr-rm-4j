@@ -1,0 +1,11 @@
+{
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "SOCIAL_ENTITY",
+        "classifier": "Class",
+        "description": "A business level service provided by a Party.",
+        "name": "SERVICE"
+    }
+}

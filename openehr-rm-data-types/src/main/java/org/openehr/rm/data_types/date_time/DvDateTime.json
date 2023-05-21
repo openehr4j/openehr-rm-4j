@@ -1,80 +1,80 @@
 {
-  "meta_info": {
-    "base_type": "<Iso8601_date_time",
-    "name": "DV_DATE_TIME",
-    "classifier": "Class",
-    "description": "Represents an absolute point in time, specified to the second. Semantics defined by ISO 8601."
-  },
-  "functions": [
-    {
-      "name": "magnitude",
-      "parameters": [],
-      "return_type": "Double",
-      "meaning": "Numeric value of the date/time as seconds since the calendar origin date/time `0001-01-01T00:00:00Z`."
-    },
-    {
-      "name": "add",
-      "parameters": [
+    "attributes": [
         {
-          "name": "a_diff",
-          "type": "DV_DURATION[1]"
+            "description": "ISO8601 date/time string.",
+            "multiplicity": null,
+            "name": "value",
+            "type": "String"
         }
-      ],
-      "return_type": "DV_DATE_TIME",
-      "meaning": "Addition of a Duration to this Date/time."
-    },
-    {
-      "name": "subtract",
-      "parameters": [
+    ],
+    "constants": [],
+    "functions": [
         {
-          "name": "a_diff",
-          "type": "DV_DURATION[1]"
-        }
-      ],
-      "return_type": "DV_DATE_TIME",
-      "meaning": "Subtract a Duration from this Date/time."
-    },
-    {
-      "name": "diff",
-      "parameters": [
+            "meaning": "Numeric value of the date/time as seconds since the calendar origin date/time `0001-01-01T00:00:00Z`.",
+            "name": "magnitude",
+            "parameters": [],
+            "return_type": "Double"
+        },
         {
-          "name": "other",
-          "type": "DV_DATE_TIME[1]"
-        }
-      ],
-      "return_type": "DV_DURATION",
-      "meaning": "Difference between this Date/time and `_other_`."
-    },
-    {
-      "name": "less_than",
-      "parameters": [
+            "meaning": "Addition of a Duration to this Date/time.",
+            "name": "add",
+            "parameters": [
+                {
+                    "name": "a_diff",
+                    "type": "DV_DURATION[1]"
+                }
+            ],
+            "return_type": "DV_DATE_TIME"
+        },
         {
-          "name": "other",
-          "type": "DV_DATE_TIME[1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True if this date-time object is less than `_other_`, based on comparison of `_magnitude()_`."
-    },
-    {
-      "name": "is_strictly_comparable_to",
-      "parameters": [
+            "meaning": "Subtract a Duration from this Date/time.",
+            "name": "subtract",
+            "parameters": [
+                {
+                    "name": "a_diff",
+                    "type": "DV_DURATION[1]"
+                }
+            ],
+            "return_type": "DV_DATE_TIME"
+        },
         {
-          "name": "other",
-          "type": "DV_DATE_TIME[1]"
+            "meaning": "Difference between this Date/time and `_other_`.",
+            "name": "diff",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_DATE_TIME[1]"
+                }
+            ],
+            "return_type": "DV_DURATION"
+        },
+        {
+            "meaning": "True if this date-time object is less than `_other_`, based on comparison of `_magnitude()_`.",
+            "name": "less_than",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_DATE_TIME[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True, for any two Date/times.",
+            "name": "is_strictly_comparable_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_DATE_TIME[1]"
+                }
+            ],
+            "return_type": "Boolean"
         }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True, for any two Date/times."
+    ],
+    "meta_info": {
+        "base_type": "<Iso8601_date_time",
+        "classifier": "Class",
+        "description": "Represents an absolute point in time, specified to the second. Semantics defined by ISO 8601.",
+        "name": "DV_DATE_TIME"
     }
-  ],
-  "attributes": [
-    {
-      "name": "value",
-      "multiplicity": null,
-      "type": "String",
-      "description": "ISO8601 date/time string."
-    }
-  ],
-  "constants": []
 }

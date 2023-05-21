@@ -1,91 +1,91 @@
 {
-  "meta_info": {
-    "base_type": "<Iso8601_date",
-    "name": "DV_DATE",
-    "classifier": "Class",
-    "description": "Represents an absolute point in time, as measured on the Gregorian calendar, and specified only to the day. Semantics defined by ISO 8601. Used for recording dates in real world time. The partial form is used for approximate birth dates, dates of death, etc."
-  },
-  "functions": [
-    {
-      "name": "magnitude",
-      "parameters": [],
-      "return_type": "Integer",
-      "meaning": "Numeric value of the date as days since the calendar origin date `0001-01-01`."
-    },
-    {
-      "name": "is_equal",
-      "parameters": [
+    "attributes": [
         {
-          "name": "other",
-          "type": "DV_QUANTIFIED[1]"
+            "description": "ISO8601 date string.",
+            "multiplicity": null,
+            "name": "value",
+            "type": "String"
         }
-      ],
-      "return_type": "Boolean",
-      "meaning": "Return True if this `DV_QUANTIFIED` is considered equal to `_other_`."
-    },
-    {
-      "name": "add",
-      "parameters": [
+    ],
+    "constants": [],
+    "functions": [
         {
-          "name": "a_diff",
-          "type": "DV_DURATION[1]"
-        }
-      ],
-      "return_type": "DV_DATE",
-      "meaning": "Addition of a Duration to this Date."
-    },
-    {
-      "name": "subtract",
-      "parameters": [
+            "meaning": "Numeric value of the date as days since the calendar origin date `0001-01-01`.",
+            "name": "magnitude",
+            "parameters": [],
+            "return_type": "Integer"
+        },
         {
-          "name": "a_diff",
-          "type": "DV_DURATION[1]"
-        }
-      ],
-      "return_type": "DV_DATE",
-      "meaning": "Subtract a Duration from this Date."
-    },
-    {
-      "name": "diff",
-      "parameters": [
+            "meaning": "Return True if this `DV_QUANTIFIED` is considered equal to `_other_`.",
+            "name": "is_equal",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_QUANTIFIED[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
         {
-          "name": "other",
-          "type": "DV_DATE[1]"
-        }
-      ],
-      "return_type": "DV_DURATION",
-      "meaning": "Difference between this Date and `_other_`."
-    },
-    {
-      "name": "less_than",
-      "parameters": [
+            "meaning": "Addition of a Duration to this Date.",
+            "name": "add",
+            "parameters": [
+                {
+                    "name": "a_diff",
+                    "type": "DV_DURATION[1]"
+                }
+            ],
+            "return_type": "DV_DATE"
+        },
         {
-          "name": "other",
-          "type": "DV_DATE[1]"
-        }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True if this date object is less than `_other_`, based on comparison of `_magnitude()_`."
-    },
-    {
-      "name": "is_strictly_comparable_to",
-      "parameters": [
+            "meaning": "Subtract a Duration from this Date.",
+            "name": "subtract",
+            "parameters": [
+                {
+                    "name": "a_diff",
+                    "type": "DV_DURATION[1]"
+                }
+            ],
+            "return_type": "DV_DATE"
+        },
         {
-          "name": "other",
-          "type": "DV_DATE[1]"
+            "meaning": "Difference between this Date and `_other_`.",
+            "name": "diff",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_DATE[1]"
+                }
+            ],
+            "return_type": "DV_DURATION"
+        },
+        {
+            "meaning": "True if this date object is less than `_other_`, based on comparison of `_magnitude()_`.",
+            "name": "less_than",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_DATE[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        },
+        {
+            "meaning": "True, for any two Dates.",
+            "name": "is_strictly_comparable_to",
+            "parameters": [
+                {
+                    "name": "other",
+                    "type": "DV_DATE[1]"
+                }
+            ],
+            "return_type": "Boolean"
         }
-      ],
-      "return_type": "Boolean",
-      "meaning": "True, for any two Dates."
+    ],
+    "meta_info": {
+        "base_type": "<Iso8601_date",
+        "classifier": "Class",
+        "description": "Represents an absolute point in time, as measured on the Gregorian calendar, and specified only to the day. Semantics defined by ISO 8601. Used for recording dates in real world time. The partial form is used for approximate birth dates, dates of death, etc.",
+        "name": "DV_DATE"
     }
-  ],
-  "attributes": [
-    {
-      "name": "value",
-      "multiplicity": null,
-      "type": "String",
-      "description": "ISO8601 date string."
-    }
-  ],
-  "constants": []
 }

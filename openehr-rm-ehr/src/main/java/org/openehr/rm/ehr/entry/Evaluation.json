@@ -1,18 +1,18 @@
 {
-  "meta_info": {
-    "base_type": "CARE_ENTRY",
-    "name": "EVALUATION",
-    "classifier": "Class",
-    "description": "Entry type for evaluation statements. Used for all kinds of statements which evaluate other information, such as interpretations of observations, diagnoses, differential diagnoses, hypotheses, risk assessments, goals and plans."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "data",
-      "multiplicity": "1..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "The data of this evaluation, in the form of a spatial data structure."
+    "attributes": [
+        {
+            "description": "The data of this evaluation, in the form of a spatial data structure.",
+            "multiplicity": "1..1",
+            "name": "data",
+            "type": "ITEM_STRUCTURE"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "CARE_ENTRY",
+        "classifier": "Class",
+        "description": "Entry type for evaluation statements. Used for all kinds of statements which evaluate other information, such as interpretations of observations, diagnoses, differential diagnoses, hypotheses, risk assessments, goals and plans.",
+        "name": "EVALUATION"
     }
-  ],
-  "constants": []
 }

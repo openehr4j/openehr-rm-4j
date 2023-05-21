@@ -1,0 +1,24 @@
+{
+    "attributes": [
+        {
+            "description": "Details of specification of this Extract.",
+            "multiplicity": "1..1",
+            "name": "specification",
+            "type": "SYNC_EXTRACT_SPEC"
+        },
+        {
+            "description": "Content, in the form of a serialised Contributions.",
+            "multiplicity": "0..1",
+            "name": "items",
+            "type": "List<X_CONTRIBUTION>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "MESSAGE_CONTENT",
+        "classifier": "Class",
+        "description": "",
+        "name": "SYNC_EXTRACT"
+    }
+}

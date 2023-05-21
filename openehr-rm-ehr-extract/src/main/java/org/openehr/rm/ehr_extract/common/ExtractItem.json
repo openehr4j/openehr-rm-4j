@@ -1,0 +1,11 @@
+{
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "LOCATABLE",
+        "classifier": "Class",
+        "description": "Abstract parent of Extract Folder and Content types.",
+        "name": "EXTRACT_ITEM"
+    }
+}

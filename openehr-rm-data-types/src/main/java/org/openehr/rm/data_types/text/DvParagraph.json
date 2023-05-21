@@ -1,18 +1,18 @@
 {
-  "meta_info": {
-    "base_type": "DATA_VALUE",
-    "name": "DV_PARAGRAPH",
-    "classifier": "Class",
-    "description": "DEPRECATED: use markdown formatted `DV_TEXT` instead."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "items",
-      "multiplicity": "1..1",
-      "type": "List<DV_TEXT>",
-      "description": "Items making up the paragraph, each of which is a text item (which may have its own formatting, and/or have hyperlinks)."
+    "attributes": [
+        {
+            "description": "Items making up the paragraph, each of which is a text item (which may have its own formatting, and/or have hyperlinks).",
+            "multiplicity": "1..1",
+            "name": "items",
+            "type": "List<DV_TEXT>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "DATA_VALUE",
+        "classifier": "Class",
+        "description": "DEPRECATED: use markdown formatted `DV_TEXT` instead.",
+        "name": "DV_PARAGRAPH"
     }
-  ],
-  "constants": []
 }

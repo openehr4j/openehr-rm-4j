@@ -1,24 +1,24 @@
 {
-  "meta_info": {
-    "base_type": "ENTRY",
-    "name": "CARE_ENTRY",
-    "classifier": "Class",
-    "description": "The abstract parent of all clinical `ENTRY` subtypes. A `CARE_ENTRY` defines protocol and guideline attributes for all clinical Entry subtypes."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "protocol",
-      "multiplicity": "0..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "Description of the method (i.e. how) the information in this entry was arrived at. For `OBSERVATIONs`, this is a description of the method or instrument used. For `EVALUATIONs`, how the evaluation was arrived at. For `INSTRUCTIONs`, how to execute the Instruction. This may take the form of references to guidelines, including manually followed and executable; knowledge references such as a paper in Medline; clinical reasons within a larger care process."
-    },
-    {
-      "name": "guideline_id",
-      "multiplicity": "0..1",
-      "type": "OBJECT_REF",
-      "description": "Optional external identifier of guideline creating this Entry if relevant."
+    "attributes": [
+        {
+            "description": "Description of the method (i.e. how) the information in this entry was arrived at. For `OBSERVATIONs`, this is a description of the method or instrument used. For `EVALUATIONs`, how the evaluation was arrived at. For `INSTRUCTIONs`, how to execute the Instruction. This may take the form of references to guidelines, including manually followed and executable; knowledge references such as a paper in Medline; clinical reasons within a larger care process.",
+            "multiplicity": "0..1",
+            "name": "protocol",
+            "type": "ITEM_STRUCTURE"
+        },
+        {
+            "description": "Optional external identifier of guideline creating this Entry if relevant.",
+            "multiplicity": "0..1",
+            "name": "guideline_id",
+            "type": "OBJECT_REF"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "ENTRY",
+        "classifier": "Class",
+        "description": "The abstract parent of all clinical `ENTRY` subtypes. A `CARE_ENTRY` defines protocol and guideline attributes for all clinical Entry subtypes.",
+        "name": "CARE_ENTRY"
     }
-  ],
-  "constants": []
 }

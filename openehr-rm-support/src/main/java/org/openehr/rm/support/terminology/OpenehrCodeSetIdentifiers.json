@@ -1,0 +1,59 @@
+{
+    "attributes": [],
+    "constants": [
+        {
+            "description": null,
+            "name": "Code_set_id_character_sets",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"character sets\""
+        },
+        {
+            "description": null,
+            "name": "Code_set_id_compression_algorithms",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"compression algorithms\""
+        },
+        {
+            "description": null,
+            "name": "Code_set_id_countries",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"countries\""
+        },
+        {
+            "description": null,
+            "name": "Code_set_integrity_check_algorithms",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"integrity check algorithms\""
+        },
+        {
+            "description": null,
+            "name": "Code_set_id_languages",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"languages\""
+        },
+        {
+            "description": null,
+            "name": "Code_set_id_media_types",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"media types\""
+        },
+        {
+            "description": null,
+            "name": "Code_set_id_normal_statuses",
+            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"normal statuses\""
+        }
+    ],
+    "functions": [
+        {
+            "meaning": "Validity function to test if an identifier is in the set defined by this class.",
+            "name": "valid_code_set_id",
+            "parameters": [
+                {
+                    "name": "an_id",
+                    "type": "String[1]"
+                }
+            ],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_type": null,
+        "classifier": "Class",
+        "description": "List of identifiers for code sets in the openEHR terminology.",
+        "name": "OPENEHR_CODE_SET_IDENTIFIERS"
+    }
+}

@@ -1,24 +1,24 @@
 {
-  "meta_info": {
-    "base_type": "CARE_ENTRY",
-    "name": "OBSERVATION",
-    "classifier": "Class",
-    "description": "Entry subtype for all clinical data in the past or present, i.e. which (by the time it is recorded) has already occurred. `OBSERVATION` data is expressed using the class `HISTORY<T>`, which guarantees that it is situated in time. `OBSERVATION` is used for all notionally objective (i.e. measured in some way) observations of phenomena, and patient-reported phenomena, e.g. pain."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "data",
-      "multiplicity": "1..1",
-      "type": "HISTORY<ITEM_STRUCTURE>",
-      "description": "The data of this observation, in the form of a history of values which may be of any complexity."
-    },
-    {
-      "name": "state",
-      "multiplicity": "0..1",
-      "type": "HISTORY<ITEM_STRUCTURE>",
-      "description": "Optional recording of the state of subject of this observation during the observation process, in the form of a separate history of values which may be of any complexity. State may also be recorded within the History of the data attribute."
+    "attributes": [
+        {
+            "description": "The data of this observation, in the form of a history of values which may be of any complexity.",
+            "multiplicity": "1..1",
+            "name": "data",
+            "type": "HISTORY<ITEM_STRUCTURE>"
+        },
+        {
+            "description": "Optional recording of the state of subject of this observation during the observation process, in the form of a separate history of values which may be of any complexity. State may also be recorded within the History of the data attribute.",
+            "multiplicity": "0..1",
+            "name": "state",
+            "type": "HISTORY<ITEM_STRUCTURE>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "CARE_ENTRY",
+        "classifier": "Class",
+        "description": "Entry subtype for all clinical data in the past or present, i.e. which (by the time it is recorded) has already occurred. `OBSERVATION` data is expressed using the class `HISTORY<T>`, which guarantees that it is situated in time. `OBSERVATION` is used for all notionally objective (i.e. measured in some way) observations of phenomena, and patient-reported phenomena, e.g. pain.",
+        "name": "OBSERVATION"
     }
-  ],
-  "constants": []
 }

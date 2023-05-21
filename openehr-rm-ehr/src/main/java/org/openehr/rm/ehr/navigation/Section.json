@@ -1,18 +1,18 @@
 {
-  "meta_info": {
-    "base_type": "CONTENT_ITEM",
-    "name": "SECTION",
-    "classifier": "Class",
-    "description": "Represents a heading in a heading structure, or  section tree.  Created according to archetyped structures for typical headings such as SOAP,  physical examination, but also pathology result heading structures.  Should not be used instead of `ENTRY` hierarchical structures."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "items",
-      "multiplicity": "0..1",
-      "type": "List<CONTENT_ITEM>",
-      "description": "Ordered list of content items under this section, which may include:"
+    "attributes": [
+        {
+            "description": "Ordered list of content items under this section, which may include:",
+            "multiplicity": "0..1",
+            "name": "items",
+            "type": "List<CONTENT_ITEM>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "CONTENT_ITEM",
+        "classifier": "Class",
+        "description": "Represents a heading in a heading structure, or  section tree.  Created according to archetyped structures for typical headings such as SOAP,  physical examination, but also pathology result heading structures.  Should not be used instead of `ENTRY` hierarchical structures.",
+        "name": "SECTION"
     }
-  ],
-  "constants": []
 }

@@ -1,0 +1,11 @@
+{
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "VERSIONED_OBJECT",
+        "classifier": "Class",
+        "description": "Version container for `EHR_ACCESS` instance.",
+        "name": "VERSIONED_EHR_ACCESS"
+    }
+}

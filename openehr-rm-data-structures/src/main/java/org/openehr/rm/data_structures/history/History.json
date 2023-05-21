@@ -1,49 +1,49 @@
 {
-  "meta_info": {
-    "base_type": "DATA_STRUCTURE",
-    "name": "HISTORY",
-    "classifier": "Class",
-    "description": "Root object of a linear history, i.e. time series structure. This is a generic class whose type parameter must be a descendant of `ITEM_STRUCTURE`, ensuring that each Event in the `_events_` of a given instance is of the same structural type, i.e. `ITEM_TREE`, `ITEM_LIST` etc."
-  },
-  "functions": [
-    {
-      "name": "is_periodic",
-      "parameters": [],
-      "return_type": "Boolean",
-      "meaning": "Indicates whether history is periodic."
+    "attributes": [
+        {
+            "description": "Time origin of this event history. The first event is not necessarily at the origin point.",
+            "multiplicity": "1..1",
+            "name": "origin",
+            "type": "DV_DATE_TIME"
+        },
+        {
+            "description": "Period between samples in this segment if periodic.",
+            "multiplicity": "0..1",
+            "name": "period",
+            "type": "DV_DURATION"
+        },
+        {
+            "description": "Duration of the entire History; either corresponds to the duration of all the events, and/or the duration represented by the summary, if it exists.",
+            "multiplicity": "0..1",
+            "name": "duration",
+            "type": "DV_DURATION"
+        },
+        {
+            "description": "Optional summary data that aggregates, organizes, reduces and transforms the event series. This may be a text or image that presents a graphical presentation, or some data that assists with the interpretation of the data.",
+            "multiplicity": "0..1",
+            "name": "summary",
+            "type": "ITEM_STRUCTURE"
+        },
+        {
+            "description": "The events in the series. This attribute is of a generic type whose parameter must be a descendant of `ITEM_SUTRUCTURE`.",
+            "multiplicity": "0..1",
+            "name": "events",
+            "type": "List<EVENT>"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "Indicates whether history is periodic.",
+            "name": "is_periodic",
+            "parameters": [],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_type": "DATA_STRUCTURE",
+        "classifier": "Class",
+        "description": "Root object of a linear history, i.e. time series structure. This is a generic class whose type parameter must be a descendant of `ITEM_STRUCTURE`, ensuring that each Event in the `_events_` of a given instance is of the same structural type, i.e. `ITEM_TREE`, `ITEM_LIST` etc.",
+        "name": "HISTORY"
     }
-  ],
-  "attributes": [
-    {
-      "name": "origin",
-      "multiplicity": "1..1",
-      "type": "DV_DATE_TIME",
-      "description": "Time origin of this event history. The first event is not necessarily at the origin point."
-    },
-    {
-      "name": "period",
-      "multiplicity": "0..1",
-      "type": "DV_DURATION",
-      "description": "Period between samples in this segment if periodic."
-    },
-    {
-      "name": "duration",
-      "multiplicity": "0..1",
-      "type": "DV_DURATION",
-      "description": "Duration of the entire History; either corresponds to the duration of all the events, and/or the duration represented by the summary, if it exists."
-    },
-    {
-      "name": "summary",
-      "multiplicity": "0..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "Optional summary data that aggregates, organizes, reduces and transforms the event series. This may be a text or image that presents a graphical presentation, or some data that assists with the interpretation of the data."
-    },
-    {
-      "name": "events",
-      "multiplicity": "0..1",
-      "type": "List<EVENT>",
-      "description": "The events in the series. This attribute is of a generic type whose parameter must be a descendant of `ITEM_SUTRUCTURE`."
-    }
-  ],
-  "constants": []
 }

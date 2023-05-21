@@ -1,61 +1,61 @@
 {
-  "meta_info": {
-    "base_type": "PATHABLE",
-    "name": "LOCATABLE",
-    "classifier": "Class",
-    "description": "Root class of all information model classes that can be archetyped. Most classes in the openEHR reference model inherit from the `LOCATABLE` class, which defines the idea of  locatability in an archetyped structure. `LOCATABLE` defines a runtime name and an `_archetype_node_id_`."
-  },
-  "functions": [
-    {
-      "name": "concept",
-      "parameters": [],
-      "return_type": "DV_TEXT",
-      "meaning": "Clinical concept of the archetype as a whole (= derived from the archetype_node_id' of the root node)"
-    },
-    {
-      "name": "is_archetype_root",
-      "parameters": [],
-      "return_type": "Boolean",
-      "meaning": "True if this node is the root of an archetyped structure."
+    "attributes": [
+        {
+            "description": "Runtime name of this fragment, used to build runtime paths. This is the term provided via a clinical application or batch process to name this EHR construct: its retention in the EHR faithfully preserves the original label by which this entry was known to end users.",
+            "multiplicity": "1..1",
+            "name": "name",
+            "type": "DV_TEXT"
+        },
+        {
+            "description": "Design-time archetype identifier of this node taken from its generating archetype; used to build archetype paths. Always in the form of an at-code, e.g.  `at0005`. This value enables a 'standardised' name for this node to be generated, by referring to the generating archetype local terminology.",
+            "multiplicity": "1..1",
+            "name": "archetype_node_id",
+            "type": "String"
+        },
+        {
+            "description": "Optional globally unique object identifier for root points of archetyped structures.",
+            "multiplicity": "0..1",
+            "name": "uid",
+            "type": "UID_BASED_ID"
+        },
+        {
+            "description": "Links to other archetyped structures (data whose root object inherits from `ARCHETYPED`, such as `ENTRY`, `SECTION` and so on). Links may be to structures in other compositions.",
+            "multiplicity": "0..1",
+            "name": "links",
+            "type": "List<LINK>"
+        },
+        {
+            "description": "Details of archetyping used on this node.",
+            "multiplicity": "0..1",
+            "name": "archetype_details",
+            "type": "ARCHETYPED"
+        },
+        {
+            "description": "Audit trail from non-openEHR system of original commit of information forming the content of this node, or from a conversion gateway which has synthesised this node.",
+            "multiplicity": "0..1",
+            "name": "feeder_audit",
+            "type": "FEEDER_AUDIT"
+        }
+    ],
+    "constants": [],
+    "functions": [
+        {
+            "meaning": "Clinical concept of the archetype as a whole (= derived from the archetype_node_id' of the root node)",
+            "name": "concept",
+            "parameters": [],
+            "return_type": "DV_TEXT"
+        },
+        {
+            "meaning": "True if this node is the root of an archetyped structure.",
+            "name": "is_archetype_root",
+            "parameters": [],
+            "return_type": "Boolean"
+        }
+    ],
+    "meta_info": {
+        "base_type": "PATHABLE",
+        "classifier": "Class",
+        "description": "Root class of all information model classes that can be archetyped. Most classes in the openEHR reference model inherit from the `LOCATABLE` class, which defines the idea of  locatability in an archetyped structure. `LOCATABLE` defines a runtime name and an `_archetype_node_id_`.",
+        "name": "LOCATABLE"
     }
-  ],
-  "attributes": [
-    {
-      "name": "name",
-      "multiplicity": "1..1",
-      "type": "DV_TEXT",
-      "description": "Runtime name of this fragment, used to build runtime paths. This is the term provided via a clinical application or batch process to name this EHR construct: its retention in the EHR faithfully preserves the original label by which this entry was known to end users."
-    },
-    {
-      "name": "archetype_node_id",
-      "multiplicity": "1..1",
-      "type": "String",
-      "description": "Design-time archetype identifier of this node taken from its generating archetype; used to build archetype paths. Always in the form of an at-code, e.g.  `at0005`. This value enables a 'standardised' name for this node to be generated, by referring to the generating archetype local terminology."
-    },
-    {
-      "name": "uid",
-      "multiplicity": "0..1",
-      "type": "UID_BASED_ID",
-      "description": "Optional globally unique object identifier for root points of archetyped structures."
-    },
-    {
-      "name": "links",
-      "multiplicity": "0..1",
-      "type": "List<LINK>",
-      "description": "Links to other archetyped structures (data whose root object inherits from `ARCHETYPED`, such as `ENTRY`, `SECTION` and so on). Links may be to structures in other compositions."
-    },
-    {
-      "name": "archetype_details",
-      "multiplicity": "0..1",
-      "type": "ARCHETYPED",
-      "description": "Details of archetyping used on this node."
-    },
-    {
-      "name": "feeder_audit",
-      "multiplicity": "0..1",
-      "type": "FEEDER_AUDIT",
-      "description": "Audit trail from non-openEHR system of original commit of information forming the content of this node, or from a conversion gateway which has synthesised this node."
-    }
-  ],
-  "constants": []
 }

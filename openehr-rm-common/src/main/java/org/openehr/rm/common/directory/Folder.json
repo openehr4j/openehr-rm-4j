@@ -1,30 +1,30 @@
 {
-  "meta_info": {
-    "base_type": "LOCATABLE",
-    "name": "FOLDER",
-    "classifier": "Class",
-    "description": "The concept of a named folder."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "items",
-      "multiplicity": "0..1",
-      "type": "List<OBJECT_REF>",
-      "description": "The list of references to other (usually) versioned objects logically in this folder."
-    },
-    {
-      "name": "folders",
-      "multiplicity": "0..1",
-      "type": "List<FOLDER>",
-      "description": "Sub-folders of this `FOLDER`."
-    },
-    {
-      "name": "details",
-      "multiplicity": "0..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "Archetypable meta-data for `FOLDER`."
+    "attributes": [
+        {
+            "description": "The list of references to other (usually) versioned objects logically in this folder.",
+            "multiplicity": "0..1",
+            "name": "items",
+            "type": "List<OBJECT_REF>"
+        },
+        {
+            "description": "Sub-folders of this `FOLDER`.",
+            "multiplicity": "0..1",
+            "name": "folders",
+            "type": "List<FOLDER>"
+        },
+        {
+            "description": "Archetypable meta-data for `FOLDER`.",
+            "multiplicity": "0..1",
+            "name": "details",
+            "type": "ITEM_STRUCTURE"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "LOCATABLE",
+        "classifier": "Class",
+        "description": "The concept of a named folder.",
+        "name": "FOLDER"
     }
-  ],
-  "constants": []
 }

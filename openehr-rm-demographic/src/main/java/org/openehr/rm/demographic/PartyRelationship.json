@@ -1,43 +1,30 @@
 {
-  "meta_info": {
-    "base_type": "LOCATABLE",
-    "name": "PARTY_RELATIONSHIP",
-    "classifier": "Class",
-    "description": "Generic description of a relationship between parties."
-  },
-  "functions": [
-    {
-      "name": "type",
-      "parameters": [],
-      "return_type": "DV_TEXT",
-      "meaning": "Type of relationship, such as  employment,  authority,  health provision"
+    "attributes": [
+        {
+            "description": "The Accountability type defining the scope of this relationship; typically a job post.",
+            "multiplicity": "0..1",
+            "name": "scoper",
+            "type": "String"
+        },
+        {
+            "description": "Source of relationship, may be understood as 'owner' of relationship.",
+            "multiplicity": "0..1",
+            "name": "source",
+            "type": "String"
+        },
+        {
+            "description": "Target of relationship.",
+            "multiplicity": "0..1",
+            "name": "target",
+            "type": "String"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "ENTITY_RELATIONSHIP",
+        "classifier": "Class",
+        "description": "A relationship between parties. In BFO terms, a Relational quality, i.e. a Quality that s-depends on the parties of the relation.",
+        "name": "PARTY_RELATIONSHIP"
     }
-  ],
-  "attributes": [
-    {
-      "name": "details",
-      "multiplicity": "0..1",
-      "type": "ITEM_STRUCTURE",
-      "description": "The detailed description of the relationship."
-    },
-    {
-      "name": "target",
-      "multiplicity": "1..1",
-      "type": "PARTY_REF",
-      "description": "Target of relationship."
-    },
-    {
-      "name": "time_validity",
-      "multiplicity": "0..1",
-      "type": "DV_INTERVAL<DV_DATE>",
-      "description": "Valid time interval for this relationship."
-    },
-    {
-      "name": "source",
-      "multiplicity": "1..1",
-      "type": "PARTY_REF",
-      "description": "Source of relationship."
-    }
-  ],
-  "constants": []
 }

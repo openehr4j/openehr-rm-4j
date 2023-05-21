@@ -1,24 +1,24 @@
 {
-  "meta_info": {
-    "base_type": "DATA_VALUE",
-    "name": "DV_ENCAPSULATED",
-    "classifier": "Class",
-    "description": "Abstract class defining the common meta-data of all types of encapsulated data."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "charset",
-      "multiplicity": "0..1",
-      "type": "CODE_PHRASE",
-      "description": "Name of character encoding scheme in which this value is encoded. Coded from openEHR Code Set  character sets . Unicode is the default assumption in openEHR, with UTF-8 being the assumed encoding. This attribute allows for variations from these assumptions."
-    },
-    {
-      "name": "language",
-      "multiplicity": "0..1",
-      "type": "CODE_PHRASE",
-      "description": "Optional indicator of the localised language in which the data is written, if relevant. Coded from openEHR Code Set `languages`."
+    "attributes": [
+        {
+            "description": "Name of character encoding scheme in which this value is encoded. Coded from openEHR Code Set  character sets . Unicode is the default assumption in openEHR, with UTF-8 being the assumed encoding. This attribute allows for variations from these assumptions.",
+            "multiplicity": "0..1",
+            "name": "charset",
+            "type": "CODE_PHRASE"
+        },
+        {
+            "description": "Optional indicator of the localised language in which the data is written, if relevant. Coded from openEHR Code Set `languages`.",
+            "multiplicity": "0..1",
+            "name": "language",
+            "type": "CODE_PHRASE"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "DATA_VALUE",
+        "classifier": "Class",
+        "description": "Abstract class defining the common meta-data of all types of encapsulated data.",
+        "name": "DV_ENCAPSULATED"
     }
-  ],
-  "constants": []
 }

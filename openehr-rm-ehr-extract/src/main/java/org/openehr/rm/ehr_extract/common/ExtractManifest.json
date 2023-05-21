@@ -1,0 +1,18 @@
+{
+    "attributes": [
+        {
+            "description": "List of entity manifests uids of items included in the Extract; for openEHR data, these are uids identifying the version containers.",
+            "multiplicity": "1..1",
+            "name": "entities",
+            "type": "List<EXTRACT_ENTITY_MANIFEST>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": null,
+        "classifier": "Class",
+        "description": "Specification of the candidate entities and optionally top-level items (e.g. Compositions) to be included in the Extract.",
+        "name": "EXTRACT_MANIFEST"
+    }
+}

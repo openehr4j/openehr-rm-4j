@@ -1,0 +1,42 @@
+{
+    "attributes": [
+        {
+            "description": "Identifier by which this entity is known in the Extract. May be one of the other identifiers, e.g. ehr_id or subject_id, or it may be something else, including a simple integer.",
+            "multiplicity": "1..1",
+            "name": "extract_id_key",
+            "type": "String"
+        },
+        {
+            "description": "EHR / EMR identifier for the entity at the target system.",
+            "multiplicity": "0..1",
+            "name": "ehr_id",
+            "type": "String"
+        },
+        {
+            "description": "Subject (i.e. patient or similar) identifier for the entity at the target system.",
+            "multiplicity": "0..1",
+            "name": "subject_id",
+            "type": "String"
+        },
+        {
+            "description": "Other identifiers that may be used to find the entity at the target system, keyed by type. May include medicare numbers, drivers license number, tax number etc.",
+            "multiplicity": "0..1",
+            "name": "other_ids",
+            "type": "List<String>"
+        },
+        {
+            "description": "List of Uids of items to be included in the Extract, in cases where individual items are being requested by id. More typically, this attribute is not used, and the `EXTRACT_SPEC._criteria query_` defines the Extract contents. If set, for openEHR data, these are Uids identifying the version containers.",
+            "multiplicity": "0..1",
+            "name": "item_list",
+            "type": "List<OBJECT_REF>"
+        }
+    ],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": null,
+        "classifier": "Class",
+        "description": "The manifest for one entity (e.g. EHR subject), identifying the entity and optionally specifying top-level items to be included in the Extract. The list actually included may be modified by the `_version_spec_` part of the specification, and also by the link_depth attribute. In repeat (standing order) requests, the final inclusion may be modified by the send_changes_only value for `EXTRACT_UPDATE_SPEC._update_method_`.",
+        "name": "EXTRACT_ENTITY_MANIFEST"
+    }
+}

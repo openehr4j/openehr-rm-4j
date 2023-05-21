@@ -1,24 +1,11 @@
 {
-  "meta_info": {
-    "base_type": null,
-    "name": "REVISION_HISTORY_ITEM",
-    "classifier": "Class",
-    "description": "An entry in a revision history, corresponding to a version from a versioned container. Consists of `AUDIT_DETAILS` instances with revision identifier of the revision to which the `AUDIT_DETAILS` instance belongs."
-  },
-  "functions": [],
-  "attributes": [
-    {
-      "name": "version_id",
-      "multiplicity": "1..1",
-      "type": "OBJECT_VERSION_ID",
-      "description": "Version identifier for this revision."
-    },
-    {
-      "name": "audits",
-      "multiplicity": "1..1",
-      "type": "List<AUDIT_DETAILS>",
-      "description": "The audits for this revision; there will always be at least one commit audit (which may itself be an `ATTESTATION`), there may also be further attestations."
+    "attributes": [],
+    "constants": [],
+    "functions": [],
+    "meta_info": {
+        "base_type": "LOCATABLE",
+        "classifier": "Class",
+        "description": "The abstract parent of `CLUSTER` and `ELEMENT` representation classes.",
+        "name": "ITEM"
     }
-  ],
-  "constants": []
 }
