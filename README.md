@@ -1,10 +1,4 @@
-<div align="right">
-  <a href="https://masterminds.github.io/stability/experimental.html">
-    <img src="https://masterminds.github.io/stability/experimental.svg">
-  </a>
-</div>
-
-# openehr-rm-java
+# openehr-rm-java [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
 This repository contains the Java interface types for the openEHR [RM specifications](https://specifications.openehr.org/releases/RM).
 
@@ -72,6 +66,19 @@ dependencies {
 
 - [Working with the Gradle registry | docs.github.com](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry)
 
+### Versions
+
+The Package version number consists of two parts: (1) the version number of the corresponding openEHR component and (2) a Package-specific suffix. Those two parts are separated by the first hyphen.
+
+The suffix has four different types:
+
+1. `alpha`: releases for development tests
+2. `beta`: release candidates for system tests
+3. `RELEASE`: official Package for corresponding openEHR component version
+4. `RELEASE-patch`: if necessary, bug fixes for the released Package
+
+Except for the `RELEASE` which is terminal, each type is followed by another hyphen and then an integer number that gets incremented with every new release.
+
 ## Development
 
 ### Publish to Maven Local
@@ -88,6 +95,16 @@ find ~/.m2/repository/com/experimental-software
 ### Publish to GitHub Packages
 
 The packages are automatically published after the creation of a new GitHub release.
+
+## Legal notice
+
+openEHR is a trademark of [openEHR International](https://openehr.org/about/contacts).
+
+The specifications are distributed under the [Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)](https://creativecommons.org/licenses/by-nd/3.0/deed.en_GB) license.
+
+This project transpiles the specification to the Java programming language, under the assumption that it is allowed usage according to the "Principles" section in their Intellectual Property notice: https://openehr.org/governance/intellectual_property.
+
+This project is not affiliated nor endorsed by openEHR International.
 
 ## References
 
