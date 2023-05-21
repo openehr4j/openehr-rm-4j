@@ -89,6 +89,16 @@ find ~/.m2/repository/com/experimental-software
 
 The packages are automatically published after the creation of a new GitHub release.
 
+## Legal notice
+
+openEHR is a trademark of [openEHR International](https://openehr.org/about/contacts).
+
+The specifications are distributed under the [Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)](https://creativecommons.org/licenses/by-nd/3.0/deed.en_GB) license.
+
+This project transpiles the specification to the Java programming language, under the assumption that it is allowed usage according to the "Principles" section in their Intellectual Property notice: https://openehr.org/governance/intellectual_property.
+
+This project is not affiliated nor endorsed by openEHR International.
+
 ## References
 
 - https://specifications.openehr.org/releases/RM/Release-1.1.0
