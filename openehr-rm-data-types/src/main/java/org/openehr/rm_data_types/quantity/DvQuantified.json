@@ -1,0 +1,65 @@
+{
+  "meta_info": {
+    "base_type": "DV_ORDERED",
+    "name": "DV_QUANTIFIED",
+    "classifier": "Class",
+    "description": "Abstract class defining the concept of true quantified values, i.e. values which are not only ordered, but which have a precise magnitude."
+  },
+  "functions": [
+    {
+      "name": "valid_magnitude_status",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Test whether a string value is one of the valid values for the magnitude_status attribute."
+    },
+    {
+      "name": "magnitude",
+      "parameters": [],
+      "return_type": "Ordered_Numeric",
+      "meaning": ""
+    },
+    {
+      "name": "accuracy_unknown",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "True if accuracy is not known, e.g. due to not being recorded or discernable."
+    },
+    {
+      "name": "is_equal",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_QUANTIFIED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "Return True if this `DV_QUANTIFIED` is considered equal to `_other_`."
+    },
+    {
+      "name": "less_than",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_QUANTIFIED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this Quantified object is less than `_other_`, based on comparison of `_magnitude_`."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "magnitude_status",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Optional status of magnitude with values:"
+    },
+    {
+      "name": "accuracy",
+      "multiplicity": "0..1",
+      "type": "Any",
+      "description": "Accuracy of measurement. Exact form of expression determined in descendants."
+    }
+  ],
+  "constants": []
+}

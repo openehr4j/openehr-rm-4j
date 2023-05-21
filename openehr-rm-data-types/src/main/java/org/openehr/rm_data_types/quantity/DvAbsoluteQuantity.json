@@ -1,0 +1,52 @@
+{
+  "meta_info": {
+    "base_type": "DV_QUANTIFIED",
+    "name": "DV_ABSOLUTE_QUANTITY",
+    "classifier": "Class",
+    "description": "Abstract class defining the concept of quantified entities whose values are absolute with respect to an origin. Dates and Times are the main example."
+  },
+  "functions": [
+    {
+      "name": "add",
+      "parameters": [
+        {
+          "name": "a_diff",
+          "type": "DV_AMOUNT[1]"
+        }
+      ],
+      "return_type": "DV_ABSOLUTE_QUANTITY",
+      "meaning": "Addition of a differential amount to this quantity."
+    },
+    {
+      "name": "subtract",
+      "parameters": [
+        {
+          "name": "a_diff",
+          "type": "DV_AMOUNT[1]"
+        }
+      ],
+      "return_type": "DV_ABSOLUTE_QUANTITY",
+      "meaning": "Result of subtracting a differential amount from this quantity."
+    },
+    {
+      "name": "diff",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_ABSOLUTE_QUANTITY[1]"
+        }
+      ],
+      "return_type": "DV_AMOUNT",
+      "meaning": "Difference of two quantities."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "accuracy",
+      "multiplicity": null,
+      "type": "DV_AMOUNT",
+      "description": ""
+    }
+  ],
+  "constants": []
+}

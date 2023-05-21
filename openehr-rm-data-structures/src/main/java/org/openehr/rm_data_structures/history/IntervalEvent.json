@@ -1,0 +1,37 @@
+{
+  "meta_info": {
+    "base_type": "EVENT",
+    "name": "INTERVAL_EVENT",
+    "classifier": "Class",
+    "description": "Defines a single interval event in a series."
+  },
+  "functions": [
+    {
+      "name": "interval_start_time",
+      "parameters": [],
+      "return_type": "DV_DATE_TIME",
+      "meaning": "Start time of the interval of this event."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "width",
+      "multiplicity": "1..1",
+      "type": "DV_DURATION",
+      "description": "Duration of the time interval during which the values recorded under `data` are true and, if set, the values recorded under `state` are true. Void if an instantaneous event."
+    },
+    {
+      "name": "sample_count",
+      "multiplicity": "0..1",
+      "type": "Integer",
+      "description": "Optional count of original samples to which this event corresponds."
+    },
+    {
+      "name": "math_function",
+      "multiplicity": "1..1",
+      "type": "DV_CODED_TEXT",
+      "description": "Mathematical function of the data of this event, e.g.  maximum, mean etc. Coded using https://github.com/openEHR/terminology/blob/master/openEHR_RM/en/openehr_terminology.xml[openEHR vocabulary `event math function`]. Default value `640&#124;actual&#124;`, meaning 'actual value'."
+    }
+  ],
+  "constants": []
+}

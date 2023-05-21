@@ -1,0 +1,31 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "CONTACT",
+    "classifier": "Class",
+    "description": "Description of a means of contact of a Party. Actual structure is archetyped."
+  },
+  "functions": [
+    {
+      "name": "purpose",
+      "parameters": [],
+      "return_type": "DV_TEXT",
+      "meaning": "Purpose for which this contact is used, e.g. mail,  daytime phone, etc. Taken from value of inherited `_name_` attribute."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "addresses",
+      "multiplicity": "1..1",
+      "type": "List<ADDRESS>",
+      "description": "A set of address alternatives for this contact purpose and time validity combination."
+    },
+    {
+      "name": "time_validity",
+      "multiplicity": "0..1",
+      "type": "DV_INTERVAL<DV_DATE>",
+      "description": "Valid time interval for this contact descriptor."
+    }
+  ],
+  "constants": []
+}

@@ -1,0 +1,65 @@
+{
+  "meta_info": {
+    "base_type": "<Ordered",
+    "name": "DV_ORDERED",
+    "classifier": "Class",
+    "description": "Abstract class defining the concept of ordered values, which includes ordinals as well as true quantities. It defines the functions  `<` and `_is_strictly_comparable_to()_`, the latter of which must evaluate to `True` for instances being compared with the  `<` function, or used as limits in the `DV_INTERVAL<T>` class."
+  },
+  "functions": [
+    {
+      "name": "is_strictly_comparable_to",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_ORDERED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "Test if two instances are strictly comparable. Effected in descendants."
+    },
+    {
+      "name": "is_simple",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "True if this quantity has no reference ranges."
+    },
+    {
+      "name": "is_normal",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Value is in the normal range, determined by comparison of the value to `_normal_range_` if present, or by the `_normal_status_` marker if present."
+    },
+    {
+      "name": "less_than",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_ORDERED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this Ordered object is less than `_other_`. Redefined in descendants."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "normal_status",
+      "multiplicity": "0..1",
+      "type": "CODE_PHRASE",
+      "description": "Optional normal status indicator of value with respect to normal range for this value. Often included by lab, even if the normal range itself is not included. Coded by ordinals in series HHH, HH, H, (nothing), L, LL, LLL; see openEHR terminology group  `normal_status`."
+    },
+    {
+      "name": "normal_range",
+      "multiplicity": "0..1",
+      "type": "DV_INTERVAL",
+      "description": "Optional normal range."
+    },
+    {
+      "name": "other_reference_ranges",
+      "multiplicity": "0..1",
+      "type": "List<REFERENCE_RANGE>",
+      "description": "Optional tagged other reference ranges for this value in its particular measurement context."
+    }
+  ],
+  "constants": []
+}

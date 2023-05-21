@@ -1,0 +1,11 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "ITEM",
+    "classifier": "Class",
+    "description": "The abstract parent of `CLUSTER` and `ELEMENT` representation classes."
+  },
+  "functions": [],
+  "attributes": [],
+  "constants": []
+}

@@ -1,0 +1,52 @@
+{
+  "meta_info": {
+    "base_type": "DV_ABSOLUTE_QUANTITY",
+    "name": "DV_TEMPORAL",
+    "classifier": "Class",
+    "description": "Specialised temporal variant of `DV_ABSOLUTE_QUANTITY` whose diff type is `DV_DURATION`."
+  },
+  "functions": [
+    {
+      "name": "add",
+      "parameters": [
+        {
+          "name": "a_diff",
+          "type": "DV_DURATION[1]"
+        }
+      ],
+      "return_type": "DV_TEMPORAL",
+      "meaning": "Addition of a Duration to this temporal entity."
+    },
+    {
+      "name": "subtract",
+      "parameters": [
+        {
+          "name": "a_diff",
+          "type": "DV_DURATION[1]"
+        }
+      ],
+      "return_type": "DV_TEMPORAL",
+      "meaning": "Subtract a Duration from this temporal entity."
+    },
+    {
+      "name": "diff",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_TEMPORAL[1]"
+        }
+      ],
+      "return_type": "DV_DURATION",
+      "meaning": "Difference between this temporal entity and `_other_`."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "accuracy",
+      "multiplicity": null,
+      "type": "DV_DURATION",
+      "description": "Time accuracy, expressed as a duration."
+    }
+  ],
+  "constants": []
+}

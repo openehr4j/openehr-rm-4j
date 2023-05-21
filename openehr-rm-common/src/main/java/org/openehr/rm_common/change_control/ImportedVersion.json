@@ -1,0 +1,43 @@
+{
+  "meta_info": {
+    "base_type": "VERSION",
+    "name": "IMPORTED_VERSION",
+    "classifier": "Class",
+    "description": "Versions whose content is an `ORIGINAL_VERSION` copied from another location; this class inherits `_commit_audit_` and `_contribution_` from `VERSION<T>`, providing imported versions with their own audit trail and Contribution, distinct from those of the imported `ORIGINAL_VERSION`."
+  },
+  "functions": [
+    {
+      "name": "uid",
+      "parameters": [],
+      "return_type": "OBJECT_VERSION_ID",
+      "meaning": "Computed version of inheritance precursor, derived as `_item.uid_`."
+    },
+    {
+      "name": "preceding_version_uid",
+      "parameters": [],
+      "return_type": "OBJECT_VERSION_ID",
+      "meaning": "Computed version of inheritance precursor, derived as `_item.preceding_version_uid_`."
+    },
+    {
+      "name": "lifecycle_state",
+      "parameters": [],
+      "return_type": "DV_CODED_TEXT",
+      "meaning": "Lifecycle state of the content item in wrapped `ORIGINAL_VERSION`, derived as `_item.lifecycle_state_`; coded by openEHR vocabulary `version lifecycle state`."
+    },
+    {
+      "name": "data",
+      "parameters": [],
+      "return_type": "T",
+      "meaning": "Original content of this Version."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "item",
+      "multiplicity": "1..1",
+      "type": "ORIGINAL_VERSION",
+      "description": "The `ORIGINAL_VERSION` object that was imported."
+    }
+  ],
+  "constants": []
+}

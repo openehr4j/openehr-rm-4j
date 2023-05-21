@@ -1,0 +1,55 @@
+{
+  "meta_info": {
+    "base_type": null,
+    "name": "AUTHORED_RESOURCE",
+    "classifier": "Class",
+    "description": "Abstract idea of an online resource created by a human author."
+  },
+  "functions": [
+    {
+      "name": "current_revision",
+      "parameters": [],
+      "return_type": "String",
+      "meaning": "Most recent revision in `_revision_history_` if `_is_controlled_` else  (uncontrolled) ."
+    },
+    {
+      "name": "languages_available",
+      "parameters": [],
+      "return_type": "List<String>",
+      "meaning": "Total list of languages available in this resource, derived from `_original_language_` and `_translations_`."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "original_language",
+      "multiplicity": "1..1",
+      "type": "CODE_PHRASE",
+      "description": "Language in which this resource was initially authored. Although there is no language primacy of resources overall, the language of original authoring is required to ensure natural language translations can preserve quality. Language is relevant in both the description and ontology sections."
+    },
+    {
+      "name": "is_controlled",
+      "multiplicity": "0..1",
+      "type": "Boolean",
+      "description": "True if this resource is under any kind of change control (even file copying), in which case revision history is created."
+    },
+    {
+      "name": "translations",
+      "multiplicity": "0..1",
+      "type": "Hash<String,TRANSLATION_DETAILS>",
+      "description": "List of details for each natural-language translation made of this resource, keyed by language. For each translation listed here, there must be corresponding sections in all language-dependent parts of the resource. The `_original_language_` does not appear in this list."
+    },
+    {
+      "name": "description",
+      "multiplicity": "0..1",
+      "type": "RESOURCE_DESCRIPTION",
+      "description": "Description and lifecycle information of the resource."
+    },
+    {
+      "name": "revision_history",
+      "multiplicity": "0..1",
+      "type": "REVISION_HISTORY",
+      "description": "The revision history of the resource. Only required if `_is_controlled_ = True` (avoids large revision histories for informal or private editing situations)."
+    }
+  ],
+  "constants": []
+}

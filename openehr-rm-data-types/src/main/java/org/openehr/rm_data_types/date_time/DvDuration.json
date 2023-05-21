@@ -1,0 +1,86 @@
+{
+  "meta_info": {
+    "base_type": "<Iso8601_duration",
+    "name": "DV_DURATION",
+    "classifier": "Class",
+    "description": "Represents a period of time with respect to a notional point in time, which is not specified. A sign may be used to indicate the duration is  backwards  in time rather than forwards."
+  },
+  "functions": [
+    {
+      "name": "add",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_DURATION[1]"
+        }
+      ],
+      "return_type": "DV_DURATION",
+      "meaning": "Sum of this Duration and `_other_`."
+    },
+    {
+      "name": "subtract",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_DURATION[1]"
+        }
+      ],
+      "return_type": "DV_DURATION",
+      "meaning": "Difference of this Duration and `_other_`."
+    },
+    {
+      "name": "multiply",
+      "parameters": [
+        {
+          "name": "factor",
+          "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+        }
+      ],
+      "return_type": "DV_DURATION",
+      "meaning": "Product of this Duration and `_factor_`."
+    },
+    {
+      "name": "less_than",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_DURATION[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this duration object is less than `_other_`, based on comparison of `_magnitude()_`."
+    },
+    {
+      "name": "is_strictly_comparable_to",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_DURATION[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True, for any two Durations."
+    },
+    {
+      "name": "negative",
+      "parameters": [],
+      "return_type": "DV_DURATION",
+      "meaning": "Negated version of current duration."
+    },
+    {
+      "name": "magnitude",
+      "parameters": [],
+      "return_type": "Double",
+      "meaning": "Numeric value of the duration as a number of seconds. Computed using the method `_to_seconds()_` inherited from `Iso8601_duration`."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "value",
+      "multiplicity": null,
+      "type": "String",
+      "description": "ISO8601 duration string, including described deviations to support negative values and weeks."
+    }
+  ],
+  "constants": []
+}

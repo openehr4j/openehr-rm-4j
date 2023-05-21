@@ -1,0 +1,59 @@
+{
+  "meta_info": {
+    "base_type": "ITEM_STRUCTURE",
+    "name": "ITEM_LIST",
+    "classifier": "Class",
+    "description": "Logical list data structure, where each item has a value and can be referred to by a name and a positional index in the list. The list may be empty."
+  },
+  "functions": [
+    {
+      "name": "item_count",
+      "parameters": [],
+      "return_type": "Integer",
+      "meaning": "Count of all items."
+    },
+    {
+      "name": "names",
+      "parameters": [],
+      "return_type": "List<DV_TEXT>",
+      "meaning": "Retrieve the names of all items."
+    },
+    {
+      "name": "named_item",
+      "parameters": [
+        {
+          "name": "a_name",
+          "type": "String[1]"
+        }
+      ],
+      "return_type": "ELEMENT",
+      "meaning": "Retrieve the item with name ‘a_name’."
+    },
+    {
+      "name": "ith_item",
+      "parameters": [
+        {
+          "name": "i",
+          "type": "/releases/BASE/{base_release}/foundation_types.html#_integer_class[Integer][1]"
+        }
+      ],
+      "return_type": "ELEMENT",
+      "meaning": "Retrieve the i-th item with name."
+    },
+    {
+      "name": "as_hierarchy",
+      "parameters": [],
+      "return_type": "CLUSTER",
+      "meaning": "Generate a CEN EN13606-compatible hierarchy consisting of a single `CLUSTER` containing the `ELEMENTs` of this list."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "items",
+      "multiplicity": "0..1",
+      "type": "List<ELEMENT>",
+      "description": "Physical representation of the list."
+    }
+  ],
+  "constants": []
+}

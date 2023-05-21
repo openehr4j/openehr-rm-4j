@@ -1,0 +1,30 @@
+{
+  "meta_info": {
+    "base_type": null,
+    "name": "CODE_PHRASE",
+    "classifier": "Class",
+    "description": "A fully coordinated (i.e. all coordination has been performed) term from a terminology service (as distinct from a particular terminology)."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "terminology_id",
+      "multiplicity": "1..1",
+      "type": "TERMINOLOGY_ID",
+      "description": "Identifier of the distinct terminology from which the code_string (or its elements) was extracted."
+    },
+    {
+      "name": "code_string",
+      "multiplicity": "1..1",
+      "type": "String",
+      "description": "The key used by the terminology service to identify a concept or coordination of concepts. This string is most likely parsable inside the terminology service, but nothing can be assumed about its syntax outside that context."
+    },
+    {
+      "name": "preferred_term",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Optional attribute to carry preferred term corresponding to the code or expression in `_code_string_`. Typical use in integration situations which create mappings, and representing data for which both a (non-preferred) actual term and a preferred term are both required."
+    }
+  ],
+  "constants": []
+}

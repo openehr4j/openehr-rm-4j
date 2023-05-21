@@ -1,0 +1,18 @@
+{
+  "meta_info": {
+    "base_type": "PARTY_IDENTIFIED",
+    "name": "PARTY_RELATED",
+    "classifier": "Class",
+    "description": "Proxy type for identifying a party and its relationship to the subject of the record. Use where the relationship between the party and the subject of the record must be known."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "relationship",
+      "multiplicity": "1..1",
+      "type": "DV_CODED_TEXT",
+      "description": "Relationship of subject of this ENTRY to the subject of the record. May be coded. If it is the patient, coded as  self."
+    }
+  ],
+  "constants": []
+}

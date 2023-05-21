@@ -1,0 +1,11 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "CONTENT_ITEM",
+    "classifier": "Class",
+    "description": "Abstract ancestor of all concrete content types."
+  },
+  "functions": [],
+  "attributes": [],
+  "constants": []
+}

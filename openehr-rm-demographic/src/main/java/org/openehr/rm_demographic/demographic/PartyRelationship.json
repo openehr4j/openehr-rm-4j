@@ -1,0 +1,43 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "PARTY_RELATIONSHIP",
+    "classifier": "Class",
+    "description": "Generic description of a relationship between parties."
+  },
+  "functions": [
+    {
+      "name": "type",
+      "parameters": [],
+      "return_type": "DV_TEXT",
+      "meaning": "Type of relationship, such as  employment,  authority,  health provision"
+    }
+  ],
+  "attributes": [
+    {
+      "name": "details",
+      "multiplicity": "0..1",
+      "type": "ITEM_STRUCTURE",
+      "description": "The detailed description of the relationship."
+    },
+    {
+      "name": "target",
+      "multiplicity": "1..1",
+      "type": "PARTY_REF",
+      "description": "Target of relationship."
+    },
+    {
+      "name": "time_validity",
+      "multiplicity": "0..1",
+      "type": "DV_INTERVAL<DV_DATE>",
+      "description": "Valid time interval for this relationship."
+    },
+    {
+      "name": "source",
+      "multiplicity": "1..1",
+      "type": "PARTY_REF",
+      "description": "Source of relationship."
+    }
+  ],
+  "constants": []
+}

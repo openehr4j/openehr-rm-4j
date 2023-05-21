@@ -1,0 +1,54 @@
+{
+  "meta_info": {
+    "base_type": "PATHABLE",
+    "name": "EVENT_CONTEXT",
+    "classifier": "Class",
+    "description": "Documents the context information of a healthcare event involving the subject of care and the health system. The context information recorded here are independent of the attributes recorded in the version audit, which document the  system interaction  context, i.e. the context of a user interacting with the health record system. Healthcare events include patient contacts, and any other business activity, such as pathology investigations which take place on behalf of the patient."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "start_time",
+      "multiplicity": "1..1",
+      "type": "DV_DATE_TIME",
+      "description": "Start time of the clinical session or other kind of event during which a provider performs a service of any kind for the patient."
+    },
+    {
+      "name": "end_time",
+      "multiplicity": "0..1",
+      "type": "DV_DATE_TIME",
+      "description": "Optional end time of the clinical session."
+    },
+    {
+      "name": "location",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "The actual location where the session occurred, e.g. 'microbiology lab 2', 'home', 'ward A3'  and so on."
+    },
+    {
+      "name": "setting",
+      "multiplicity": "1..1",
+      "type": "DV_CODED_TEXT",
+      "description": "The setting in which the clinical session took place. Coded using the openEHR Terminology,  setting  group."
+    },
+    {
+      "name": "other_context",
+      "multiplicity": "0..1",
+      "type": "ITEM_STRUCTURE",
+      "description": "Other optional context which will be archetyped."
+    },
+    {
+      "name": "health_care_facility",
+      "multiplicity": "0..1",
+      "type": "PARTY_IDENTIFIED",
+      "description": "The health care facility under whose care the event took place. This is the most specific workgroup or delivery unit within a care delivery enterprise that has an official identifier in the health system, and can be used to ensure medico-legal accountability."
+    },
+    {
+      "name": "participations",
+      "multiplicity": "0..1",
+      "type": "List<PARTICIPATION>",
+      "description": "Parties involved in the healthcare event. These would normally include the physician(s) and often the patient (but not the latter if the clinical session is a pathology test for example)."
+    }
+  ],
+  "constants": []
+}

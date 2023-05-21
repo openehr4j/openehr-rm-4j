@@ -1,0 +1,31 @@
+{
+  "meta_info": {
+    "base_type": null,
+    "name": "REVISION_HISTORY",
+    "classifier": "Class",
+    "description": "Purpose Defines the notion of a revision history of audit items, each associated with the version for which that audit was committed. The list is in most-recent-first order."
+  },
+  "functions": [
+    {
+      "name": "most_recent_version",
+      "parameters": [],
+      "return_type": "String",
+      "meaning": "The version id of the most recent item, as a String."
+    },
+    {
+      "name": "most_recent_version_time_committed",
+      "parameters": [],
+      "return_type": "String",
+      "meaning": "The commit date/time of the most recent item, as a String."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "items",
+      "multiplicity": "1..1",
+      "type": "List<REVISION_HISTORY_ITEM>",
+      "description": "The items in this history in most-recent-last order."
+    }
+  ],
+  "constants": []
+}

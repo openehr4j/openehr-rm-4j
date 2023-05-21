@@ -1,0 +1,36 @@
+{
+  "meta_info": {
+    "base_type": "CARE_ENTRY",
+    "name": "INSTRUCTION",
+    "classifier": "Class",
+    "description": "Used to specify actions in the future. Enables simple and complex specifications to be expressed, including in a fully-computable workflow form. Used for any actionable statement such as medication and therapeutic orders, monitoring, recall and review. Enough details must be provided for the specification to be directly executed by an actor, either human or machine."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "narrative",
+      "multiplicity": "1..1",
+      "type": "DV_TEXT",
+      "description": "Mandatory human-readable version of what the Instruction is about."
+    },
+    {
+      "name": "expiry_time",
+      "multiplicity": "0..1",
+      "type": "DV_DATE_TIME",
+      "description": "Optional expiry date/time to assist determination of when an Instruction can be assumed to have expired. This helps prevent false listing of Instructions as Active when they clearly must have been terminated in some way or other."
+    },
+    {
+      "name": "wf_definition",
+      "multiplicity": "0..1",
+      "type": "DV_PARSABLE",
+      "description": "Optional workflow engine executable expression of the Instruction."
+    },
+    {
+      "name": "activities",
+      "multiplicity": "0..1",
+      "type": "List<ACTIVITY>",
+      "description": "List of all activities in Instruction."
+    }
+  ],
+  "constants": []
+}

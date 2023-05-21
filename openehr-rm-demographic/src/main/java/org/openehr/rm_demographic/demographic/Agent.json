@@ -1,0 +1,11 @@
+{
+  "meta_info": {
+    "base_type": "ACTOR",
+    "name": "AGENT",
+    "classifier": "Class",
+    "description": "Generic concept of any kind of agent, including devices, software systems, but not humans or organisations."
+  },
+  "functions": [],
+  "attributes": [],
+  "constants": []
+}

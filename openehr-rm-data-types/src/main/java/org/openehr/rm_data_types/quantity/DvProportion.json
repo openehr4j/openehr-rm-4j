@@ -1,0 +1,127 @@
+{
+  "meta_info": {
+    "base_type": "PROPORTION_KIND`, `DV_AMOUNT",
+    "name": "DV_PROPORTION",
+    "classifier": "Class",
+    "description": "Models a ratio of values, i.e. where the numerator and denominator are both pure numbers. The `_valid_proportion_kind_` property of the `PROPORTION_KIND` class is used to control the type attribute to be one of a defined set."
+  },
+  "functions": [
+    {
+      "name": "magnitude",
+      "parameters": [],
+      "return_type": "Real",
+      "meaning": "Effective magnitude represented by ratio."
+    },
+    {
+      "name": "is_integral",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "True if the `_numerator_` and `_denominator_` values are integers, i.e. if `_precision_` is 0."
+    },
+    {
+      "name": "add",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_PROPORTION[1]"
+        }
+      ],
+      "return_type": "DV_PROPORTION",
+      "meaning": "Sum of two strictly comparable proportions."
+    },
+    {
+      "name": "subtract",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_PROPORTION[1]"
+        }
+      ],
+      "return_type": "DV_PROPORTION",
+      "meaning": "Difference between two strictly comparable proportions."
+    },
+    {
+      "name": "is_equal",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_PROPORTION[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "Return True if this `DV_AMOUNT` is considered equal to `_other_`."
+    },
+    {
+      "name": "multiply",
+      "parameters": [
+        {
+          "name": "factor",
+          "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+        }
+      ],
+      "return_type": "DV_PROPORTION",
+      "meaning": "Product of this Proportion and `_factor_`."
+    },
+    {
+      "name": "less_than",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_PROPORTION[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this Proportion is less than  `_other_`. Only valid if `_is_strictly_comparable_to()_` is True."
+    },
+    {
+      "name": "is_strictly_comparable_to",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_ORDERED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "Return True if the `_type_` of this proportion is the same as the `_type_` of `_other_`."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "numerator",
+      "multiplicity": "1..1",
+      "type": "Real",
+      "description": "Numerator of ratio"
+    },
+    {
+      "name": "denominator",
+      "multiplicity": "1..1",
+      "type": "Real",
+      "description": "Denominator of ratio."
+    },
+    {
+      "name": "type",
+      "multiplicity": "1..1",
+      "type": "Integer",
+      "description": "Indicates semantic type of proportion, including percent, unitary etc."
+    },
+    {
+      "name": "precision",
+      "multiplicity": "0..1",
+      "type": "Integer",
+      "description": "Precision  to  which  the  `_numerator_` and `_denominator_` values of  the  proportion are expressed, in terms of number  of decimal places. The value 0 implies an integral quantity. The value -1 implies no limit, i.e. any number of decimal places."
+    },
+    {
+      "name": "normal_range",
+      "multiplicity": "0..1",
+      "type": "DV_INTERVAL<DV_PROPORTION>",
+      "description": "Optional normal range."
+    },
+    {
+      "name": "other_reference_ranges",
+      "multiplicity": "0..1",
+      "type": "List<REFERENCE_RANGE<DV_PROPORTION",
+      "description": "Optional tagged other reference ranges for this value in its particular measurement context."
+    }
+  ],
+  "constants": []
+}

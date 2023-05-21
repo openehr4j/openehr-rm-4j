@@ -1,0 +1,24 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "CAPABILITY",
+    "classifier": "Class",
+    "description": "Capability of a role, such as  ehr modifier,  health care provider. Capability should be backed up by credentials."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "credentials",
+      "multiplicity": "1..1",
+      "type": "ITEM_STRUCTURE",
+      "description": "The qualifications of the performer of the role for this capability. This might include professional qualifications and official identifications such as provider numbers etc."
+    },
+    {
+      "name": "time_validity",
+      "multiplicity": "0..1",
+      "type": "DV_INTERVAL<DV_DATE>",
+      "description": "Valid time interval for the credentials of this capability."
+    }
+  ],
+  "constants": []
+}

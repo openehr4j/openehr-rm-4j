@@ -1,0 +1,116 @@
+{
+  "meta_info": {
+    "base_type": "DV_AMOUNT",
+    "name": "DV_QUANTITY",
+    "classifier": "Class",
+    "description": "Quantitified type representing  scientific  quantities, i.e. quantities expressed as a magnitude and units. Units are expressed in the UCUM syntax (http://unitsofmeasure.org/ucum.html[Unified Code for Units of Measure (UCUM)], by Gunther Schadow and Clement J. McDonald of The Regenstrief Institute)  (case-sensitive form) by default, or another system if `_units_system_` is set."
+  },
+  "functions": [
+    {
+      "name": "add",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_QUANTITY[1]"
+        }
+      ],
+      "return_type": "DV_QUANTITY",
+      "meaning": "Sum of this `DV_QUANTITY` and `_other_`."
+    },
+    {
+      "name": "subtract",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_QUANTITY[1]"
+        }
+      ],
+      "return_type": "DV_QUANTITY",
+      "meaning": "Difference of this `DV_QUANTITY` and `_other_`."
+    },
+    {
+      "name": "multiply",
+      "parameters": [
+        {
+          "name": "factor",
+          "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+        }
+      ],
+      "return_type": "DV_QUANTITY",
+      "meaning": "Product of this `DV_QUANTITY` and `_factor_`."
+    },
+    {
+      "name": "less_than",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_QUANTITY[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this Quantity object is less than `_other_`, based on comparison of `_magnitude_`. Only valid if `_is_strictly_comparable_to()_` is True."
+    },
+    {
+      "name": "is_integral",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "True if `_precision_` = 0, meaning that the `_magnitude_` is a whole number."
+    },
+    {
+      "name": "is_strictly_comparable_to",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_ORDERED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this quantity and `_other_` have the same `_units_` and also `_units_system_` if it exists."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "magnitude",
+      "multiplicity": "1..1",
+      "type": "Real",
+      "description": "Numeric magnitude of the quantity."
+    },
+    {
+      "name": "precision",
+      "multiplicity": "0..1",
+      "type": "Integer",
+      "description": "Precision to which the value of the quantity is expressed, in terms of number of decimal places. The value 0 implies an integral quantity."
+    },
+    {
+      "name": "units",
+      "multiplicity": "1..1",
+      "type": "String",
+      "description": "Quantity units, expressed as a code or syntax string from either UCUM (the default) or the units system specified in `_units_system_`, when set."
+    },
+    {
+      "name": "units_system",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Optional field used to specify a units system from which codes in `_units_` are defined. Value is a URI identifying a terminology containing units concepts from the  (https://www.hl7.org/fhir/terminologies-systems.html[HL7 FHIR terminologies list])."
+    },
+    {
+      "name": "units_display_name",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Optional field containing the displayable form of the `_units_` field, e.g. `'°C'`."
+    },
+    {
+      "name": "normal_range",
+      "multiplicity": "0..1",
+      "type": "DV_INTERVAL<DV_QUANTITY>",
+      "description": "Optional normal range."
+    },
+    {
+      "name": "other_reference_ranges",
+      "multiplicity": "0..1",
+      "type": "List<REFERENCE_RANGE<DV_QUANTITY",
+      "description": "Optional tagged other reference ranges for this value in its particular measurement context."
+    }
+  ],
+  "constants": []
+}

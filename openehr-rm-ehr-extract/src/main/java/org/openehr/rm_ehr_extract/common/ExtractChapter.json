@@ -1,0 +1,18 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "EXTRACT_CHAPTER",
+    "classifier": "Class",
+    "description": "One content chapter of an Extract; contains information relating to only one entity."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "items",
+      "multiplicity": "0..1",
+      "type": "List<EXTRACT_ITEM>",
+      "description": "The information content of this chapter."
+    }
+  ],
+  "constants": []
+}

@@ -1,0 +1,240 @@
+{
+  "meta_info": {
+    "base_type": null,
+    "name": "VERSIONED_OBJECT",
+    "classifier": "Class",
+    "description": "Version control abstraction, defining semantics for versioning one complex object."
+  },
+  "functions": [
+    {
+      "name": "version_count",
+      "parameters": [],
+      "return_type": "Integer",
+      "meaning": "Return the total number of versions in this object."
+    },
+    {
+      "name": "all_version_ids",
+      "parameters": [],
+      "return_type": "List<OBJECT_VERSION_ID>",
+      "meaning": "Return a list of ids of all versions in this object."
+    },
+    {
+      "name": "all_versions",
+      "parameters": [],
+      "return_type": "List<VERSION>",
+      "meaning": "Return a list of all versions in this object."
+    },
+    {
+      "name": "has_version_at_time",
+      "parameters": [
+        {
+          "name": "a_time",
+          "type": "/releases/RM/{rm_release}/data_types.html#_dv_date_time_class[DV_DATE_TIME][1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if a version for time  `_a_time_` exists."
+    },
+    {
+      "name": "has_version_id",
+      "parameters": [
+        {
+          "name": "a_version_uid",
+          "type": "/releases/BASE/{base_release}/base_types.html#_object_version_id_class[OBJECT_VERSION_ID][1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if a version with `_a_version_uid_` exists."
+    },
+    {
+      "name": "version_with_id",
+      "parameters": [
+        {
+          "name": "a_version_uid",
+          "type": "/releases/BASE/{base_release}/base_types.html#_object_version_id_class[OBJECT_VERSION_ID][1]"
+        }
+      ],
+      "return_type": "VERSION",
+      "meaning": "Return the version with `_uid_` =  `_a_version_uid_`."
+    },
+    {
+      "name": "is_original_version",
+      "parameters": [
+        {
+          "name": "a_version_uid",
+          "type": "/releases/BASE/{base_release}/base_types.html#_object_version_id_class[OBJECT_VERSION_ID][1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if version with `_a_version_uid_` is an `ORIGINAL_VERSION`."
+    },
+    {
+      "name": "version_at_time",
+      "parameters": [
+        {
+          "name": "a_time",
+          "type": "/releases/RM/{rm_release}/data_types.html#_dv_date_time_class[DV_DATE_TIME][1]"
+        }
+      ],
+      "return_type": "VERSION",
+      "meaning": "Return the version for time  `_a_time_`."
+    },
+    {
+      "name": "revision_history",
+      "parameters": [],
+      "return_type": "REVISION_HISTORY",
+      "meaning": "History of all audits and attestations in this versioned repository."
+    },
+    {
+      "name": "latest_version",
+      "parameters": [],
+      "return_type": "VERSION",
+      "meaning": "Return the most recently added version (i.e. on trunk or any branch)."
+    },
+    {
+      "name": "latest_trunk_version",
+      "parameters": [],
+      "return_type": "VERSION",
+      "meaning": "Return the most recently added trunk version."
+    },
+    {
+      "name": "trunk_lifecycle_state",
+      "parameters": [],
+      "return_type": "DV_CODED_TEXT",
+      "meaning": "Return the lifecycle state from the latest trunk version. Useful for determining if the version container is logically deleted."
+    },
+    {
+      "name": "commit_original_version",
+      "parameters": [
+        {
+          "name": "a_contribution",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_new_version_uid",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_preceding_version_id",
+          "type": "String[1]"
+        },
+        {
+          "name": "an_audit",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_lifecycle_state",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_data",
+          "type": "String[1]"
+        },
+        {
+          "name": "signing_key",
+          "type": "String[1]"
+        }
+      ],
+      "return_type": "void",
+      "meaning": "Add a new original version."
+    },
+    {
+      "name": "commit_original_merged_version",
+      "parameters": [
+        {
+          "name": "a_contribution",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_new_version_uid",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_preceding_version_id",
+          "type": "String[1]"
+        },
+        {
+          "name": "an_audit",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_lifecycle_state",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_data",
+          "type": "String[1]"
+        },
+        {
+          "name": "an_other_input_uids",
+          "type": "String[1]"
+        },
+        {
+          "name": "signing_key",
+          "type": "String[1]"
+        }
+      ],
+      "return_type": "void",
+      "meaning": "Add a new original merged version. This commit function adds a parameter containing the ids of other versions merged into the current one."
+    },
+    {
+      "name": "commit_imported_version",
+      "parameters": [
+        {
+          "name": "a_contribution",
+          "type": "ORIGINAL_VERSION[1]"
+        },
+        {
+          "name": "an_audit",
+          "type": "ORIGINAL_VERSION[1]"
+        },
+        {
+          "name": "a_version",
+          "type": "ORIGINAL_VERSION[1]"
+        }
+      ],
+      "return_type": "void",
+      "meaning": "Add a new imported version. Details of version id etc come from the `ORIGINAL_VERSION` being committed."
+    },
+    {
+      "name": "commit_attestation",
+      "parameters": [
+        {
+          "name": "an_attestation",
+          "type": "String[1]"
+        },
+        {
+          "name": "a_ver_id",
+          "type": "String[1]"
+        },
+        {
+          "name": "signing_key",
+          "type": "String[1]"
+        }
+      ],
+      "return_type": "void",
+      "meaning": "Add a new attestation to a specified original version. Attestations can only be added to Original versions."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "uid",
+      "multiplicity": "1..1",
+      "type": "HIER_OBJECT_ID",
+      "description": "Unique identifier of this version container in the form of a UID with no extension. This id will be the same in all instances of the same container in a distributed environment, meaning that it can be understood as the uid of the  virtual version tree."
+    },
+    {
+      "name": "owner_id",
+      "multiplicity": "1..1",
+      "type": "OBJECT_REF",
+      "description": "Reference to object to which this version container belongs, e.g. the id of the containing EHR or other relevant owning entity."
+    },
+    {
+      "name": "time_created",
+      "multiplicity": "1..1",
+      "type": "DV_DATE_TIME",
+      "description": "Time of initial creation of this versioned object."
+    }
+  ],
+  "constants": []
+}

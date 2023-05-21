@@ -1,0 +1,11 @@
+{
+  "meta_info": {
+    "base_type": "EVENT",
+    "name": "POINT_EVENT",
+    "classifier": "Class",
+    "description": "Defines a single point event in a series."
+  },
+  "functions": [],
+  "attributes": [],
+  "constants": []
+}

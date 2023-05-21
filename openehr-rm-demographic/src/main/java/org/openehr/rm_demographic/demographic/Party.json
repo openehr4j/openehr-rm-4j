@@ -1,0 +1,49 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "PARTY",
+    "classifier": "Class",
+    "description": "Ancestor of all Party types, including real world entities and their roles. A Party is any entity which can participate in an activity. The `_name_` attribute inherited from `LOCATABLE` is used to indicate the actual type of party (note that the actual names, i.e. identities of parties are indicated in the `_identities_` attribute, not the `_name_` attribute)."
+  },
+  "functions": [
+    {
+      "name": "type",
+      "parameters": [],
+      "return_type": "DV_TEXT",
+      "meaning": "Type of party, such as  `PERSON`,  `ORGANISATION`, etc. Role name, e.g.  general practitioner ,  nurse ,  private citizen . Taken from inherited `_name_` attribute."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "identities",
+      "multiplicity": "1..1",
+      "type": "List<PARTY_IDENTITY>",
+      "description": "Identities used by the party to identify itself, such as legal name, stage names, aliases, nicknames and so on."
+    },
+    {
+      "name": "contacts",
+      "multiplicity": "0..1",
+      "type": "List<CONTACT>",
+      "description": "Contacts for this party."
+    },
+    {
+      "name": "details",
+      "multiplicity": "0..1",
+      "type": "ITEM_STRUCTURE",
+      "description": "All other details for this Party."
+    },
+    {
+      "name": "reverse_relationships",
+      "multiplicity": "0..1",
+      "type": "List<LOCATABLE_REF>",
+      "description": "References to relationships in which this Party takes part as target."
+    },
+    {
+      "name": "relationships",
+      "multiplicity": "0..1",
+      "type": "List<PARTY_RELATIONSHIP>",
+      "description": "Relationships in which this Party takes part as source."
+    }
+  ],
+  "constants": []
+}

@@ -1,0 +1,11 @@
+{
+  "meta_info": {
+    "base_type": "VERSIONED_OBJECT",
+    "name": "VERSIONED_FOLDER",
+    "classifier": "Class",
+    "description": "A version-controlled hierarchy of `FOLDERs` giving the effect of a directory."
+  },
+  "functions": [],
+  "attributes": [],
+  "constants": []
+}

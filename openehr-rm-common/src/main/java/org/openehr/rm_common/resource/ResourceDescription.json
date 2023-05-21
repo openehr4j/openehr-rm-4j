@@ -1,0 +1,54 @@
+{
+  "meta_info": {
+    "base_type": null,
+    "name": "RESOURCE_DESCRIPTION",
+    "classifier": "Class",
+    "description": "Defines the descriptive meta-data of a resource."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "original_author",
+      "multiplicity": "1..1",
+      "type": "String>",
+      "description": "Original author of this resource, with all relevant details, including organisation."
+    },
+    {
+      "name": "other_contributors",
+      "multiplicity": "0..1",
+      "type": "List<String>",
+      "description": "Other contributors to the resource, probably listed in  `'name <email>'`  form."
+    },
+    {
+      "name": "lifecycle_state",
+      "multiplicity": "1..1",
+      "type": "String",
+      "description": "Lifecycle state of the resource, typically including states such as: `initial &#124; submitted &#124; experimental &#124; awaiting_approval &#124; approved &#124; superseded &#124; obsolete`."
+    },
+    {
+      "name": "resource_package_uri",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "URI of package to which this resource belongs."
+    },
+    {
+      "name": "other_details",
+      "multiplicity": "0..1",
+      "type": "String>",
+      "description": "Additional non language-senstive resource meta-data, as a list of name/value pairs."
+    },
+    {
+      "name": null,
+      "multiplicity": "1..1",
+      "type": null,
+      "description": "Reference to owning resource."
+    },
+    {
+      "name": "details",
+      "multiplicity": "1..1",
+      "type": "Hash<String,RESOURCE_DESCRIPTION_ITEM>",
+      "description": "Details of all parts of resource description that are natural language-dependent, keyed by language code."
+    }
+  ],
+  "constants": []
+}

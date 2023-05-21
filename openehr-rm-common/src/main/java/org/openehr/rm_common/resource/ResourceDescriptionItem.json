@@ -1,0 +1,60 @@
+{
+  "meta_info": {
+    "base_type": null,
+    "name": "RESOURCE_DESCRIPTION_ITEM",
+    "classifier": "Class",
+    "description": "Language-specific detail of resource description. When a resource is translated for use in another language environment, each `RESOURCE_DESCRIPTION_ITEM` needs to be copied and translated into the new language."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "language",
+      "multiplicity": "1..1",
+      "type": "CODE_PHRASE",
+      "description": "The localised language in which the items in this description item are written. Coded from openEHR code set `languages`."
+    },
+    {
+      "name": "purpose",
+      "multiplicity": "1..1",
+      "type": "String",
+      "description": "Purpose of the resource."
+    },
+    {
+      "name": "keywords",
+      "multiplicity": "0..1",
+      "type": "List<String>",
+      "description": "Keywords which characterise this resource, used e.g. for indexing and searching."
+    },
+    {
+      "name": "use",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Description of the uses of the resource, i.e. contexts in which it could be used."
+    },
+    {
+      "name": "misuse",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Description of any misuses of the resource, i.e. contexts in which it should not be used."
+    },
+    {
+      "name": "copyright",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Optional copyright statement for the resource as a knowledge resource."
+    },
+    {
+      "name": "original_resource_uri",
+      "multiplicity": "0..1",
+      "type": "String>",
+      "description": "URIs of original clinical document(s) or description of which resource is a formalisation, in the language of this description item; keyed by meaning."
+    },
+    {
+      "name": "other_details",
+      "multiplicity": "0..1",
+      "type": "String>",
+      "description": "Additional language-senstive resource metadata, as a list of name/value pairs."
+    }
+  ],
+  "constants": []
+}

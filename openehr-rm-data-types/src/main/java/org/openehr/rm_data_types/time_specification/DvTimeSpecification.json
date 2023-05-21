@@ -1,0 +1,37 @@
+{
+  "meta_info": {
+    "base_type": "DATA_VALUE",
+    "name": "DV_TIME_SPECIFICATION",
+    "classifier": "Class",
+    "description": "This is an abstract class of which all timing specifications are specialisations. Specifies points in time, possibly linked to the calendar, or a real world repeating event, such as  breakfast."
+  },
+  "functions": [
+    {
+      "name": "calendar_alignment",
+      "parameters": [],
+      "return_type": "String",
+      "meaning": "Indicates what prototypical point in the calendar the specification is aligned to, e.g.  5th of the month . Empty if not aligned. Extracted from the  value' attribute."
+    },
+    {
+      "name": "event_alignment",
+      "parameters": [],
+      "return_type": "String",
+      "meaning": "Indicates what real-world event the specification is aligned to if any. Extracted from the  value' attribute."
+    },
+    {
+      "name": "institution_specified",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Indicates if the specification is aligned with institution schedules, e.g. a hospital nursing changeover or meal serving times. Extracted from the  value' attribute."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "value",
+      "multiplicity": "1..1",
+      "type": "DV_PARSABLE",
+      "description": "The specification, in the HL7v3 syntax for `PIVL` or `EIVL` types."
+    }
+  ],
+  "constants": []
+}

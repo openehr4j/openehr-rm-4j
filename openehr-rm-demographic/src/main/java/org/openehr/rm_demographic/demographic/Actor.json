@@ -1,0 +1,24 @@
+{
+  "meta_info": {
+    "base_type": "PARTY",
+    "name": "ACTOR",
+    "classifier": "Class",
+    "description": "Ancestor of all real-world types, including people and organisations. An actor is any real-world entity capable of taking on a role."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "languages",
+      "multiplicity": "0..1",
+      "type": "List<DV_TEXT>",
+      "description": "Languages which can be used to communicate with this actor, in preferred order of use (if known, else order irrelevant)."
+    },
+    {
+      "name": "roles",
+      "multiplicity": "0..1",
+      "type": "List<PARTY_REF>",
+      "description": "Identifiers of the Version container for each Role played by this Party."
+    }
+  ],
+  "constants": []
+}

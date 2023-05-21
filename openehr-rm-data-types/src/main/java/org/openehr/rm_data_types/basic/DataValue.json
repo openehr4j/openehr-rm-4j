@@ -1,0 +1,11 @@
+{
+  "meta_info": {
+    "base_type": "OPENEHR_DEFINITIONS",
+    "name": "DATA_VALUE",
+    "classifier": "Class",
+    "description": "Abstract parent of all `DV_` data value types."
+  },
+  "functions": [],
+  "attributes": [],
+  "constants": []
+}

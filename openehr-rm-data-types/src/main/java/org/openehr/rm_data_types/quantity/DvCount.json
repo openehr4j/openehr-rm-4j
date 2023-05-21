@@ -1,0 +1,86 @@
+{
+  "meta_info": {
+    "base_type": "DV_AMOUNT",
+    "name": "DV_COUNT",
+    "classifier": "Class",
+    "description": "Countable quantities. Used for countable types such as pregnancies and steps (taken by a physiotherapy patient), number of cigarettes smoked in a day."
+  },
+  "functions": [
+    {
+      "name": "add",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_COUNT[1]"
+        }
+      ],
+      "return_type": "DV_COUNT",
+      "meaning": "Sum of this `DV_COUNT` and `_other_`."
+    },
+    {
+      "name": "subtract",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_COUNT[1]"
+        }
+      ],
+      "return_type": "DV_COUNT",
+      "meaning": "Difference of this `DV_COUNT` and `_other_`."
+    },
+    {
+      "name": "multiply",
+      "parameters": [
+        {
+          "name": "factor",
+          "type": "/releases/BASE/{base_release}/foundation_types.html#_real_class[Real][1]"
+        }
+      ],
+      "return_type": "DV_COUNT",
+      "meaning": "Product of this `DV_COUNT` and `_factor_`."
+    },
+    {
+      "name": "less_than",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_COUNT[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "True if this Quantified object is less than `_other_`, based on comparison of `_magnitude_`."
+    },
+    {
+      "name": "is_strictly_comparable_to",
+      "parameters": [
+        {
+          "name": "other",
+          "type": "DV_ORDERED[1]"
+        }
+      ],
+      "return_type": "Boolean",
+      "meaning": "Return True."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "magnitude",
+      "multiplicity": "1..1",
+      "type": "Integer64",
+      "description": ""
+    },
+    {
+      "name": "normal_range",
+      "multiplicity": "1..1",
+      "type": "DV_INTERVAL<DV_COUNT>",
+      "description": "Optional normal range."
+    },
+    {
+      "name": "other_reference_ranges",
+      "multiplicity": "1..1",
+      "type": "List<REFERENCE_RANGE<DV_COUNT",
+      "description": "Optional tagged other reference ranges for this value in its particular measurement context."
+    }
+  ],
+  "constants": []
+}

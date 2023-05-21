@@ -1,0 +1,30 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "EXTRACT_ACTION_REQUEST",
+    "classifier": "Class",
+    "description": "Generic model of a Request for an Extract, containing an Extract specification."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "request_id",
+      "multiplicity": "1..1",
+      "type": "OBJECT_REF",
+      "description": "Identifier of previous `EXTRACT_REQUEST`."
+    },
+    {
+      "name": "action",
+      "multiplicity": "1..1",
+      "type": "DV_CODED_TEXT",
+      "description": "Requested action: `cancel &#124; resend &#124; send new`. Coded by openEHR Terminology group `'extract action type'`."
+    },
+    {
+      "name": "uid",
+      "multiplicity": "1..1",
+      "type": "HIER_OBJECT_ID",
+      "description": ""
+    }
+  ],
+  "constants": []
+}

@@ -1,0 +1,48 @@
+{
+  "meta_info": {
+    "base_type": "DATA_VALUE",
+    "name": "DV_TEXT",
+    "classifier": "Class",
+    "description": "A text item, which may contain any amount of legal characters arranged as e.g. words, sentences etc (i.e. one `DV_TEXT` may be more than one word). Visual formatting and hyperlinks may be included via markdown."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "value",
+      "multiplicity": "1..1",
+      "type": "String",
+      "description": "Displayable rendition of the item, regardless of its underlying structure. For `DV_CODED_TEXT`, this is the rubric of the complete term as provided by the terminology service."
+    },
+    {
+      "name": "hyperlink",
+      "multiplicity": "0..1",
+      "type": "DV_URI",
+      "description": "DEPRECATED: this field is deprecated; use markdown link/text in the `_value_` attribute, and `\"markdown\"` as the value of the `_formatting_` field."
+    },
+    {
+      "name": "formatting",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "If set, contains one of the following values:"
+    },
+    {
+      "name": "mappings",
+      "multiplicity": "0..1",
+      "type": "List<TERM_MAPPING>",
+      "description": "Terms from other terminologies most closely matching this term, typically used where the originator (e.g. pathology lab) of information uses a local terminology but also supplies one or more equivalents from well known terminologies (e.g. LOINC)."
+    },
+    {
+      "name": "language",
+      "multiplicity": "0..1",
+      "type": "CODE_PHRASE",
+      "description": "Optional indicator of the localised language in which the value is written. Coded from openEHR Code Set  languages . Only used when either the text object is in a different language from the enclosing `ENTRY`, or else the text object is being used outside of an `ENTRY` or other enclosing structure which indicates the language."
+    },
+    {
+      "name": "encoding",
+      "multiplicity": "0..1",
+      "type": "CODE_PHRASE",
+      "description": "Name of character encoding scheme in which this value is encoded. Coded from openEHR Code Set  character sets . Unicode is the default assumption in openEHR, with UTF-8 being the assumed encoding. This attribute allows for variations from these assumptions."
+    }
+  ],
+  "constants": []
+}

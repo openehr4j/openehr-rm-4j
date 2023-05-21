@@ -1,0 +1,37 @@
+{
+  "meta_info": {
+    "base_type": "LOCATABLE",
+    "name": "EVENT",
+    "classifier": "Class",
+    "description": "Defines the abstract notion of a single event in a series. This class is generic, allowing types to be generated which are locked to particular spatial types, such as `EVENT<ITEM_LIST>`. Subtypes express point or intveral data."
+  },
+  "functions": [
+    {
+      "name": "offset",
+      "parameters": [],
+      "return_type": "DV_DURATION",
+      "meaning": "Offset of this event from origin, computed as time.diff(parent.origin)."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "time",
+      "multiplicity": "1..1",
+      "type": "DV_DATE_TIME",
+      "description": "Time of this event. If the width is non-zero, it is the time point of the trailing edge of the event."
+    },
+    {
+      "name": "state",
+      "multiplicity": "0..1",
+      "type": "ITEM_STRUCTURE",
+      "description": "Optional state data for this event."
+    },
+    {
+      "name": "data",
+      "multiplicity": "1..1",
+      "type": "T",
+      "description": "The data of this event."
+    }
+  ],
+  "constants": []
+}

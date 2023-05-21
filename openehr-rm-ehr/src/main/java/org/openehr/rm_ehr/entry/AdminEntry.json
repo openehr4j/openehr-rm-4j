@@ -1,0 +1,18 @@
+{
+  "meta_info": {
+    "base_type": "ENTRY",
+    "name": "ADMIN_ENTRY",
+    "classifier": "Class",
+    "description": "Entry subtype for administrative information, i.e. information about setting up the clinical process, but not itself clinically relevant. Archetypes will define contained information."
+  },
+  "functions": [],
+  "attributes": [
+    {
+      "name": "data",
+      "multiplicity": "1..1",
+      "type": "ITEM_STRUCTURE",
+      "description": "Content of the Admin Entry."
+    }
+  ],
+  "constants": []
+}

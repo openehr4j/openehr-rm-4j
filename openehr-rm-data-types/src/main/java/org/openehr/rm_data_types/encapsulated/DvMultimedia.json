@@ -1,0 +1,91 @@
+{
+  "meta_info": {
+    "base_type": "DV_ENCAPSULATED",
+    "name": "DV_MULTIMEDIA",
+    "classifier": "Class",
+    "description": "A specialisation of `DV_ENCAPSULATED` for audiovisual and bio-signal types. Includes further metadata relating to multimedia types which are not applicable to other subtypes of `DV_ENCAPSULATED`."
+  },
+  "functions": [
+    {
+      "name": "is_external",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Computed from the value of the `_uri_` attribute: True if  the data is stored externally to the record, as indicated by `_uri_`. A copy may also be stored internally, in which case `_is_expanded_` is also true."
+    },
+    {
+      "name": "is_inline",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Computed from the value of the data attribute. True if  the  data is stored  in  expanded  form, ie within the EHR itself."
+    },
+    {
+      "name": "is_compressed",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Computed from the value of the `_compression_algorithm_` attribute: True if  the  data is stored in compressed form."
+    },
+    {
+      "name": "has_integrity_check",
+      "parameters": [],
+      "return_type": "Boolean",
+      "meaning": "Computed from the value of the `_integrity_check_algorithm_` attribute: True if an integrity check has been computed."
+    }
+  ],
+  "attributes": [
+    {
+      "name": "alternate_text",
+      "multiplicity": "0..1",
+      "type": "String",
+      "description": "Text to display in lieu of multimedia display/replay."
+    },
+    {
+      "name": "uri",
+      "multiplicity": "0..1",
+      "type": "DV_URI",
+      "description": "URI reference to electronic information stored outside the record as a file, database entry etc, if supplied as a reference."
+    },
+    {
+      "name": "data",
+      "multiplicity": "0..1",
+      "type": "List<Byte>",
+      "description": "The actual data found at `_uri_`, if supplied inline."
+    },
+    {
+      "name": "media_type",
+      "multiplicity": "1..1",
+      "type": "CODE_PHRASE",
+      "description": "Data media type coded from openEHR code set  media types  (interface for the IANA MIME types code set)."
+    },
+    {
+      "name": "compression_algorithm",
+      "multiplicity": "0..1",
+      "type": "CODE_PHRASE",
+      "description": "Compression type, a coded value from the openEHR Integrity check code set. Void means no compression."
+    },
+    {
+      "name": "integrity_check",
+      "multiplicity": "0..1",
+      "type": "List<Byte>",
+      "description": "Binary cryptographic integrity checksum."
+    },
+    {
+      "name": "integrity_check_algorithm",
+      "multiplicity": "0..1",
+      "type": "CODE_PHRASE",
+      "description": "Type of integrity check, a coded value from the openEHR `Integrity check` code set."
+    },
+    {
+      "name": "thumbnail",
+      "multiplicity": "0..1",
+      "type": "DV_MULTIMEDIA",
+      "description": "The thumbnail for this item, if one exists; mainly for graphics formats."
+    },
+    {
+      "name": "size",
+      "multiplicity": "1..1",
+      "type": "Integer",
+      "description": "Original size in bytes of unencoded encapsulated data. I.e. encodings such as base64, hexadecimal etc do not change the value of this attribute."
+    }
+  ],
+  "constants": []
+}
