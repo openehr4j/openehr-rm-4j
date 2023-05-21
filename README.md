@@ -66,6 +66,19 @@ dependencies {
 
 - [Working with the Gradle registry | docs.github.com](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-gradle-registry)
 
+### Versions
+
+The Package version number consists of two parts: (1) the version number of the corresponding openEHR component and (2) a Package-specific suffix. Those two parts are separated by the first hyphen.
+
+The suffix has four different types:
+
+1. `alpha`: releases for development tests
+2. `beta`: release candidates for system tests
+3. `RELEASE`: official Package for corresponding openEHR component version
+4. `RELEASE-patch`: if necessary, bug fixes for the released Package
+
+Except for the `RELEASE` which is terminal, each type is followed by another hyphen and then an integer number that gets incremented with every new release.
+
 ## Development
 
 ### Publish to Maven Local
