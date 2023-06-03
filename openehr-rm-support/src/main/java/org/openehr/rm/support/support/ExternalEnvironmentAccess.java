@@ -1,4 +1,7 @@
 package org.openehr.rm.support.support;
 
-public interface ExternalEnvironmentAccess {
+/**
+ * A mixin class providing access to services in the external environment.
+ */
+public interface ExternalEnvironmentAccess extends TerminologyService, MeasurementService {
 }

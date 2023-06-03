@@ -1,4 +1,7 @@
 package org.openehr.rm.ehr_extract.openehr_extract;
 
-public interface XVersionedEhrAccess {
+/**
+ * Version container for `EHR_ACCESS` instance.
+ */
+public interface VersionedEhrAccess extends VersionedObject {
 }

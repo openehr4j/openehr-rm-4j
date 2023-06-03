@@ -1,4 +1,7 @@
 package org.openehr.rm.ehr_extract.openehr_extract;
 
-public interface XVersionedFolder {
+/**
+ * Form of `X_VERSIONED_OBJECT` for `FOLDER` EHR object.
+ */
+public interface XVersionedFolder extends XVersionedObject {
 }

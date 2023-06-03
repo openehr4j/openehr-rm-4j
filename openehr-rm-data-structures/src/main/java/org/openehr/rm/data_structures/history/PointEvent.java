@@ -1,4 +1,7 @@
 package org.openehr.rm.data_structures.history;
 
-public interface PointEvent {
+/**
+ * Defines a single point event in a series.
+ */
+public interface PointEvent extends Event {
 }

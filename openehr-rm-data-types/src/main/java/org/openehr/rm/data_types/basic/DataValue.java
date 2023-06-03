@@ -1,4 +1,7 @@
 package org.openehr.rm.data_types.basic;
 
-public interface DataValue {
+/**
+ * Abstract parent of all `DV_` data value types.
+ */
+public interface DataValue extends OpenehrDefinitions {
 }

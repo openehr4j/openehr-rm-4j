@@ -1,4 +1,7 @@
 package org.openehr.rm.common.directory;
 
-public interface VersionedFolder {
+/**
+ * A version-controlled hierarchy of `FOLDERs` giving the effect of a directory.
+ */
+public interface VersionedFolder extends VersionedObject {
 }

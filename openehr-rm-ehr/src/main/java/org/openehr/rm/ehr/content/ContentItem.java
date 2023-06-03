@@ -1,4 +1,7 @@
 package org.openehr.rm.ehr.content;
 
-public interface ContentItem {
+/**
+ * The abstract parent of `CLUSTER` and `ELEMENT` representation classes.
+ */
+public interface Item extends Locatable {
 }

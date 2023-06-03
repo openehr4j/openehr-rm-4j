@@ -1,4 +1,7 @@
 package org.openehr.rm.ehr.ehr;
 
-public interface VersionedEhrAccess {
+/**
+ * Version container for `EHR_ACCESS` instance.
+ */
+public interface VersionedEhrAccess extends VersionedObject {
 }

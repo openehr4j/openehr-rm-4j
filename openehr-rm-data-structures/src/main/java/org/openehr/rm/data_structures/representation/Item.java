@@ -1,4 +1,7 @@
 package org.openehr.rm.data_structures.representation;
 
-public interface Item {
+/**
+ * The abstract parent of `CLUSTER` and `ELEMENT` representation classes.
+ */
+public interface Item extends Locatable {
 }

@@ -1,4 +1,7 @@
 package org.openehr.rm.support.terminology;
 
-public interface TerminologyService {
+/**
+ * A business level service provided by a Party.
+ */
+public interface Service extends SocialEntity {
 }
