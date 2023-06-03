@@ -5,7 +5,7 @@
     "meta_info": {
         "base_types": [
             "TERMINOLOGY_SERVICE",
-            " `MEASUREMENT_SERVICE"
+            "MEASUREMENT_SERVICE"
         ],
         "classifier": "Class",
         "description": "A mixin class providing access to services in the external environment.",

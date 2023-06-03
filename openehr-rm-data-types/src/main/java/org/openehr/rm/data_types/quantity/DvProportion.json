@@ -121,7 +121,7 @@
     "meta_info": {
         "base_types": [
             "PROPORTION_KIND",
-            " `DV_AMOUNT"
+            "DV_AMOUNT"
         ],
         "classifier": "Class",
         "description": "Models a ratio of values, i.e. where the numerator and denominator are both pure numbers. The `_valid_proportion_kind_` property of the `PROPORTION_KIND` class is used to control the type attribute to be one of a defined set.",
