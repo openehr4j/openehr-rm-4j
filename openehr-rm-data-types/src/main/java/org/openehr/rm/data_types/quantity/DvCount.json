@@ -16,7 +16,7 @@
             "description": "Optional tagged other reference ranges for this value in its particular measurement context.",
             "multiplicity": "1..1",
             "name": "other_reference_ranges",
-            "type": "List<REFERENCE_RANGE<DV_COUNT"
+            "type": "List<REFERENCE_RANGE<DV_COUNT>>"
         }
     ],
     "constants": [],
