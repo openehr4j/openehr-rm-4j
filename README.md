@@ -49,7 +49,7 @@ After the configuration of the GitHub Maven repository, the dependency on the re
 ```groovy
 repositories {
     maven {
-        url = uri('https://maven.pkg.github.com/experimental-software/openehr-rm-java')
+        url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-rm-java')
         credentials {
             username = project.findProperty('gpr.user')
             password = project.findProperty('gpr.key')
