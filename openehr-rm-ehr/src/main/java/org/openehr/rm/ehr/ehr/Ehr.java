@@ -1,5 +1,9 @@
 package org.openehr.rm.ehr.ehr;
 
+import org.openehr.base_base_types.identification.HierObjectId;
+import org.openehr.base_base_types.identification.ObjectRef;
+import org.openehr.rm_data_types.date_time.DvDateTime;
+
 /**
  * The EHR object is the root object and access point of an EHR for a subject of care.
  */
@@ -17,7 +21,7 @@ public interface Ehr {
   /**
    * List of contributions causing changes to this EHR. Each contribution contains a list of versions, which may include references to any number of `VERSION` instances, i.e. items of type `VERSIONED_COMPOSITION` and `VERSIONED_FOLDER`.
    */
-  List<OBJECTREF> getContributions();
+  List<ObjectRef> getContributions();
 
   /**
    * Reference to `EHR_STATUS` object for this EHR.
@@ -32,7 +36,7 @@ public interface Ehr {
   /**
    * Master list of all Versioned Composition references in this EHR.
    */
-  List<OBJECTREF> getCompositions();
+  List<ObjectRef> getCompositions();
 
   /**
    * Optional directory structure for this EHR. If present, this is a reference to the first member of `_folders_`.
@@ -47,10 +51,10 @@ public interface Ehr {
   /**
    * Optional additional Folder structures for this EHR. If set, the `_directory_` attribute refers to the first member.
    */
-  List<OBJECTREF> getFolders();
+  List<ObjectRef> getFolders();
 
   /**
    * Optional list of tags associated with this EHR. Tag `_target_` values can only be within the same EHR.
    */
-  List<OBJECTREF> getTags();
+  List<ObjectRef> getTags();
 }

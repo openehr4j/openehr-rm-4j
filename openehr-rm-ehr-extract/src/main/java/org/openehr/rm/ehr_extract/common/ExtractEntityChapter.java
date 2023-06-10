@@ -1,5 +1,8 @@
 package org.openehr.rm.ehr_extract.common;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_ehr_extract.common.ExtractChapter;
+
 /**
  * Type of chapter that contains information relating to a single demographic entity.
  */

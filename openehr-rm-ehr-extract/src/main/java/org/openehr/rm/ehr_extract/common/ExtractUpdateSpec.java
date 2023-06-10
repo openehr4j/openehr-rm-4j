@@ -1,5 +1,9 @@
 package org.openehr.rm.ehr_extract.common;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.rm_data_types.date_time.DvDuration;
+import org.openehr.rm_data_types.text.CodePhrase;
+
 /**
  * Specification of the how the request should be processed by server. The request can be persisted in the server, meaning that a) it can be re-activated by the requesting system simply by indicating Request id, and b) that a changes-only pattern of Extract updates can be set up. To achieve this, the server has to remember what was sent in the previous response.
  */
@@ -17,7 +21,7 @@ public interface ExtractUpdateSpec {
   /**
    * Set of Event names that will cause sending of update Extracts. Event types include:
    */
-  List<DVCodedTEXT> getTriggerEvents();
+  List<DvCodedText> getTriggerEvents();
 
   /**
    * Indicate mode of update. Can be: send only items that are changed (including logical deletions) or new since last send. For `_persist_in_server_` Requests only.

@@ -1,5 +1,8 @@
 package org.openehr.rm.data_types.basic;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.basic.DataValue;
+
 /**
  * Type for representing identifiers of real-world entities. Typical identifiers include drivers licence number, social security number, veterans affairs number, prescription id, order id, and so on.
  */

@@ -1,5 +1,12 @@
 package org.openehr.rm.data_types.encapsulated;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.encapsulated.DvEncapsulated;
+import org.openehr.rm_data_types.text.CodePhrase;
+import org.openehr.rm_data_types.uri.DvUri;
+
 /**
  * A specialisation of `DV_ENCAPSULATED` for audiovisual and bio-signal types. Includes further metadata relating to multimedia types which are not applicable to other subtypes of `DV_ENCAPSULATED`.
  */
@@ -42,7 +49,7 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * The thumbnail for this item, if one exists; mainly for graphics formats.
    */
-  DvMultimedia getThumbnail();
+  org.openehr.rm_data_types.encapsulated.DvMultimedia getThumbnail();
 
   /**
    * Original size in bytes of unencoded encapsulated data. I.e. encodings such as base64, hexadecimal etc do not change the value of this attribute.
@@ -52,20 +59,20 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * Computed from the value of the `_uri_` attribute: True if  the data is stored externally to the record, as indicated by `_uri_`. A copy may also be stored internally, in which case `_is_expanded_` is also true.
    */
-  void is_external();
+  Boolean isExternal();
 
   /**
    * Computed from the value of the data attribute. True if  the  data is stored  in  expanded  form, ie within the EHR itself.
    */
-  void is_inline();
+  Boolean isInline();
 
   /**
    * Computed from the value of the `_compression_algorithm_` attribute: True if  the  data is stored in compressed form.
    */
-  void is_compressed();
+  Boolean isCompressed();
 
   /**
    * Computed from the value of the `_integrity_check_algorithm_` attribute: True if an integrity check has been computed.
    */
-  void has_integrity_check();
+  Boolean hasIntegrityCheck();
 }

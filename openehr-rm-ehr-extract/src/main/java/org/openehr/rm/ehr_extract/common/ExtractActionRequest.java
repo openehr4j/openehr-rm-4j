@@ -1,5 +1,10 @@
 package org.openehr.rm.ehr_extract.common;
 
+import org.openehr.base_base_types.identification.HierObjectId;
+import org.openehr.base_base_types.identification.ObjectRef;
+import org.openehr.rm_common.archetyped.Locatable;
+import org.openehr.rm_data_types.text.DvCodedText;
+
 /**
  * Generic model of a Request for an Extract, containing an Extract specification.
  */

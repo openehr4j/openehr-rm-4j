@@ -1,5 +1,9 @@
 package org.openehr.rm.support.terminology;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.text.CodePhrase;
+
 /**
  * Defines an object providing proxy access to a terminology.
  */
@@ -7,30 +11,30 @@ public interface TerminologyAccess {
   /**
    * Identification of this Terminology.
    */
-  void id();
+  String id();
 
   /**
    * Return all codes known in this terminology.
    */
-  void all_codes();
+  CodePhrase allCodes();
 
   /**
    * Return all codes under grouper 'a_group_id' from this terminology.
    */
-  void codes_for_group_id();
+  List<CodePhrase> codesForGroupId(Object aGroupId);
 
   /**
    * Return all codes under grouper whose name in 'a_lang' is 'a_name' from this terminology.
    */
-  void codes_for_group_name();
+  List<CodePhrase> codesForGroupName(Object aLang, Object aName);
 
   /**
    * True if  a_code' is known in group  group_id' in the openEHR terminology.
    */
-  void has_code_for_group_id();
+  Boolean hasCodeForGroupId();
 
   /**
    * Return all rubric of code  code' in language  lang'.
    */
-  void rubric_for_code();
+  String rubricForCode(Object aCode);
 }

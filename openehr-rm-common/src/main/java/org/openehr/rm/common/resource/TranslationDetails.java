@@ -1,5 +1,8 @@
 package org.openehr.rm.common.resource;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.text.CodePhrase;
+
 /**
  * Class providing details of a natural language translation.
  */

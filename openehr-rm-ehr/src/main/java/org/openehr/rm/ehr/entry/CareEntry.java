@@ -1,5 +1,9 @@
 package org.openehr.rm.ehr.entry;
 
+import org.openehr.base_base_types.identification.ObjectRef;
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm_ehr.entry.Entry;
+
 /**
  * The abstract parent of all clinical `ENTRY` subtypes. A `CARE_ENTRY` defines protocol and guideline attributes for all clinical Entry subtypes.
  */

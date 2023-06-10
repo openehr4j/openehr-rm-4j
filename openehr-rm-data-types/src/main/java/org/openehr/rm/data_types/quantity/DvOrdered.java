@@ -1,5 +1,11 @@
 package org.openehr.rm.data_types.quantity;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Ordered;
+import org.openehr.rm_data_types.basic.DataValue;
+import org.openehr.rm_data_types.quantity.DvInterval;
+import org.openehr.rm_data_types.text.CodePhrase;
+
 /**
  * Abstract class defining the concept of ordered values, which includes ordinals as well as true quantities. It defines the functions  `<` and `_is_strictly_comparable_to()_`, the latter of which must evaluate to `True` for instances being compared with the  `<` function, or used as limits in the `DV_INTERVAL<T>` class.
  */
@@ -17,25 +23,25 @@ public interface DvOrdered extends DataValue, Ordered {
   /**
    * Optional tagged other reference ranges for this value in its particular measurement context.
    */
-  List<REFERENCERANGE> getOtherReferenceRanges();
+  List<ReferenceRange> getOtherReferenceRanges();
 
   /**
    * Test if two instances are strictly comparable. Effected in descendants.
    */
-  void is_strictly_comparable_to();
+  Boolean isStrictlyComparableTo(Object other);
 
   /**
    * True if this quantity has no reference ranges.
    */
-  void is_simple();
+  Boolean isSimple();
 
   /**
    * Value is in the normal range, determined by comparison of the value to `_normal_range_` if present, or by the `_normal_status_` marker if present.
    */
-  void is_normal();
+  Boolean isNormal();
 
   /**
    * True if this Ordered object is less than `_other_`. Redefined in descendants.
    */
-  void less_than();
+  Boolean lessThan(Object other);
 }

@@ -1,5 +1,10 @@
 package org.openehr.rm.data_types.quantity;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.OrderedNumeric;
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.quantity.DvOrdered;
+
 /**
  * Abstract class defining the concept of true quantified values, i.e. values which are not only ordered, but which have a precise magnitude.
  */
@@ -17,22 +22,22 @@ public interface DvQuantified extends DvOrdered {
   /**
    * Test whether a string value is one of the valid values for the magnitude_status attribute.
    */
-  void valid_magnitude_status();
+  Boolean validMagnitudeStatus();
 
-  void magnitude();
+  OrderedNumeric magnitude();
 
   /**
    * True if accuracy is not known, e.g. due to not being recorded or discernable.
    */
-  void accuracy_unknown();
+  Boolean accuracyUnknown();
 
   /**
    * Return True if this `DV_QUANTIFIED` is considered equal to `_other_`.
    */
-  void is_equal();
+  Boolean isEqual(Object other);
 
   /**
    * True if this Quantified object is less than `_other_`, based on comparison of `_magnitude_`.
    */
-  void less_than();
+  Boolean lessThan(Object other);
 }

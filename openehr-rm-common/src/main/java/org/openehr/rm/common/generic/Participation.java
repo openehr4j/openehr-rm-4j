@@ -1,5 +1,9 @@
 package org.openehr.rm.common.generic;
 
+import org.openehr.rm_common.generic.PartyProxy;
+import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm_data_types.text.DvText;
+
 /**
  * Model of a participation of a Party (any Actor or Role) in an activity.  Used to represent any participation of a Party in some activity, which is not  explicitly in the model, e.g. assisting nurse. Can be used to record past or  future participations.
  */
@@ -22,5 +26,5 @@ public interface Participation {
   /**
    * The time interval during which the participation took place, if it is used in an observational context (i.e. recording facts about the past); or the intended time interval of the participation when used in future contexts, such as EHR Instructions.
    */
-  DvINTERVAL<DVDateTIME> getTime();
+  DvInterval<DvDateTime> getTime();
 }

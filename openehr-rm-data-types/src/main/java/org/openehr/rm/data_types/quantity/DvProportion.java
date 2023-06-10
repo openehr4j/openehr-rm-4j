@@ -1,5 +1,11 @@
 package org.openehr.rm.data_types.quantity;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base_foundation_types.primitive_types.Real;
+import org.openehr.rm_data_types.quantity.DvAmount;
+import org.openehr.rm_data_types.quantity.ProportionKind;
+
 /**
  * Models a ratio of values, i.e. where the numerator and denominator are both pure numbers. The `_valid_proportion_kind_` property of the `PROPORTION_KIND` class is used to control the type attribute to be one of a defined set.
  */
@@ -27,50 +33,50 @@ public interface DvProportion extends ProportionKind, DvAmount {
   /**
    * Optional normal range.
    */
-  DvINTERVAL<DVPROPORTION> getNormalRange();
+  DvInterval<DvProportion> getNormalRange();
 
   /**
    * Optional tagged other reference ranges for this value in its particular measurement context.
    */
-  List<REFERENCERANGE<DVProportion getOtherReferenceRanges();
+  List<ReferenceRange<DvProportion>> getOtherReferenceRanges();
 
   /**
    * Effective magnitude represented by ratio.
    */
-  void magnitude();
+  Real magnitude();
 
   /**
    * True if the `_numerator_` and `_denominator_` values are integers, i.e. if `_precision_` is 0.
    */
-  void is_integral();
+  Boolean isIntegral();
 
   /**
    * Sum of two strictly comparable proportions.
    */
-  void add();
+  org.openehr.rm_data_types.quantity.DvProportion add(Object other);
 
   /**
    * Difference between two strictly comparable proportions.
    */
-  void subtract();
+  org.openehr.rm_data_types.quantity.DvProportion subtract(Object other);
 
   /**
    * Return True if this `DV_AMOUNT` is considered equal to `_other_`.
    */
-  void is_equal();
+  Boolean isEqual(Object other);
 
   /**
    * Product of this Proportion and `_factor_`.
    */
-  void multiply();
+  org.openehr.rm_data_types.quantity.DvProportion multiply(Object factor);
 
   /**
    * True if this Proportion is less than  `_other_`. Only valid if `_is_strictly_comparable_to()_` is True.
    */
-  void less_than();
+  Boolean lessThan(Object other);
 
   /**
    * Return True if the `_type_` of this proportion is the same as the `_type_` of `_other_`.
    */
-  void is_strictly_comparable_to();
+  Boolean isStrictlyComparableTo(Object other);
 }

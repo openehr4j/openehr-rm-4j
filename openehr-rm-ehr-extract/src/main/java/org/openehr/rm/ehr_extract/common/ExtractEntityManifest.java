@@ -1,5 +1,7 @@
 package org.openehr.rm.ehr_extract.common;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+
 /**
  * The manifest for one entity (e.g. EHR subject), identifying the entity and optionally specifying top-level items to be included in the Extract. The list actually included may be modified by the `_version_spec_` part of the specification, and also by the link_depth attribute. In repeat (standing order) requests, the final inclusion may be modified by the send_changes_only value for `EXTRACT_UPDATE_SPEC._update_method_`.
  */
@@ -27,5 +29,5 @@ public interface ExtractEntityManifest {
   /**
    * List of Uids of items to be included in the Extract, in cases where individual items are being requested by id. More typically, this attribute is not used, and the `EXTRACT_SPEC._criteria query_` defines the Extract contents. If set, for openEHR data, these are Uids identifying the version containers.
    */
-  List<OBJECTREF> getItemList();
+  List<ObjectRef> getItemList();
 }

@@ -1,5 +1,8 @@
 package org.openehr.rm.common.resource;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.text.CodePhrase;
+
 /**
  * Language-specific detail of resource description. When a resource is translated for use in another language environment, each `RESOURCE_DESCRIPTION_ITEM` needs to be copied and translated into the new language.
  */

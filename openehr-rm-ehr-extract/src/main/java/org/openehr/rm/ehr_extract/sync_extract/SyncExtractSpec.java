@@ -1,5 +1,12 @@
 package org.openehr.rm.ehr_extract.sync_extract;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm_ehr_extract.common.ExtractManifest;
+import org.openehr.rm_ehr_extract.common.ExtractVersionSpec;
+
 /**
  * Specification of an Extract's contents. Subtypes can be used to add details specific to the type of Extract. The specification consists of attributes specifying the directory, and two further groups of attributes in their own classes, namely a version specfication (which versions of information items are to be included) and a manifest (which entities are to be included in the extract).
  */
@@ -37,7 +44,7 @@ public interface ExtractSpec {
   /**
    * Queries specifying the contents of this Extract.
    */
-  List<DVPARSABLE> getCriteria();
+  List<DvParsable> getCriteria();
 
   /**
    * Other specification items. Archetypable.

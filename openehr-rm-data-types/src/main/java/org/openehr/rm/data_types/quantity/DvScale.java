@@ -1,5 +1,10 @@
 package org.openehr.rm.data_types.quantity;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Real;
+import org.openehr.rm_data_types.quantity.DvOrdered;
+import org.openehr.rm_data_types.text.DvCodedText;
+
 /**
  * A data type that represents scale values, where there is:
  */
@@ -17,10 +22,10 @@ public interface DvScale extends DvOrdered {
   /**
    * Test if this Scale value is strictly comparable to `_other_`.
    */
-  void is_strictly_comparable_to();
+  Boolean isStrictlyComparableTo(Object other);
 
   /**
    * True if this Scale value is less than `_other_`.
    */
-  void less_than();
+  Boolean lessThan(Object other);
 }

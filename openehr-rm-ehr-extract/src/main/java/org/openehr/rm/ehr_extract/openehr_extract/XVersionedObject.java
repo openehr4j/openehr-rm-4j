@@ -1,5 +1,14 @@
 package org.openehr.rm.ehr_extract.openehr_extract;
 
+import org.openehr.base_base_types.identification.HierObjectId;
+import org.openehr.base_base_types.identification.ObjectRef;
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.rm_common.change_control.Version;
+import org.openehr.rm_common.generic.RevisionHistory;
+import org.openehr.rm_data_types.date_time.DvDateTime;
+import org.openehr.rm_data_types.text.DvCodedText;
+
 /**
  * Version control abstraction, defining semantics for versioning one complex object.
  */
@@ -22,80 +31,84 @@ public interface VersionedObject {
   /**
    * Return the total number of versions in this object.
    */
-  void version_count();
+  Integer versionCount();
 
   /**
    * Return a list of ids of all versions in this object.
    */
-  void all_version_ids();
+  List<ObjectVersionId> allVersionIds();
 
   /**
    * Return a list of all versions in this object.
    */
-  void all_versions();
+  List<Version> allVersions();
 
   /**
    * True if a version for time  `_a_time_` exists.
    */
-  void has_version_at_time();
+  Boolean hasVersionAtTime(Object aTime);
 
   /**
    * True if a version with `_a_version_uid_` exists.
    */
-  void has_version_id();
+  Boolean hasVersionId(Object aVersionUid);
 
   /**
    * Return the version with `_uid_` =  `_a_version_uid_`.
    */
-  void version_with_id();
+  Version versionWithId(Object aVersionUid);
 
   /**
    * True if version with `_a_version_uid_` is an `ORIGINAL_VERSION`.
    */
-  void is_original_version();
+  Boolean isOriginalVersion(Object aVersionUid);
 
   /**
    * Return the version for time  `_a_time_`.
    */
-  void version_at_time();
+  Version versionAtTime(Object aTime);
 
   /**
    * History of all audits and attestations in this versioned repository.
    */
-  void revision_history();
+  RevisionHistory revisionHistory();
 
   /**
    * Return the most recently added version (i.e. on trunk or any branch).
    */
-  void latest_version();
+  Version latestVersion();
 
   /**
    * Return the most recently added trunk version.
    */
-  void latest_trunk_version();
+  Version latestTrunkVersion();
 
   /**
    * Return the lifecycle state from the latest trunk version. Useful for determining if the version container is logically deleted.
    */
-  void trunk_lifecycle_state();
+  DvCodedText trunkLifecycleState();
 
   /**
    * Add a new original version.
    */
-  void commit_original_version();
+  Void commitOriginalVersion(Object aContribution, Object aNewVersionUid,
+      Object aPrecedingVersionId, Object anAudit, Object aLifecycleState, Object aData,
+      Object signingKey);
 
   /**
    * Add a new original merged version. This commit function adds a parameter containing the ids of other versions merged into the current one.
    */
-  void commit_original_merged_version();
+  Void commitOriginalMergedVersion(Object aContribution, Object aNewVersionUid,
+      Object aPrecedingVersionId, Object anAudit, Object aLifecycleState, Object aData,
+      Object anOtherInputUids, Object signingKey);
 
   /**
    * Add a new imported version. Details of version id etc come from the `ORIGINAL_VERSION` being committed.
    */
-  void commit_imported_version();
+  Void commitImportedVersion(Object aContribution, Object anAudit, Object aVersion);
 
   /**
    * Add a new attestation to a specified original version. Attestations can only be added to Original versions.
    */
-  void commit_attestation();
+  Void commitAttestation(Object anAttestation, Object aVerId, Object signingKey);
 }

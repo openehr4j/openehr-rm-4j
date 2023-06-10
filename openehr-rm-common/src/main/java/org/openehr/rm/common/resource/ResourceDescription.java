@@ -1,5 +1,7 @@
 package org.openehr.rm.common.resource;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+
 /**
  * Defines the descriptive meta-data of a resource.
  */
@@ -32,5 +34,5 @@ public interface ResourceDescription {
   /**
    * Details of all parts of resource description that are natural language-dependent, keyed by language code.
    */
-  Hash<String,RESOURCEDescriptionITEM> getDetails();
+  Hash<String,ResourceDescriptionItem> getDetails();
 }

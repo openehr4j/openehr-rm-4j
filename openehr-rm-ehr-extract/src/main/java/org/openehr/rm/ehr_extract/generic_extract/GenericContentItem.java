@@ -1,5 +1,11 @@
 package org.openehr.rm.ehr_extract.generic_extract;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.base_foundation_types.time_types.Iso8601DateTime;
+import org.openehr.rm_common.archetyped.Locatable;
+import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm_ehr_extract.common.ExtractContentItem;
+
 /**
  * Single item in generic extract, designed for 13606 and CDA data.
  */

@@ -1,5 +1,8 @@
 package org.openehr.rm.demographic;
 
+import org.openehr.rm_common.archetyped.Locatable;
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+
 /**
  * Capability of a role, such as  ehr modifier,  health care provider. Capability should be backed up by credentials.
  */
@@ -12,5 +15,5 @@ public interface Capability extends Locatable {
   /**
    * Valid time interval for the credentials of this capability.
    */
-  DvINTERVAL<DVDATE> getTimeValidity();
+  DvInterval<DvDate> getTimeValidity();
 }

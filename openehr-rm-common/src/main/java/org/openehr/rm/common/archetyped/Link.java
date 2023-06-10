@@ -1,5 +1,8 @@
 package org.openehr.rm.common.archetyped;
 
+import org.openehr.rm_data_types.text.DvText;
+import org.openehr.rm_data_types.uri.DvEhrUri;
+
 /**
  * The `LINK` type defines a logical relationship between two items, such as two `ENTRYs` or an `ENTRY` and a `COMPOSITION`. Links can be used across compositions, and across EHRs. Links can potentially be used between interior (i.e. non archetype root) nodes, although this probably should be prevented in archetypes. Multiple `LINKs` can be attached to the root object of any archetyped structure to give the effect of a 1->N link.
  */

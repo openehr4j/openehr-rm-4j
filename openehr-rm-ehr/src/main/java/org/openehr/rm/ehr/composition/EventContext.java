@@ -1,5 +1,12 @@
 package org.openehr.rm.ehr.composition;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_common.archetyped.Pathable;
+import org.openehr.rm_common.generic.PartyIdentified;
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm_data_types.date_time.DvDateTime;
+import org.openehr.rm_data_types.text.DvCodedText;
+
 /**
  * Documents the context information of a healthcare event involving the subject of care and the health system. The context information recorded here are independent of the attributes recorded in the version audit, which document the  system interaction  context, i.e. the context of a user interacting with the health record system. Healthcare events include patient contacts, and any other business activity, such as pathology investigations which take place on behalf of the patient.
  */
@@ -37,5 +44,5 @@ public interface EventContext extends Pathable {
   /**
    * Parties involved in the healthcare event. These would normally include the physician(s) and often the patient (but not the latter if the clinical session is a pathology test for example).
    */
-  List<PARTICIPATION> getParticipations();
+  List<Participation> getParticipations();
 }

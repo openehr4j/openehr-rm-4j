@@ -1,5 +1,10 @@
 package org.openehr.rm.data_structures.item_structure;
 
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm_data_structures.representation.Cluster;
+import org.openehr.rm_data_structures.representation.Element;
+
 /**
  * Logical list data structure, where each item has a value and can be referred to by a name and a positional index in the list. The list may be empty.
  */
@@ -7,30 +12,30 @@ public interface ItemList extends ItemStructure {
   /**
    * Physical representation of the list.
    */
-  List<ELEMENT> getItems();
+  List<Element> getItems();
 
   /**
    * Count of all items.
    */
-  void item_count();
+  Integer itemCount();
 
   /**
    * Retrieve the names of all items.
    */
-  void names();
+  List<DvText> names();
 
   /**
    * Retrieve the item with name ‘a_name’.
    */
-  void named_item();
+  Element namedItem(Object aName);
 
   /**
    * Retrieve the i-th item with name.
    */
-  void ith_item();
+  Element ithItem(Object i);
 
   /**
    * Generate a CEN EN13606-compatible hierarchy consisting of a single `CLUSTER` containing the `ELEMENTs` of this list.
    */
-  void as_hierarchy();
+  Cluster asHierarchy();
 }

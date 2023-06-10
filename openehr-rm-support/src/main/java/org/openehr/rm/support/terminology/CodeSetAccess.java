@@ -1,5 +1,8 @@
 package org.openehr.rm.support.terminology;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.String;
+
 /**
  * Defines an object providing proxy access to a code_set.
  */
@@ -7,20 +10,20 @@ public interface CodeSetAccess {
   /**
    * External identifier of this code set.
    */
-  void id();
+  String id();
 
   /**
    * Return all codes known in this code set.
    */
-  void all_codes();
+  List<CodePhrase> allCodes();
 
   /**
    * True if code set knows about 'a_lang' .
    */
-  void has_lang();
+  Boolean hasLang(Object aLang);
 
   /**
    * True if code set knows about  'a_code'.
    */
-  void has_code();
+  Boolean hasCode(Object aCode);
 }

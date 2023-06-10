@@ -1,5 +1,11 @@
 package org.openehr.rm.ehr.entry;
 
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm_data_types.date_time.DvDateTime;
+import org.openehr.rm_ehr.entry.CareEntry;
+import org.openehr.rm_ehr.entry.InstructionDetails;
+import org.openehr.rm_ehr.entry.IsmTransition;
+
 /**
  * Used to record a clinical action that has been performed, which may have been ad hoc, or due to the execution of an Activity in an Instruction workflow. Every Action corresponds to a careflow step of some kind or another.
  */

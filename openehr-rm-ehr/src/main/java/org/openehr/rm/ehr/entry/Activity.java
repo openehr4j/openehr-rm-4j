@@ -1,5 +1,10 @@
 package org.openehr.rm.ehr.entry;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_common.archetyped.Locatable;
+import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm_data_types.encapsulated.DvParsable;
+
 /**
  * Defines a single activity within an Instruction, such as a medication administration.
  */

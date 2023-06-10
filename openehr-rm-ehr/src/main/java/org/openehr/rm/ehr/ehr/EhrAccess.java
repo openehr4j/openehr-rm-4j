@@ -1,5 +1,8 @@
 package org.openehr.rm.ehr.ehr;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_common.archetyped.Locatable;
+
 /**
  * EHR-wide access control object. All access decisions to data in the EHR must be made in accordance with the policies and rules in this object.
  */
@@ -12,5 +15,5 @@ public interface EhrAccess extends Locatable {
   /**
    * The name of the access control scheme in use; corresponds to the concrete instance of the settings attribute.
    */
-  void scheme();
+  String scheme();
 }

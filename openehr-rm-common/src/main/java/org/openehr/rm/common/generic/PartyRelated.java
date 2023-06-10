@@ -1,5 +1,8 @@
 package org.openehr.rm.common.generic;
 
+import org.openehr.rm_common.generic.PartyIdentified;
+import org.openehr.rm_data_types.text.DvCodedText;
+
 /**
  * Proxy type for identifying a party and its relationship to the subject of the record. Use where the relationship between the party and the subject of the record must be known.
  */

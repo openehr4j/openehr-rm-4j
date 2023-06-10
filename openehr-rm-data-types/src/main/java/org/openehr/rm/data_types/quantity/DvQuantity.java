@@ -1,5 +1,11 @@
 package org.openehr.rm.data_types.quantity;
 
+import org.openehr.base_foundation_types.primitive_types.Boolean;
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base_foundation_types.primitive_types.Real;
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_data_types.quantity.DvAmount;
+
 /**
  * Quantitified type representing  scientific  quantities, i.e. quantities expressed as a magnitude and units. Units are expressed in the UCUM syntax (http://unitsofmeasure.org/ucum.html[Unified Code for Units of Measure (UCUM)], by Gunther Schadow and Clement J. McDonald of The Regenstrief Institute)  (case-sensitive form) by default, or another system if `_units_system_` is set.
  */
@@ -32,40 +38,40 @@ public interface DvQuantity extends DvAmount {
   /**
    * Optional normal range.
    */
-  DvINTERVAL<DVQUANTITY> getNormalRange();
+  DvInterval<DvQuantity> getNormalRange();
 
   /**
    * Optional tagged other reference ranges for this value in its particular measurement context.
    */
-  List<REFERENCERANGE<DVQuantity getOtherReferenceRanges();
+  List<ReferenceRange<DvQuantity>> getOtherReferenceRanges();
 
   /**
    * Sum of this `DV_QUANTITY` and `_other_`.
    */
-  void add();
+  org.openehr.rm_data_types.quantity.DvQuantity add(Object other);
 
   /**
    * Difference of this `DV_QUANTITY` and `_other_`.
    */
-  void subtract();
+  org.openehr.rm_data_types.quantity.DvQuantity subtract(Object other);
 
   /**
    * Product of this `DV_QUANTITY` and `_factor_`.
    */
-  void multiply();
+  org.openehr.rm_data_types.quantity.DvQuantity multiply(Object factor);
 
   /**
    * True if this Quantity object is less than `_other_`, based on comparison of `_magnitude_`. Only valid if `_is_strictly_comparable_to()_` is True.
    */
-  void less_than();
+  Boolean lessThan(Object other);
 
   /**
    * True if `_precision_` = 0, meaning that the `_magnitude_` is a whole number.
    */
-  void is_integral();
+  Boolean isIntegral();
 
   /**
    * True if this quantity and `_other_` have the same `_units_` and also `_units_system_` if it exists.
    */
-  void is_strictly_comparable_to();
+  Boolean isStrictlyComparableTo(Object other);
 }

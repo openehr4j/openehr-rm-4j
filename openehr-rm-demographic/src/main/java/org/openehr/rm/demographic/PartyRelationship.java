@@ -1,5 +1,7 @@
 package org.openehr.rm.demographic;
 
+import org.openehr.base_foundation_types.primitive_types.String;
+
 /**
  * A relationship between parties. In BFO terms, a Relational quality, i.e. a Quality that s-depends on the parties of the relation.
  */

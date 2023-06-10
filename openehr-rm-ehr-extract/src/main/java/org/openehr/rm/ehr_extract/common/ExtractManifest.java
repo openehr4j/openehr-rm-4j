@@ -7,5 +7,5 @@ public interface ExtractManifest {
   /**
    * List of entity manifests uids of items included in the Extract; for openEHR data, these are uids identifying the version containers.
    */
-  List<EXTRACTEntityMANIFEST> getEntities();
+  List<ExtractEntityManifest> getEntities();
 }

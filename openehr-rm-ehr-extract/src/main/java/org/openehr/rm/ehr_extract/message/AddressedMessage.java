@@ -1,5 +1,9 @@
 package org.openehr.rm.ehr_extract.message;
 
+import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.rm_ehr_extract.message.Message;
+
 /**
  * The concept of a message addressed to nominated recipients.
  */
