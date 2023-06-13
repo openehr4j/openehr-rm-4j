@@ -1,14 +1,14 @@
 name: Test
 on:
-#  push:
-#    branches: [master]
+  push:
+    branches: [master]
   pull_request:
     branches: [master]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ !contains(github.event.head_commit.message, 'docs:') }}
+    if: ${{ contains(github.event.head_commit.message, 'feat:') }}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -18,4 +18,4 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - run: ./gradlew publishToMavenLocal
+      - run: ./gradlew publishToMavenLocal -Pgpr.user=${{ secrets.GITHUB_ACTOR }} -Pgpr.key=${{ secrets.GITHUB_TOKEN }}

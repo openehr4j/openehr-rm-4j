@@ -14,6 +14,6 @@ jobs:
         with:
           distribution: "temurin"
           java-version: 17
-      - run: ./gradlew publish
+      - run: ./gradlew publish -Pgpr.user=${{ secrets.GITHUB_ACTOR }} -Pgpr.key=${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
