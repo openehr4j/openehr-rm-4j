@@ -2,19 +2,6 @@
 
 This repository contains the Java interface types for the openEHR [RM specifications](https://specifications.openehr.org/releases/RM).
 
-## Overview
-
-| **Subproject**             | **Description** |
-|----------------------------|-----------------|
-| openehr-rm-common          | TBD             |
-| openehr-rm-data-structures | TBD             |
-| openehr-rm-data-types      | TBD             |
-| openehr-rm-demographic     | TBD             |
-| openehr-rm-ehr             | TBD             |
-| openehr-rm-ehr-extract     | TBD             |
-| openehr-rm-integration     | TBD             |
-| openehr-rm-support         | TBD             |
-
 ## Usage
 
 The packages are published to GitHub Packages.
@@ -57,8 +44,17 @@ repositories {
     }
 }
 
+ext['openehrRmVersion'] = '1.1.0-alpha-3'
+
 dependencies {
-    implementation 'com.experimental-software.java-api:openehr-rm-data-types:1.1.0-alpha-2'
+    api "com.experimental-software.java-api:openehr-rm-common:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-data-structures:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-data-types:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-demographic:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-ehr:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-ehr-extract:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-integration:${openehrRmVersion}"
+    api "com.experimental-software.java-api:openehr-rm-support:${openehrRmVersion}"
 }
 ```
 
