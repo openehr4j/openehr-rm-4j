@@ -1,12 +1,9 @@
 package org.openehr.rm.common.archetyped;
 
+import java.util.List;
+
 import org.openehr.base_base_types.identification.UidBasedId;
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.archetyped.Archetyped;
-import org.openehr.rm_common.archetyped.FeederAudit;
-import org.openehr.rm_common.archetyped.Pathable;
-import org.openehr.rm_data_types.text.DvText;
+import org.openehr.rm.data_types.text.DvText;
 
 /**
  * Root class of all information model classes that can be archetyped. Most classes in the openEHR reference model inherit from the `LOCATABLE` class, which defines the idea of  locatability in an archetyped structure. `LOCATABLE` defines a runtime name and an `_archetype_node_id_`.
@@ -30,7 +27,7 @@ public interface Locatable extends Pathable {
   /**
    * Links to other archetyped structures (data whose root object inherits from `ARCHETYPED`, such as `ENTRY`, `SECTION` and so on). Links may be to structures in other compositions.
    */
-  List<Link> getLinks();
+  List getLinks();
 
   /**
    * Details of archetyping used on this node.

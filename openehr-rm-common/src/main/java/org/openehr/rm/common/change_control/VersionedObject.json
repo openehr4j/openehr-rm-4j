@@ -31,13 +31,13 @@
             "meaning": "Return a list of ids of all versions in this object.",
             "name": "all_version_ids",
             "parameters": [],
-            "return_type": "List<OBJECT_VERSION_ID>"
+            "return_type": "List"
         },
         {
             "meaning": "Return a list of all versions in this object.",
             "name": "all_versions",
             "parameters": [],
-            "return_type": "List<VERSION>"
+            "return_type": "List"
         },
         {
             "meaning": "True if a version for time  `_a_time_` exists.",

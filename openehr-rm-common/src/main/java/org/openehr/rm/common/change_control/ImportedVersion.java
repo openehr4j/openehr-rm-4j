@@ -1,9 +1,7 @@
 package org.openehr.rm.common.change_control;
 
 import org.openehr.base_base_types.identification.ObjectVersionId;
-import org.openehr.rm_common.change_control.OriginalVersion;
-import org.openehr.rm_common.change_control.Version;
-import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * Versions whose content is an `ORIGINAL_VERSION` copied from another location; this class inherits `_commit_audit_` and `_contribution_` from `VERSION<T>`, providing imported versions with their own audit trail and Contribution, distinct from those of the imported `ORIGINAL_VERSION`.
@@ -32,5 +30,5 @@ public interface ImportedVersion extends Version {
   /**
    * Original content of this Version.
    */
-  T data();
+  Object data();
 }

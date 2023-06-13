@@ -20,7 +20,7 @@
             "LOCATABLE"
         ],
         "classifier": "Class",
-        "description": "Capability of a role, such as  ehr modifier,  health care provider. Capability should be backed up by credentials.",
+        "description": "Capability of a role, such as  ehr modifier ,  health care provider . Capability should be backed up by credentials.",
         "name": "CAPABILITY"
     }
 }

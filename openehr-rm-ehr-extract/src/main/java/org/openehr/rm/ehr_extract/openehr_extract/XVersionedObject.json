@@ -1,240 +1,54 @@
 {
     "attributes": [
         {
-            "description": "Unique identifier of this version container in the form of a UID with no extension. This id will be the same in all instances of the same container in a distributed environment, meaning that it can be understood as the uid of the  virtual version tree.",
+            "description": "Uid of original `VERSIONED_OBJECT`.",
             "multiplicity": "1..1",
             "name": "uid",
             "type": "HIER_OBJECT_ID"
         },
         {
-            "description": "Reference to object to which this version container belongs, e.g. the id of the containing EHR or other relevant owning entity.",
+            "description": "Owner_id from original `VERSIONED_OBJECT`, which identifies source EHR.",
             "multiplicity": "1..1",
             "name": "owner_id",
             "type": "OBJECT_REF"
         },
         {
-            "description": "Time of initial creation of this versioned object.",
+            "description": "Creation time of original `VERSIONED_OBJECT`.",
             "multiplicity": "1..1",
             "name": "time_created",
             "type": "DV_DATE_TIME"
+        },
+        {
+            "description": "Total number of versions in original `VERSIONED_OBJECT` at time of creation of this `X_VERSIONED_OBJECT`.",
+            "multiplicity": "1..1",
+            "name": "total_version_count",
+            "type": "Integer"
+        },
+        {
+            "description": "The number of Versions in this extract for this Versioned object, i.e. the count of items in the versions attribute. May be 0 if only revision history is requested.",
+            "multiplicity": "1..1",
+            "name": "extract_version_count",
+            "type": "Integer"
+        },
+        {
+            "description": "Optional revision history of the original `VERSIONED_OBJECT`. If included, it is the complete revision history.",
+            "multiplicity": "0..1",
+            "name": "revision_history",
+            "type": "REVISION_HISTORY"
+        },
+        {
+            "description": "0 or more Versions from the original `VERSIONED_OBJECT`, according to the Extract specification.",
+            "multiplicity": "0..1",
+            "name": "versions",
+            "type": "List"
         }
     ],
     "constants": [],
-    "functions": [
-        {
-            "meaning": "Return the total number of versions in this object.",
-            "name": "version_count",
-            "parameters": [],
-            "return_type": "Integer"
-        },
-        {
-            "meaning": "Return a list of ids of all versions in this object.",
-            "name": "all_version_ids",
-            "parameters": [],
-            "return_type": "List<OBJECT_VERSION_ID>"
-        },
-        {
-            "meaning": "Return a list of all versions in this object.",
-            "name": "all_versions",
-            "parameters": [],
-            "return_type": "List<VERSION>"
-        },
-        {
-            "meaning": "True if a version for time  `_a_time_` exists.",
-            "name": "has_version_at_time",
-            "parameters": [
-                {
-                    "name": "a_time",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "Boolean"
-        },
-        {
-            "meaning": "True if a version with `_a_version_uid_` exists.",
-            "name": "has_version_id",
-            "parameters": [
-                {
-                    "name": "a_version_uid",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "Boolean"
-        },
-        {
-            "meaning": "Return the version with `_uid_` =  `_a_version_uid_`.",
-            "name": "version_with_id",
-            "parameters": [
-                {
-                    "name": "a_version_uid",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "VERSION"
-        },
-        {
-            "meaning": "True if version with `_a_version_uid_` is an `ORIGINAL_VERSION`.",
-            "name": "is_original_version",
-            "parameters": [
-                {
-                    "name": "a_version_uid",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "Boolean"
-        },
-        {
-            "meaning": "Return the version for time  `_a_time_`.",
-            "name": "version_at_time",
-            "parameters": [
-                {
-                    "name": "a_time",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "VERSION"
-        },
-        {
-            "meaning": "History of all audits and attestations in this versioned repository.",
-            "name": "revision_history",
-            "parameters": [],
-            "return_type": "REVISION_HISTORY"
-        },
-        {
-            "meaning": "Return the most recently added version (i.e. on trunk or any branch).",
-            "name": "latest_version",
-            "parameters": [],
-            "return_type": "VERSION"
-        },
-        {
-            "meaning": "Return the most recently added trunk version.",
-            "name": "latest_trunk_version",
-            "parameters": [],
-            "return_type": "VERSION"
-        },
-        {
-            "meaning": "Return the lifecycle state from the latest trunk version. Useful for determining if the version container is logically deleted.",
-            "name": "trunk_lifecycle_state",
-            "parameters": [],
-            "return_type": "DV_CODED_TEXT"
-        },
-        {
-            "meaning": "Add a new original version.",
-            "name": "commit_original_version",
-            "parameters": [
-                {
-                    "name": "a_contribution",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_new_version_uid",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_preceding_version_id",
-                    "type": "Object"
-                },
-                {
-                    "name": "an_audit",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_lifecycle_state",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_data",
-                    "type": "Object"
-                },
-                {
-                    "name": "signing_key",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "void"
-        },
-        {
-            "meaning": "Add a new original merged version. This commit function adds a parameter containing the ids of other versions merged into the current one.",
-            "name": "commit_original_merged_version",
-            "parameters": [
-                {
-                    "name": "a_contribution",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_new_version_uid",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_preceding_version_id",
-                    "type": "Object"
-                },
-                {
-                    "name": "an_audit",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_lifecycle_state",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_data",
-                    "type": "Object"
-                },
-                {
-                    "name": "an_other_input_uids",
-                    "type": "Object"
-                },
-                {
-                    "name": "signing_key",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "void"
-        },
-        {
-            "meaning": "Add a new imported version. Details of version id etc come from the `ORIGINAL_VERSION` being committed.",
-            "name": "commit_imported_version",
-            "parameters": [
-                {
-                    "name": "a_contribution",
-                    "type": "Object"
-                },
-                {
-                    "name": "an_audit",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_version",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "void"
-        },
-        {
-            "meaning": "Add a new attestation to a specified original version. Attestations can only be added to Original versions.",
-            "name": "commit_attestation",
-            "parameters": [
-                {
-                    "name": "an_attestation",
-                    "type": "Object"
-                },
-                {
-                    "name": "a_ver_id",
-                    "type": "Object"
-                },
-                {
-                    "name": "signing_key",
-                    "type": "Object"
-                }
-            ],
-            "return_type": "void"
-        }
-    ],
+    "functions": [],
     "meta_info": {
         "base_types": null,
         "classifier": "Class",
-        "description": "Version control abstraction, defining semantics for versioning one complex object.",
-        "name": "VERSIONED_OBJECT"
+        "description": "Variety of Extract content that consists is a sharable data-oriented version of `VERSIONED_OBJECT<T>`.",
+        "name": "X_VERSIONED_OBJECT"
     }
 }

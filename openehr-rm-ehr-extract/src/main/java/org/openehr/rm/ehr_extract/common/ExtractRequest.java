@@ -1,9 +1,7 @@
 package org.openehr.rm.ehr_extract.common;
 
 import org.openehr.base_base_types.identification.HierObjectId;
-import org.openehr.rm_common.archetyped.Locatable;
-import org.openehr.rm_ehr_extract.common.ExtractSpec;
-import org.openehr.rm_ehr_extract.common.ExtractUpdateSpec;
+import org.openehr.rm.common.archetyped.Locatable;
 
 /**
  * Generic model of a Request for an Extract, containing an Extract specification.

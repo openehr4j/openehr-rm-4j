@@ -1,10 +1,11 @@
 package org.openehr.rm.ehr_extract.common;
 
+import java.util.List;
+
 import org.openehr.base_base_types.identification.HierObjectId;
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.rm_common.archetyped.Locatable;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_ehr_extract.common.ExtractSpec;
+import org.openehr.rm.common.archetyped.Locatable;
+import org.openehr.rm.data_types.date_time.DvDateTime;
 
 /**
  * Generic model of an Extract of some information from a repository.
@@ -13,7 +14,7 @@ public interface Extract extends Locatable {
   /**
    * The content extracted and serialised from the source repository for this Extract.
    */
-  List<ExtractChapter> getChapters();
+  List getChapters();
 
   /**
    * The specification that this Extract actually conforms to; might not be identical with the specification of the corresponding request.
@@ -43,5 +44,5 @@ public interface Extract extends Locatable {
   /**
    * Participations relevant to the creation of this Extract.
    */
-  List<ExtractParticipation> getParticipations();
+  List getParticipations();
 }

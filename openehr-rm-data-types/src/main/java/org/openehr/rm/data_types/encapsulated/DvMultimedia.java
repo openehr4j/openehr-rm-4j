@@ -1,11 +1,10 @@
 package org.openehr.rm.data_types.encapsulated;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
+import java.util.List;
+
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.encapsulated.DvEncapsulated;
-import org.openehr.rm_data_types.text.CodePhrase;
-import org.openehr.rm_data_types.uri.DvUri;
+import org.openehr.rm.data_types.text.CodePhrase;
+import org.openehr.rm.data_types.uri.DvUri;
 
 /**
  * A specialisation of `DV_ENCAPSULATED` for audiovisual and bio-signal types. Includes further metadata relating to multimedia types which are not applicable to other subtypes of `DV_ENCAPSULATED`.
@@ -24,7 +23,7 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * The actual data found at `_uri_`, if supplied inline.
    */
-  List<Byte> getData();
+  List getData();
 
   /**
    * Data media type coded from openEHR code set  media types  (interface for the IANA MIME types code set).
@@ -39,7 +38,7 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * Binary cryptographic integrity checksum.
    */
-  List<Byte> getIntegrityCheck();
+  List getIntegrityCheck();
 
   /**
    * Type of integrity check, a coded value from the openEHR `Integrity check` code set.
@@ -49,7 +48,7 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * The thumbnail for this item, if one exists; mainly for graphics formats.
    */
-  org.openehr.rm_data_types.encapsulated.DvMultimedia getThumbnail();
+  DvMultimedia getThumbnail();
 
   /**
    * Original size in bytes of unencoded encapsulated data. I.e. encodings such as base64, hexadecimal etc do not change the value of this attribute.

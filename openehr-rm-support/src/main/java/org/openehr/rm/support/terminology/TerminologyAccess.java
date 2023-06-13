@@ -1,8 +1,10 @@
 package org.openehr.rm.support.terminology;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.text.CodePhrase;
+import java.lang.Boolean;
+import java.lang.Object;
+import java.lang.String;
+import java.util.List;
+import org.openehr.rm.data_types.text.CodePhrase;
 
 /**
  * Defines an object providing proxy access to a terminology.
@@ -21,12 +23,12 @@ public interface TerminologyAccess {
   /**
    * Return all codes under grouper 'a_group_id' from this terminology.
    */
-  List<CodePhrase> codesForGroupId(Object aGroupId);
+  List codesForGroupId(Object aGroupId);
 
   /**
    * Return all codes under grouper whose name in 'a_lang' is 'a_name' from this terminology.
    */
-  List<CodePhrase> codesForGroupName(Object aLang, Object aName);
+  List codesForGroupName(Object aLang, Object aName);
 
   /**
    * True if  a_code' is known in group  group_id' in the openEHR terminology.

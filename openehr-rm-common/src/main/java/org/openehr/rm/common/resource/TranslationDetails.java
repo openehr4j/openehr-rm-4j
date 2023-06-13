@@ -1,7 +1,8 @@
 package org.openehr.rm.common.resource;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.text.CodePhrase;
+import java.util.Map;
+
+import org.openehr.rm.data_types.text.CodePhrase;
 
 /**
  * Class providing details of a natural language translation.
@@ -15,7 +16,7 @@ public interface TranslationDetails {
   /**
    * Translator name and other demographic details.
    */
-  Hash<String,String> getAuthor();
+  Map getAuthor();
 
   /**
    * Accreditation of translator, usually a national translator's registration or association membership id.
@@ -25,5 +26,5 @@ public interface TranslationDetails {
   /**
    * Any other meta-data.
    */
-  Hash<String,String> getOtherDetails();
+  Map getOtherDetails();
 }

@@ -1,7 +1,7 @@
 package org.openehr.rm.data_types.encapsulated;
 
-import org.openehr.rm_data_types.basic.DataValue;
-import org.openehr.rm_data_types.text.CodePhrase;
+import org.openehr.rm.data_types.basic.DataValue;
+import org.openehr.rm.data_types.text.CodePhrase;
 
 /**
  * Abstract class defining the common meta-data of all types of encapsulated data.

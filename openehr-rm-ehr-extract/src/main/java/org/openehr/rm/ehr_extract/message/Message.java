@@ -1,7 +1,8 @@
 package org.openehr.rm.ehr_extract.message;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.generic.AuditDetails;
+import java.lang.Object;
+import java.lang.String;
+import org.openehr.rm.common.generic.AuditDetails;
 
 /**
  * A “message” is an authored, possibly signed, piece of content intended for one or more recipients. Since the recipient may or may not be known directly, recipients are specified in the `ADDRESSED_MESSAGE` class.
@@ -15,7 +16,7 @@ public interface Message {
   /**
    * Content of the message.
    */
-  MessageContent getContent();
+  Object getContent();
 
   /**
    * Optional signature by the author of message content in openPGP format. The signature is created as a Hash and optional signing of the serialisation of this message object with this signature field Void.

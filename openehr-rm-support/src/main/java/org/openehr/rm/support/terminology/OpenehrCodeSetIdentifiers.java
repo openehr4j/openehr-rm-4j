@@ -1,6 +1,7 @@
 package org.openehr.rm.support.terminology;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
+import java.lang.Boolean;
+import java.lang.Object;
 
 /**
  * List of identifiers for code sets in the openEHR terminology.

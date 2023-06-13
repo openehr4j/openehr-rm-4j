@@ -1,9 +1,8 @@
 package org.openehr.rm.ehr.entry;
 
 import org.openehr.base_base_types.identification.LocatableRef;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.archetyped.Pathable;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import org.openehr.rm.common.archetyped.Pathable;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
 
 /**
  * Used to record details of the Instruction causing an Action.

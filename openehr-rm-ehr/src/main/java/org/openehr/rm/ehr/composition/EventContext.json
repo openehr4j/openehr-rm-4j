@@ -40,7 +40,7 @@
             "description": "Parties involved in the healthcare event. These would normally include the physician(s) and often the patient (but not the latter if the clinical session is a pathology test for example).",
             "multiplicity": "0..1",
             "name": "participations",
-            "type": "List<PARTICIPATION>"
+            "type": "List"
         }
     ],
     "constants": [],

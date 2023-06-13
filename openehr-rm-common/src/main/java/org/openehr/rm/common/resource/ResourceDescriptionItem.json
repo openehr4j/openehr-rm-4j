@@ -16,7 +16,7 @@
             "description": "Keywords which characterise this resource, used e.g. for indexing and searching.",
             "multiplicity": "0..1",
             "name": "keywords",
-            "type": "List<String>"
+            "type": "List"
         },
         {
             "description": "Description of the uses of the resource, i.e. contexts in which it could be used.",
@@ -40,13 +40,13 @@
             "description": "URIs of original clinical document(s) or description of which resource is a formalisation, in the language of this description item; keyed by meaning.",
             "multiplicity": "0..1",
             "name": "original_resource_uri",
-            "type": "Hash<String,String>"
+            "type": "Hash"
         },
         {
             "description": "Additional language-senstive resource metadata, as a list of name/value pairs.",
             "multiplicity": "0..1",
             "name": "other_details",
-            "type": "Hash<String,String>"
+            "type": "Hash"
         }
     ],
     "constants": [],

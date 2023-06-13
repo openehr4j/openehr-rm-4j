@@ -1,10 +1,10 @@
 package org.openehr.rm.data_structures.item_structure;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
+import java.util.List;
+
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_structures.representation.Cluster;
-import org.openehr.rm_data_structures.representation.Element;
+import org.openehr.rm.data_structures.representation.Cluster;
+import org.openehr.rm.data_structures.representation.Element;
 
 /**
  * Logical relational database style table data structure, in which columns are named and ordered with respect to each other. Implemented using Cluster-per-row encoding. Each row Cluster must have an identical number of Elements, each of which in turn must have identical names and value types in the corresponding positions in each row.
@@ -13,7 +13,7 @@ public interface ItemTable extends ItemStructure {
   /**
    * Physical representation of the table as a list of `CLUSTERs`, each containing the data of one row of the table.
    */
-  List<Cluster> getRows();
+  List getRows();
 
   /**
    * Number of rows in the table.
@@ -28,12 +28,12 @@ public interface ItemTable extends ItemStructure {
   /**
    * Return set of row names.
    */
-  List<DvText> rowNames();
+  List rowNames();
 
   /**
    * Return set of column names.
    */
-  List<DvText> columnNames();
+  List columnNames();
 
   /**
    * Return i-th row.

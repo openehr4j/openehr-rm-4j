@@ -16,7 +16,7 @@
             "description": "The actual data found at `_uri_`, if supplied inline.",
             "multiplicity": "0..1",
             "name": "data",
-            "type": "List<Byte>"
+            "type": "List"
         },
         {
             "description": "Data media type coded from openEHR code set  media types  (interface for the IANA MIME types code set).",
@@ -34,7 +34,7 @@
             "description": "Binary cryptographic integrity checksum.",
             "multiplicity": "0..1",
             "name": "integrity_check",
-            "type": "List<Byte>"
+            "type": "List"
         },
         {
             "description": "Type of integrity check, a coded value from the openEHR `Integrity check` code set.",

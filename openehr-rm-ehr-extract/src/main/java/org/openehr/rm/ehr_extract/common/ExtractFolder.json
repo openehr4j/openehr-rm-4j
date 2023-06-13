@@ -4,7 +4,7 @@
             "description": "List of Folders and content items in this Folder.",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<EXTRACT_ITEM>"
+            "type": "List"
         }
     ],
     "constants": [],

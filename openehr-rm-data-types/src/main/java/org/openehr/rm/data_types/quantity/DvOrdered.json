@@ -16,7 +16,7 @@
             "description": "Optional tagged other reference ranges for this value in its particular measurement context.",
             "multiplicity": "0..1",
             "name": "other_reference_ranges",
-            "type": "List<REFERENCE_RANGE>"
+            "type": "List"
         }
     ],
     "constants": [],

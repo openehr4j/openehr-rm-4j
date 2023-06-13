@@ -1,9 +1,10 @@
 package org.openehr.rm.data_structures.item_structure;
 
+import java.util.List;
+
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_structures.representation.Cluster;
-import org.openehr.rm_data_structures.representation.Element;
+import org.openehr.rm.data_structures.representation.Cluster;
+import org.openehr.rm.data_structures.representation.Element;
 
 /**
  * Logical list data structure, where each item has a value and can be referred to by a name and a positional index in the list. The list may be empty.
@@ -12,7 +13,7 @@ public interface ItemList extends ItemStructure {
   /**
    * Physical representation of the list.
    */
-  List<Element> getItems();
+  List getItems();
 
   /**
    * Count of all items.
@@ -22,7 +23,7 @@ public interface ItemList extends ItemStructure {
   /**
    * Retrieve the names of all items.
    */
-  List<DvText> names();
+  List names();
 
   /**
    * Retrieve the item with name ‘a_name’.

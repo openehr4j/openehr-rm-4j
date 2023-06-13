@@ -1,32 +1,45 @@
 {
     "attributes": [
         {
-            "description": "The Accountability type defining the scope of this relationship; typically a job post.",
+            "description": "The detailed description of the relationship.",
             "multiplicity": "0..1",
-            "name": "scoper",
-            "type": "String"
-        },
-        {
-            "description": "Source of relationship, may be understood as 'owner' of relationship.",
-            "multiplicity": "0..1",
-            "name": "source",
-            "type": "String"
+            "name": "details",
+            "type": "ITEM_STRUCTURE"
         },
         {
             "description": "Target of relationship.",
-            "multiplicity": "0..1",
+            "multiplicity": "1..1",
             "name": "target",
-            "type": "String"
+            "type": "PARTY_REF"
+        },
+        {
+            "description": "Valid time interval for this relationship.",
+            "multiplicity": "0..1",
+            "name": "time_validity",
+            "type": "DV_INTERVAL<DV_DATE>"
+        },
+        {
+            "description": "Source of relationship.",
+            "multiplicity": "1..1",
+            "name": "source",
+            "type": "PARTY_REF"
         }
     ],
     "constants": [],
-    "functions": [],
+    "functions": [
+        {
+            "meaning": "Type of relationship, such as  employment,  authority,  health provision",
+            "name": "type",
+            "parameters": [],
+            "return_type": "DV_TEXT"
+        }
+    ],
     "meta_info": {
         "base_types": [
-            "ENTITY_RELATIONSHIP"
+            "LOCATABLE"
         ],
         "classifier": "Class",
-        "description": "A relationship between parties. In BFO terms, a Relational quality, i.e. a Quality that s-depends on the parties of the relation.",
+        "description": "Generic description of a relationship between parties.",
         "name": "PARTY_RELATIONSHIP"
     }
 }

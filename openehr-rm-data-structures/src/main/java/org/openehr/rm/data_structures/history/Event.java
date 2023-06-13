@@ -1,14 +1,14 @@
 package org.openehr.rm.data_structures.history;
 
-import org.openehr.rm_common.archetyped.Locatable;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.date_time.DvDuration;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.date_time.DvDateTime;
+import org.openehr.rm.data_types.date_time.DvDuration;
 
 /**
  * Defines the abstract notion of a single event in a series. This class is generic, allowing types to be generated which are locked to particular spatial types, such as `EVENT<ITEM_LIST>`. Subtypes express point or intveral data.
  */
-public interface Event extends Locatable {
+public interface Event {
+// FIXME public interface Event extends Locatable {
   /**
    * Time of this event. If the width is non-zero, it is the time point of the trailing edge of the event.
    */
@@ -22,7 +22,7 @@ public interface Event extends Locatable {
   /**
    * The data of this event.
    */
-  T getData();
+  Object getData();
 
   /**
    * Offset of this event from origin, computed as time.diff(parent.origin).

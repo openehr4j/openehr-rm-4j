@@ -1,10 +1,8 @@
 package org.openehr.rm.common.generic;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.generic.PartyProxy;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.text.DvCodedText;
-import org.openehr.rm_data_types.text.DvText;
+import org.openehr.rm.data_types.date_time.DvDateTime;
+import org.openehr.rm.data_types.text.DvCodedText;
+import org.openehr.rm.data_types.text.DvText;
 
 /**
  * The set of attributes required to document the committal of an information item to a repository.

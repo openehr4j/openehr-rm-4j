@@ -16,7 +16,7 @@
             "description": "Serialised Versions from Contribution in source system.",
             "multiplicity": "0..1",
             "name": "versions",
-            "type": "List<VERSION>"
+            "type": "List"
         }
     ],
     "constants": [],

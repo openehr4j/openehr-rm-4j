@@ -1,10 +1,9 @@
 package org.openehr.rm.data_structures.history;
 
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.rm_data_structures.history.Event;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.date_time.DvDuration;
-import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm.data_types.date_time.DvDateTime;
+import org.openehr.rm.data_types.date_time.DvDuration;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * Defines a single interval event in a series.

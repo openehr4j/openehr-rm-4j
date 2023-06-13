@@ -12,7 +12,7 @@
             "meaning": "Return all codes known in this code set.",
             "name": "all_codes",
             "parameters": [],
-            "return_type": "List<CODE_PHRASE>"
+            "return_type": "List"
         },
         {
             "meaning": "True if code set knows about 'a_lang' .",

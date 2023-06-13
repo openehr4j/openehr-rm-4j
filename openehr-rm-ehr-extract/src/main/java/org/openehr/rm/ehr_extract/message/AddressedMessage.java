@@ -1,8 +1,8 @@
 package org.openehr.rm.ehr_extract.message;
 
+import java.util.List;
+
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_ehr_extract.message.Message;
 
 /**
  * The concept of a message addressed to nominated recipients.
@@ -21,7 +21,7 @@ public interface AddressedMessage {
   /**
    * Intended recipients, in the form of internet addresses.
    */
-  List<String> getAddressees();
+  List getAddressees();
 
   /**
    * Urgency with which destination should deal with message:

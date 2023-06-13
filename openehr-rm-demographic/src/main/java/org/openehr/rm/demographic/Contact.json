@@ -4,13 +4,13 @@
             "description": "A set of address alternatives for this contact purpose and time validity combination.",
             "multiplicity": "1..1",
             "name": "addresses",
-            "type": "List<ADDRESS>"
+            "type": "List"
         },
         {
             "description": "Valid time interval for this contact descriptor.",
             "multiplicity": "0..1",
             "name": "time_validity",
-            "type": "Interval<Iso8601_date>"
+            "type": "DV_INTERVAL<DV_DATE>"
         }
     ],
     "constants": [],
@@ -19,7 +19,7 @@
             "meaning": "Purpose for which this contact is used, e.g. mail,  daytime phone, etc. Taken from value of inherited `_name_` attribute.",
             "name": "purpose",
             "parameters": [],
-            "return_type": "Terminology_term"
+            "return_type": "DV_TEXT"
         }
     ],
     "meta_info": {

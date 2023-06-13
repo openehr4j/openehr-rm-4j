@@ -1,6 +1,7 @@
 package org.openehr.rm.ehr_extract.common;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
+import java.lang.Boolean;
+import java.lang.Object;
 
 /**
  * Specification of what versions should be included in an Extract. By default, only latest versions are included in the Extract, in which case this part of the Extract specification is not needed at all. The attributes `_include_all_versions_` and `_commit_time_interval_` are used to modify this; the former forces all versions to be included; the latter limits the versions to be those latest versions committed in the time interval, or if `_include_all_versions_` is `True`, all versions committed in the time interval.
@@ -14,7 +15,7 @@ public interface ExtractVersionSpec {
   /**
    * Specifies commit time interval of items to source repository to include in Extract. By default, only latest versions whose commit times fall in the range are included. If include_all_versions is True, then the range includes all versions committed within the interval.
    */
-  DvInterval<DvDateTime> getCommitTimeInterval();
+  Object getCommitTimeInterval();
 
   /**
    * True if revision histories of the items in the Extract are included. If included, it is always the full revision history.

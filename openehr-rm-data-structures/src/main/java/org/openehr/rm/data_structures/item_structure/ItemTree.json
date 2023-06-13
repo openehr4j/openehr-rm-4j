@@ -4,7 +4,7 @@
             "description": "The items comprising the `ITEM_TREE`. Can include 0 or more `CLUSTERs` and/or 0 or more individual `ELEMENTs`.",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<ITEM>"
+            "type": "List"
         }
     ],
     "constants": [],

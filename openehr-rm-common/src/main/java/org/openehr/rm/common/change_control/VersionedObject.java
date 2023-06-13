@@ -1,13 +1,13 @@
 package org.openehr.rm.common.change_control;
 
+import java.util.List;
+
 import org.openehr.base_base_types.identification.HierObjectId;
 import org.openehr.base_base_types.identification.ObjectRef;
-import org.openehr.base_foundation_types.primitive_types.Boolean;
 import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.rm_common.change_control.Version;
-import org.openehr.rm_common.generic.RevisionHistory;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm.common.generic.RevisionHistory;
+import org.openehr.rm.data_types.date_time.DvDateTime;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * Version control abstraction, defining semantics for versioning one complex object.
@@ -36,12 +36,12 @@ public interface VersionedObject {
   /**
    * Return a list of ids of all versions in this object.
    */
-  List<ObjectVersionId> allVersionIds();
+  List allVersionIds();
 
   /**
    * Return a list of all versions in this object.
    */
-  List<Version> allVersions();
+  List allVersions();
 
   /**
    * True if a version for time  `_a_time_` exists.
@@ -91,24 +91,24 @@ public interface VersionedObject {
   /**
    * Add a new original version.
    */
-  Void commitOriginalVersion(Object aContribution, Object aNewVersionUid,
+  Object commitOriginalVersion(Object aContribution, Object aNewVersionUid,
       Object aPrecedingVersionId, Object anAudit, Object aLifecycleState, Object aData,
       Object signingKey);
 
   /**
    * Add a new original merged version. This commit function adds a parameter containing the ids of other versions merged into the current one.
    */
-  Void commitOriginalMergedVersion(Object aContribution, Object aNewVersionUid,
+  Object commitOriginalMergedVersion(Object aContribution, Object aNewVersionUid,
       Object aPrecedingVersionId, Object anAudit, Object aLifecycleState, Object aData,
       Object anOtherInputUids, Object signingKey);
 
   /**
    * Add a new imported version. Details of version id etc come from the `ORIGINAL_VERSION` being committed.
    */
-  Void commitImportedVersion(Object aContribution, Object anAudit, Object aVersion);
+  Object commitImportedVersion(Object aContribution, Object anAudit, Object aVersion);
 
   /**
    * Add a new attestation to a specified original version. Attestations can only be added to Original versions.
    */
-  Void commitAttestation(Object anAttestation, Object aVerId, Object signingKey);
+  Object commitAttestation(Object anAttestation, Object aVerId, Object signingKey);
 }

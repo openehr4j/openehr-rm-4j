@@ -23,7 +23,7 @@
                     "type": "Object"
                 }
             ],
-            "return_type": "List<CODE_PHRASE>"
+            "return_type": "List"
         },
         {
             "meaning": "Return all codes under grouper whose name in 'a_lang' is 'a_name' from this terminology.",
@@ -38,7 +38,7 @@
                     "type": "Object"
                 }
             ],
-            "return_type": "List<CODE_PHRASE>"
+            "return_type": "List"
         },
         {
             "meaning": "True if  a_code' is known in group  group_id' in the openEHR terminology.",

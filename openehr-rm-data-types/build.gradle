@@ -19,3 +19,8 @@ publishing {
     }
   }
 }
+
+dependencies {
+  api "com.experimental-software.java-api:openehr-base-base-types:${openehrBaseVersion}"
+  api "com.experimental-software.java-api:openehr-base-foundation-types:${openehrBaseVersion}"
+}

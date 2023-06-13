@@ -1,7 +1,9 @@
 package org.openehr.rm.common.resource;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.text.CodePhrase;
+import java.util.List;
+import java.util.Map;
+
+import org.openehr.rm.data_types.text.CodePhrase;
 
 /**
  * Language-specific detail of resource description. When a resource is translated for use in another language environment, each `RESOURCE_DESCRIPTION_ITEM` needs to be copied and translated into the new language.
@@ -20,7 +22,7 @@ public interface ResourceDescriptionItem {
   /**
    * Keywords which characterise this resource, used e.g. for indexing and searching.
    */
-  List<String> getKeywords();
+  List getKeywords();
 
   /**
    * Description of the uses of the resource, i.e. contexts in which it could be used.
@@ -40,10 +42,10 @@ public interface ResourceDescriptionItem {
   /**
    * URIs of original clinical document(s) or description of which resource is a formalisation, in the language of this description item; keyed by meaning.
    */
-  Hash<String,String> getOriginalResourceUri();
+  Map getOriginalResourceUri();
 
   /**
    * Additional language-senstive resource metadata, as a list of name/value pairs.
    */
-  Hash<String,String> getOtherDetails();
+  Map getOtherDetails();
 }

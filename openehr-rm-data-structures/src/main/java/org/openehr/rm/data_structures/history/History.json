@@ -28,7 +28,7 @@
             "description": "The events in the series. This attribute is of a generic type whose parameter must be a descendant of `ITEM_SUTRUCTURE`.",
             "multiplicity": "0..1",
             "name": "events",
-            "type": "List<EVENT>"
+            "type": "List"
         }
     ],
     "constants": [],

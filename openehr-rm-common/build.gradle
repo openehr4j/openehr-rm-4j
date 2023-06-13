@@ -19,3 +19,10 @@ publishing {
     }
   }
 }
+
+dependencies {
+  api "com.experimental-software.java-api:openehr-base-base-types:${openehrBaseVersion}"
+
+  api project(':openehr-rm-data-types')
+  api project(':openehr-rm-data-structures')
+}

@@ -16,7 +16,7 @@
             "description": "List of contributions causing changes to this EHR. Each contribution contains a list of versions, which may include references to any number of `VERSION` instances, i.e. items of type `VERSIONED_COMPOSITION` and `VERSIONED_FOLDER`.",
             "multiplicity": "0..1",
             "name": "contributions",
-            "type": "List<OBJECT_REF>"
+            "type": "List"
         },
         {
             "description": "Reference to `EHR_STATUS` object for this EHR.",
@@ -34,7 +34,7 @@
             "description": "Master list of all Versioned Composition references in this EHR.",
             "multiplicity": "0..1",
             "name": "compositions",
-            "type": "List<OBJECT_REF>"
+            "type": "List"
         },
         {
             "description": "Optional directory structure for this EHR. If present, this is a reference to the first member of `_folders_`.",
@@ -52,13 +52,7 @@
             "description": "Optional additional Folder structures for this EHR. If set, the `_directory_` attribute refers to the first member.",
             "multiplicity": "0..1",
             "name": "folders",
-            "type": "List<OBJECT_REF>"
-        },
-        {
-            "description": "Optional list of tags associated with this EHR. Tag `_target_` values can only be within the same EHR.",
-            "multiplicity": "0..1",
-            "name": "tags",
-            "type": "List<OBJECT_REF>"
+            "type": "List"
         }
     ],
     "constants": [],

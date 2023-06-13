@@ -1,9 +1,7 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
 import org.openehr.base_foundation_types.primitive_types.Real;
-import org.openehr.rm_data_types.quantity.DvOrdered;
-import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * A data type that represents scale values, where there is:

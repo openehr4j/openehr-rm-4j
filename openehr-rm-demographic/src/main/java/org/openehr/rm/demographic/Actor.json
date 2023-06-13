@@ -4,13 +4,13 @@
             "description": "Languages which can be used to communicate with this actor, in preferred order of use (if known, else order irrelevant).",
             "multiplicity": "0..1",
             "name": "languages",
-            "type": "List<DV_TEXT>"
+            "type": "List"
         },
         {
             "description": "Identifiers of the Version container for each Role played by this Party.",
             "multiplicity": "0..1",
             "name": "roles",
-            "type": "List<PARTY_REF>"
+            "type": "List"
         }
     ],
     "constants": [],

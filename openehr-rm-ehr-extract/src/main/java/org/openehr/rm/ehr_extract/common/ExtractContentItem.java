@@ -1,8 +1,5 @@
 package org.openehr.rm.ehr_extract.common;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.rm_ehr_extract.common.ExtractItem;
-
 /**
  * Abstract model of a wrapper for one content item in an Extract, containing various meta-data. Indicates whether it was part of the primary set and what its original path was. Intended to be subtyped for wrappers of specific types of content.
  */
@@ -25,5 +22,5 @@ public interface ExtractContentItem extends ExtractItem {
   /**
    * Content object.
    */
-  Any getItem();
+  Object getItem();
 }

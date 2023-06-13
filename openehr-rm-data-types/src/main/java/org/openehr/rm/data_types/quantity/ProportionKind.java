@@ -1,6 +1,7 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
+import java.lang.Boolean;
+import java.lang.Object;
 
 /**
  * Class of enumeration constants defining types of proportion for the `DV_PROPORTION` class.

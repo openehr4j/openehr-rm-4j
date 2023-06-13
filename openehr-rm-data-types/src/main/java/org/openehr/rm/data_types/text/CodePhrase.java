@@ -1,7 +1,7 @@
 package org.openehr.rm.data_types.text;
 
+import java.lang.String;
 import org.openehr.base_base_types.identification.TerminologyId;
-import org.openehr.base_foundation_types.primitive_types.String;
 
 /**
  * A fully coordinated (i.e. all coordination has been performed) term from a terminology service (as distinct from a particular terminology).

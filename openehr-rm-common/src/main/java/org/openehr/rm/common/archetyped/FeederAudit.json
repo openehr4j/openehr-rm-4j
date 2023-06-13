@@ -4,13 +4,13 @@
             "description": "Identifiers used for the item in the originating system, e.g. filler and placer ids.",
             "multiplicity": "0..1",
             "name": "originating_system_item_ids",
-            "type": "List<DV_IDENTIFIER>"
+            "type": "List"
         },
         {
             "description": "Identifiers used for the item in the feeder system, where the feeder system is distinct from the originating system.",
             "multiplicity": "0..1",
             "name": "feeder_system_item_ids",
-            "type": "List<DV_IDENTIFIER>"
+            "type": "List"
         },
         {
             "description": "Optional inline inclusion of or reference to original content corresponding to the openEHR content at this node. Typically a URI reference to a document or message in a persistent store associated with the EHR.",

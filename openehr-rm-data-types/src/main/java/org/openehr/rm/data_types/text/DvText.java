@@ -1,9 +1,9 @@
 package org.openehr.rm.data_types.text;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.basic.DataValue;
-import org.openehr.rm_data_types.text.CodePhrase;
-import org.openehr.rm_data_types.uri.DvUri;
+import java.util.List;
+
+import org.openehr.rm.data_types.basic.DataValue;
+import org.openehr.rm.data_types.uri.DvUri;
 
 /**
  * A text item, which may contain any amount of legal characters arranged as e.g. words, sentences etc (i.e. one `DV_TEXT` may be more than one word). Visual formatting and hyperlinks may be included via markdown.
@@ -27,7 +27,7 @@ public interface DvText extends DataValue {
   /**
    * Terms from other terminologies most closely matching this term, typically used where the originator (e.g. pathology lab) of information uses a local terminology but also supplies one or more equivalents from well known terminologies (e.g. LOINC).
    */
-  List<TermMapping> getMappings();
+  List getMappings();
 
   /**
    * Optional indicator of the localised language in which the value is written. Coded from openEHR Code Set  languages . Only used when either the text object is in a different language from the enclosing `ENTRY`, or else the text object is being used outside of an `ENTRY` or other enclosing structure which indicates the language.

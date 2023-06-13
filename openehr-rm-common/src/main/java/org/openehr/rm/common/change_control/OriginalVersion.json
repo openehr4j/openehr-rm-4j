@@ -16,7 +16,7 @@
             "description": "Identifiers of other versions whose content was merged into this version, if any.",
             "multiplicity": "0..1",
             "name": "other_input_version_uids",
-            "type": "List<OBJECT_VERSION_ID>"
+            "type": "List"
         },
         {
             "description": "Lifecycle state of the content item in this version; coded by openEHR vocabulary `version lifecycle state`.",
@@ -28,7 +28,7 @@
             "description": "Set of attestations relating to this version.",
             "multiplicity": "0..1",
             "name": "attestations",
-            "type": "List<ATTESTATION>"
+            "type": "List"
         },
         {
             "description": "Data content of this Version.",

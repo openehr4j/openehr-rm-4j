@@ -22,7 +22,7 @@
             "description": "List of all activities in Instruction.",
             "multiplicity": "0..1",
             "name": "activities",
-            "type": "List<ACTIVITY>"
+            "type": "List"
         }
     ],
     "constants": [],

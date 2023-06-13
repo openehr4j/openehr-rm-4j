@@ -16,7 +16,7 @@
             "description": "Intended recipients, in the form of internet addresses.",
             "multiplicity": "1..1",
             "name": "addressees",
-            "type": "List<String>"
+            "type": "List"
         },
         {
             "description": "Urgency with which destination should deal with message:",

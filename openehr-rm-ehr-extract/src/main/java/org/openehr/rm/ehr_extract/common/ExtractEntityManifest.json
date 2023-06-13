@@ -22,13 +22,13 @@
             "description": "Other identifiers that may be used to find the entity at the target system, keyed by type. May include medicare numbers, drivers license number, tax number etc.",
             "multiplicity": "0..1",
             "name": "other_ids",
-            "type": "List<String>"
+            "type": "List"
         },
         {
             "description": "List of Uids of items to be included in the Extract, in cases where individual items are being requested by id. More typically, this attribute is not used, and the `EXTRACT_SPEC._criteria query_` defines the Extract contents. If set, for openEHR data, these are Uids identifying the version containers.",
             "multiplicity": "0..1",
             "name": "item_list",
-            "type": "List<OBJECT_REF>"
+            "type": "List"
         }
     ],
     "constants": [],

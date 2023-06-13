@@ -1,9 +1,7 @@
 package org.openehr.rm.data_types.time_specification;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.basic.DataValue;
-import org.openehr.rm_data_types.encapsulated.DvParsable;
+import org.openehr.rm.data_types.basic.DataValue;
+import org.openehr.rm.data_types.encapsulated.DvParsable;
 
 /**
  * This is an abstract class of which all timing specifications are specialisations. Specifies points in time, possibly linked to the calendar, or a real world repeating event, such as  breakfast.

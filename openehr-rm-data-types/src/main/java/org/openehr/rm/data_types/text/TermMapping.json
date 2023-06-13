@@ -4,7 +4,7 @@
             "description": "The relative match of the target term with respect to the mapped text item. Result meanings:",
             "multiplicity": "1..1",
             "name": "match",
-            "type": "Character"
+            "type": "char"
         },
         {
             "description": "Purpose of the mapping e.g. 'automated data mining', 'billing', 'interoperability'.",

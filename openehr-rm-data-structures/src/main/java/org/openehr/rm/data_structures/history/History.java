@@ -1,10 +1,11 @@
 package org.openehr.rm.data_structures.history;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.rm_data_structures.DataStructure;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.date_time.DvDuration;
+import java.util.List;
+
+import org.openehr.rm.data_structures.DataStructure;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.date_time.DvDateTime;
+import org.openehr.rm.data_types.date_time.DvDuration;
 
 /**
  * Root object of a linear history, i.e. time series structure. This is a generic class whose type parameter must be a descendant of `ITEM_STRUCTURE`, ensuring that each Event in the `_events_` of a given instance is of the same structural type, i.e. `ITEM_TREE`, `ITEM_LIST` etc.
@@ -33,7 +34,7 @@ public interface History extends DataStructure {
   /**
    * The events in the series. This attribute is of a generic type whose parameter must be a descendant of `ITEM_SUTRUCTURE`.
    */
-  List<Event> getEvents();
+  List getEvents();
 
   /**
    * Indicates whether history is periodic.

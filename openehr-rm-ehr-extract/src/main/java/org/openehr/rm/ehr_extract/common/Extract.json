@@ -4,7 +4,7 @@
             "description": "The content extracted and serialised from the source repository for this Extract.",
             "multiplicity": "0..1",
             "name": "chapters",
-            "type": "List<EXTRACT_CHAPTER>"
+            "type": "List"
         },
         {
             "description": "The specification that this Extract actually conforms to; might not be identical with the specification of the corresponding request.",
@@ -40,7 +40,7 @@
             "description": "Participations relevant to the creation of this Extract.",
             "multiplicity": "0..1",
             "name": "participations",
-            "type": "List<EXTRACT_PARTICIPATION>"
+            "type": "List"
         }
     ],
     "constants": [],

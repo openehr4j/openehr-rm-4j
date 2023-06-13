@@ -1,9 +1,10 @@
 package org.openehr.rm.ehr.entry;
 
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.encapsulated.DvParsable;
-import org.openehr.rm_data_types.text.DvText;
-import org.openehr.rm_ehr.entry.CareEntry;
+import java.util.List;
+
+import org.openehr.rm.data_types.date_time.DvDateTime;
+import org.openehr.rm.data_types.encapsulated.DvParsable;
+import org.openehr.rm.data_types.text.DvText;
 
 /**
  * Used to specify actions in the future. Enables simple and complex specifications to be expressed, including in a fully-computable workflow form. Used for any actionable statement such as medication and therapeutic orders, monitoring, recall and review. Enough details must be provided for the specification to be directly executed by an actor, either human or machine.
@@ -27,5 +28,5 @@ public interface Instruction extends CareEntry {
   /**
    * List of all activities in Instruction.
    */
-  List<Activity> getActivities();
+  List getActivities();
 }

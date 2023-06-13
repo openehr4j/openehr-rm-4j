@@ -4,13 +4,13 @@
             "description": "The list of references to other (usually) versioned objects logically in this folder.",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<OBJECT_REF>"
+            "type": "List"
         },
         {
             "description": "Sub-folders of this `FOLDER`.",
             "multiplicity": "0..1",
             "name": "folders",
-            "type": "List<FOLDER>"
+            "type": "List"
         },
         {
             "description": "Archetypable meta-data for `FOLDER`.",

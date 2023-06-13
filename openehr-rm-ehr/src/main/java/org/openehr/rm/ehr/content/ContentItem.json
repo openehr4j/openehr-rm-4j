@@ -7,7 +7,7 @@
             "LOCATABLE"
         ],
         "classifier": "Class",
-        "description": "The abstract parent of `CLUSTER` and `ELEMENT` representation classes.",
-        "name": "ITEM"
+        "description": "Abstract ancestor of all concrete content types.",
+        "name": "CONTENT_ITEM"
     }
 }

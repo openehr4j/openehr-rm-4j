@@ -4,37 +4,37 @@
         {
             "description": null,
             "name": "Code_set_id_character_sets",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"character sets\""
+            "type": "String"
         },
         {
             "description": null,
             "name": "Code_set_id_compression_algorithms",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"compression algorithms\""
+            "type": "String"
         },
         {
             "description": null,
             "name": "Code_set_id_countries",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"countries\""
+            "type": "String"
         },
         {
             "description": null,
             "name": "Code_set_integrity_check_algorithms",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"integrity check algorithms\""
+            "type": "String"
         },
         {
             "description": null,
             "name": "Code_set_id_languages",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"languages\""
+            "type": "String"
         },
         {
             "description": null,
             "name": "Code_set_id_media_types",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"media types\""
+            "type": "String"
         },
         {
             "description": null,
             "name": "Code_set_id_normal_statuses",
-            "type": "link:/releases/BASE/{base_release}/foundation_types.html#_string_class[String^]{nbsp}={nbsp}\"normal statuses\""
+            "type": "String"
         }
     ],
     "functions": [

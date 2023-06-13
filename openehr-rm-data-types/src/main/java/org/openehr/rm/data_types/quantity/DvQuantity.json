@@ -34,13 +34,13 @@
             "description": "Optional normal range.",
             "multiplicity": "0..1",
             "name": "normal_range",
-            "type": "DV_INTERVAL<DV_QUANTITY>"
+            "type": "DV_INTERVALDV_QUANTITY>"
         },
         {
             "description": "Optional tagged other reference ranges for this value in its particular measurement context.",
             "multiplicity": "0..1",
             "name": "other_reference_ranges",
-            "type": "List<REFERENCE_RANGE<DV_QUANTITY>>"
+            "type": "List"
         }
     ],
     "constants": [],
@@ -79,7 +79,7 @@
             "return_type": "DV_QUANTITY"
         },
         {
-            "meaning": "True if this Quantity object is less than `_other_`, based on comparison of `_magnitude_`. Only valid if `_is_strictly_comparable_to()_` is True.",
+            "meaning": "True if this Quantified object is less than `_other_`. Based on comparison of `_magnitude_`. Only valid if `_is_strictly_comparable_to()_` is True.",
             "name": "less_than",
             "parameters": [
                 {

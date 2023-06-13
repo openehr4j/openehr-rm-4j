@@ -19,3 +19,7 @@ publishing {
     }
   }
 }
+
+dependencies {
+  api project(':openehr-rm-common')
+}

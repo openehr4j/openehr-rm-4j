@@ -1,7 +1,6 @@
 package org.openehr.rm.data_types.date_time;
 
-import org.openehr.rm_data_types.date_time.DvDuration;
-import org.openehr.rm_data_types.quantity.DvAbsoluteQuantity;
+import org.openehr.rm.data_types.quantity.DvAbsoluteQuantity;
 
 /**
  * Specialised temporal variant of `DV_ABSOLUTE_QUANTITY` whose diff type is `DV_DURATION`.
@@ -15,15 +14,15 @@ public interface DvTemporal extends DvAbsoluteQuantity {
   /**
    * Addition of a Duration to this temporal entity.
    */
-  org.openehr.rm_data_types.date_time.DvTemporal add(Object aDiff);
+  DvTemporal add(DvTemporal aDiff);
 
   /**
    * Subtract a Duration from this temporal entity.
    */
-  org.openehr.rm_data_types.date_time.DvTemporal subtract(Object aDiff);
+  DvTemporal subtract(DvTemporal aDiff);
 
   /**
    * Difference between this temporal entity and `_other_`.
    */
-  DvDuration diff(Object other);
+  DvDuration diff(DvTemporal other);
 }

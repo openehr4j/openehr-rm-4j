@@ -1,7 +1,6 @@
 package org.openehr.rm.ehr_extract.openehr_extract;
 
-import org.openehr.rm_ehr_extract.common.ExtractContentItem;
-import org.openehr.rm_ehr_extract.openehr_extract.XVersionedObject;
+import org.openehr.rm.ehr_extract.common.ExtractContentItem;
 
 /**
  * Form of `EHR EXTRACT_ITEM` containing openEHR serialised `VERSIONED_OBJECTs`.

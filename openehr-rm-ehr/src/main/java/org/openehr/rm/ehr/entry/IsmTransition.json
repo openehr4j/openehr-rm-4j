@@ -22,7 +22,7 @@
             "description": "Optional possibility of adding one or more reasons for this careflow step having been taken. Multiple reasons may occur in medication management for example.",
             "multiplicity": "0..1",
             "name": "reason",
-            "type": "List<DV_TEXT>"
+            "type": "List"
         }
     ],
     "constants": [],

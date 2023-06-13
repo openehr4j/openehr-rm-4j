@@ -1,7 +1,9 @@
 package org.openehr.rm.ehr.entry;
 
-import org.openehr.rm_common.archetyped.Pathable;
-import org.openehr.rm_data_types.text.DvCodedText;
+import java.util.List;
+
+import org.openehr.rm.common.archetyped.Pathable;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * Model of a transition in the Instruction State Machine, caused by a careflow step. The attributes document the careflow step as well as the ISM transition.
@@ -25,5 +27,5 @@ public interface IsmTransition extends Pathable {
   /**
    * Optional possibility of adding one or more reasons for this careflow step having been taken. Multiple reasons may occur in medication management for example.
    */
-  List<DvText> getReason();
+  List getReason();
 }

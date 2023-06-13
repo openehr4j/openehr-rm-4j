@@ -28,7 +28,7 @@
                     "type": "Object"
                 }
             ],
-            "return_type": "List<Any>"
+            "return_type": "List"
         },
         {
             "meaning": "True if the path exists in the data with respect to the current item.",

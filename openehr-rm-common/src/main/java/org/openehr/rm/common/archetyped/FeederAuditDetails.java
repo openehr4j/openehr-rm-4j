@@ -1,37 +1,46 @@
 package org.openehr.rm.common.archetyped;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.generic.PartyProxy;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_data_types.text.DvCodedText;
-import org.openehr.rm_data_types.text.DvText;
+import org.openehr.rm.common.generic.PartyIdentified;
+import org.openehr.rm.common.generic.PartyProxy;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.date_time.DvDateTime;
 
 /**
- * The set of attributes required to document the committal of an information item to a repository.
+ * Audit details for any system in a feeder system chain. Audit details here means the general notion of who/where/when the information item to which the audit is attached was created. None of the attributes is defined as mandatory, however, in different scenarios, various combinations of attributes will usually be mandatory. This can be controlled by specifying feeder audit details in legacy archetypes.
  */
-public interface AuditDetails {
+public interface FeederAuditDetails {
   /**
-   * Identifier of the logical EHR system where the change was committed. This is almost always owned by the organisation legally responsible for the EHR, and is distinct from any application, or any hosting infrastructure.
+   * Identifier of the system which handled the information item. This is the IT system owned by the organisation legally responsible for handling the data, and at which the data were previously created or passed by an earlier system.
    */
   String getSystemId();
 
   /**
-   * Time of committal of the item.
+   * Identifier of the particular site/facility within an organisation which handled the item. For computability, this identifier needs to be e.g. a PKI identifier which can be included in the identifier list of the `PARTY_IDENTIFIED` object.
    */
-  DvDateTime getTimeCommitted();
+  PartyIdentified getLocation();
 
   /**
-   * Type of change. Coded using the openEHR Terminology  audit change type  group.
+   * Identifiers for subject of the received information item.
    */
-  DvCodedText getChangeType();
+  PartyProxy getSubject();
 
   /**
-   * Reason for committal. This may be used to qualify the value in the `_change_type_` field. For example, if the change affects only the EHR directory, this field might be used to indicate 'Folder "episode 2018-02-16" added' or similar.
+   * Optional provider(s) who created, committed, forwarded or otherwise handled the item.
    */
-  DvText getDescription();
+  PartyIdentified getProvider();
 
   /**
-   * Identity and optional reference into identity management service, of user who committed the item.
+   * Time of handling the item. For an originating system, this will be time of creation, for an intermediate feeder system, this will be a time of accession or other time of handling, where available.
    */
-  PartyProxy getCommitter();
+  DvDateTime getTime();
+
+  /**
+   * Any identifier used in the system such as  "interim" ,  "final" , or numeric versions if available.
+   */
+  String getVersionId();
+
+  /**
+   * Optional attribute to carry any custom meta-data. May be archetyped.
+   */
+  ItemStructure getOtherDetails();
 }

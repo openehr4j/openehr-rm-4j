@@ -10,7 +10,7 @@
             "description": "Set of references to Versions causing changes to this EHR. Each contribution contains a list of versions, which may include paths pointing to any number of versionable items, i.e. items of types such as `COMPOSITION` and `FOLDER`.",
             "multiplicity": "1..1",
             "name": "versions",
-            "type": "List<OBJECT_REF>"
+            "type": "List"
         },
         {
             "description": "Audit trail corresponding to the committal of this Contribution.",

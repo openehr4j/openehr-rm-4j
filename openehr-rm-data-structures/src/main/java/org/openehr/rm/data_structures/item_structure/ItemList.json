@@ -4,7 +4,7 @@
             "description": "Physical representation of the list.",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<ELEMENT>"
+            "type": "List"
         }
     ],
     "constants": [],
@@ -19,7 +19,7 @@
             "meaning": "Retrieve the names of all items.",
             "name": "names",
             "parameters": [],
-            "return_type": "List<DV_TEXT>"
+            "return_type": "List"
         },
         {
             "meaning": "Retrieve the item with name \u2018a_name\u2019.",

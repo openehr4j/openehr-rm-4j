@@ -7,7 +7,7 @@
             "VERSIONED_OBJECT"
         ],
         "classifier": "Class",
-        "description": "Version container for `EHR_STATUS` instance.",
+        "description": "Version container for EHR_STATUS instance.",
         "name": "VERSIONED_EHR_STATUS"
     }
 }

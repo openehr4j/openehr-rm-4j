@@ -1,10 +1,10 @@
 {
     "attributes": [
         {
-            "description": "The data from the source message or record. May be recorded in any structural openEHR representation.",
+            "description": "The \u2018data\u2019 from the source message or record.",
             "multiplicity": "1..1",
             "name": "data",
-            "type": "ITEM"
+            "type": "ITEM_TREE"
         }
     ],
     "constants": [],

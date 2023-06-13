@@ -4,13 +4,13 @@
             "description": "Identities used by the party to identify itself, such as legal name, stage names, aliases, nicknames and so on.",
             "multiplicity": "1..1",
             "name": "identities",
-            "type": "List<PARTY_IDENTITY>"
+            "type": "List"
         },
         {
             "description": "Contacts for this party.",
             "multiplicity": "0..1",
             "name": "contacts",
-            "type": "List<CONTACT>"
+            "type": "List"
         },
         {
             "description": "All other details for this Party.",
@@ -22,13 +22,13 @@
             "description": "References to relationships in which this Party takes part as target.",
             "multiplicity": "0..1",
             "name": "reverse_relationships",
-            "type": "List<LOCATABLE_REF>"
+            "type": "List"
         },
         {
             "description": "Relationships in which this Party takes part as source.",
             "multiplicity": "0..1",
             "name": "relationships",
-            "type": "List<PARTY_RELATIONSHIP>"
+            "type": "List"
         }
     ],
     "constants": [],

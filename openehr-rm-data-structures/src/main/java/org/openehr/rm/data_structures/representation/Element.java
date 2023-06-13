@@ -1,10 +1,8 @@
 package org.openehr.rm.data_structures.representation;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.rm_data_structures.representation.Item;
-import org.openehr.rm_data_types.basic.DataValue;
-import org.openehr.rm_data_types.text.DvCodedText;
-import org.openehr.rm_data_types.text.DvText;
+import org.openehr.rm.data_types.basic.DataValue;
+import org.openehr.rm.data_types.text.DvCodedText;
+import org.openehr.rm.data_types.text.DvText;
 
 /**
  * The leaf variant of `ITEM`, to which a `DATA_VALUE` instance is attached.

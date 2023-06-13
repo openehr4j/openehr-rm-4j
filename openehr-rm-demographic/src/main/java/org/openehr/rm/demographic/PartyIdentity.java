@@ -1,20 +1,21 @@
 package org.openehr.rm.demographic;
 
-import org.openehr.base_foundation_types.terminology.TerminologyTerm;
-import org.openehr.rm_common.archetyped.Locatable;
-import org.openehr.rm_data_structures.representation.Cluster;
+
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.text.DvText;
 
 /**
- * An identity  of a Social entity, such as a person name or company name, and which is used by the party to identify itself. Actual structure is archetyped.
+ * An identity  owned  by a Party, such as a person name or company name, and which is used by the Party to identify itself. Actual structure is archetyped.
  */
-public interface PartyIdentity extends Locatable {
+public interface PartyIdentity {
+// FIXME public interface PartyIdentity extends Locatable {
   /**
-   * The value of the identity. This will usually take the form of a small structure of strings.
+   * The value of the identity. This will often taken the form of a parseable string or a small structure of strings.
    */
-  Cluster getDescription();
+  ItemStructure getDetails();
 
   /**
-   * Purpose of identity, e.g. legal ,  stage name,  nickname,  tribal name,  trading name. Taken from value of inherited `_name_` attribute.
+   * Purpose of identity, e.g. legal ,  stagename,  nickname,  tribal name,  trading name. Taken from value of inherited `_name_` attribute.
    */
-  TerminologyTerm purpose();
+  DvText purpose();
 }

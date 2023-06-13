@@ -4,7 +4,7 @@
             "description": "The items in this history in most-recent-last order.",
             "multiplicity": "1..1",
             "name": "items",
-            "type": "List<REVISION_HISTORY_ITEM>"
+            "type": "List"
         }
     ],
     "constants": [],

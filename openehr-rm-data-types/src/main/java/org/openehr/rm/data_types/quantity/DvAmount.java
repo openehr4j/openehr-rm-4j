@@ -1,11 +1,11 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
 import org.openehr.base_foundation_types.primitive_types.Real;
-import org.openehr.rm_data_types.quantity.DvQuantified;
 
 /**
  * Abstract class defining the concept of relative quantified  'amounts'. For relative quantities, the  `+` and  `-` operators are defined (unlike descendants of `DV_ABSOLUTE_QUANTITY`, such as the date/time types).
+ *
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_amount_class">specifications.openehr.org</a>
  */
 public interface DvAmount extends DvQuantified {
   /**
@@ -26,30 +26,30 @@ public interface DvAmount extends DvQuantified {
   /**
    * Sum of this amount and another. The value of accuracy in the result is either:
    */
-  org.openehr.rm_data_types.quantity.DvAmount add(Object other);
+  DvAmount add(DvAmount other);
 
   /**
    * Difference of this amount and another. The value of `_accuracy_` in the result is either:
    */
-  org.openehr.rm_data_types.quantity.DvAmount subtract(Object other);
+  DvAmount subtract(DvAmount other);
 
   /**
    * Return True if this `DV_AMOUNT` is considered equal to `_other_`.
    */
-  Boolean isEqual(Object other);
+  Boolean isEqual(DvAmount other);
 
   /**
    * Product of this Amount and `_factor_`.
    */
-  org.openehr.rm_data_types.quantity.DvAmount multiply(Object factor);
+  DvAmount multiply(DvAmount factor);
 
   /**
    * Negated version of current object, such as used for representing a difference, e.g. a weight loss.
    */
-  org.openehr.rm_data_types.quantity.DvAmount negative();
+  DvAmount negative();
 
   /**
    * True if this object is less than `_other_`. Based on comparison of `_magnitude_`.
    */
-  Boolean lessThan(Object other);
+  Boolean lessThan(DvAmount other);
 }

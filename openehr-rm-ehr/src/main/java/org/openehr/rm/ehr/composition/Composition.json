@@ -34,7 +34,7 @@
             "description": "The content of this Composition.",
             "multiplicity": "0..1",
             "name": "content",
-            "type": "List<CONTENT_ITEM>"
+            "type": "List"
         }
     ],
     "constants": [],

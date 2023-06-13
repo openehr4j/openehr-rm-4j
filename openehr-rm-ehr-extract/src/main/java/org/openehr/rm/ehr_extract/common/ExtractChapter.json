@@ -4,7 +4,7 @@
             "description": "The information content of this chapter.",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<EXTRACT_ITEM>"
+            "type": "List"
         }
     ],
     "constants": [],

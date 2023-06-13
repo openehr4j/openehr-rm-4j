@@ -1,52 +1,28 @@
 {
     "attributes": [
         {
-            "description": "Specification of which versions of information items to include in the Extract. If Void, the default is latest versions only (which is reasonable for non-versioning systems as well).",
-            "multiplicity": "0..1",
-            "name": "version_spec",
-            "type": "EXTRACT_VERSION_SPEC"
-        },
-        {
-            "description": "Specification of entities (e.g. records) to include in the Extract.",
+            "description": "True if the Versions from the Contribution are included; False if just the Contribution and its Audit are included.",
             "multiplicity": "1..1",
-            "name": "manifest",
-            "type": "EXTRACT_MANIFEST"
-        },
-        {
-            "description": "Coded term indicating the type of content required, e.g.",
-            "multiplicity": "1..1",
-            "name": "extract_type",
-            "type": "DV_CODED_TEXT"
-        },
-        {
-            "description": "Indicates whether in-line instances of `DV_MULTIMEDIA` in the source data are included or not.",
-            "multiplicity": "1..1",
-            "name": "include_multimedia",
+            "name": "includes_versions",
             "type": "Boolean"
         },
         {
-            "description": "Requested priority of this request to be handled by server. Priority schemes are likely to be local, and use values agreed by both ends.",
-            "multiplicity": "1..1",
-            "name": "priority",
-            "type": "Integer"
-        },
-        {
-            "description": "Degree of links to follow emanating from content items specified for inclusion. The kind of links to follow is dependent on the type of Extract.",
-            "multiplicity": "1..1",
-            "name": "link_depth",
-            "type": "Integer"
-        },
-        {
-            "description": "Queries specifying the contents of this Extract.",
+            "description": "List of Contributions to include / that are included in the Extract.",
             "multiplicity": "0..1",
-            "name": "criteria",
-            "type": "List<DV_PARSABLE>"
+            "name": "contribution_list",
+            "type": "List"
         },
         {
-            "description": "Other specification items. Archetypable.",
+            "description": "Specify Contributions included in Extract by threshold date.",
             "multiplicity": "0..1",
-            "name": "other_details",
-            "type": "ITEM_STRUCTURE"
+            "name": "contributions_since",
+            "type": "DV_DATE_TIME"
+        },
+        {
+            "description": "True if all Contributions in the record are included.",
+            "multiplicity": "0..1",
+            "name": "all_contributions",
+            "type": "Boolean"
         }
     ],
     "constants": [],
@@ -54,7 +30,7 @@
     "meta_info": {
         "base_types": null,
         "classifier": "Class",
-        "description": "Specification of an Extract's contents. Subtypes can be used to add details specific to the type of Extract. The specification consists of attributes specifying the directory, and two further groups of attributes in their own classes, namely a version specfication (which versions of information items are to be included) and a manifest (which entities are to be included in the extract).",
-        "name": "EXTRACT_SPEC"
+        "description": "Details of specification of Extract, used in a request to specify an Extract, or in a response, to describe what is actually in the Extract.",
+        "name": "SYNC_EXTRACT_SPEC"
     }
 }

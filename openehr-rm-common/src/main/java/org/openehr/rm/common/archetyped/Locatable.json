@@ -22,7 +22,7 @@
             "description": "Links to other archetyped structures (data whose root object inherits from `ARCHETYPED`, such as `ENTRY`, `SECTION` and so on). Links may be to structures in other compositions.",
             "multiplicity": "0..1",
             "name": "links",
-            "type": "List<LINK>"
+            "type": "List"
         },
         {
             "description": "Details of archetyping used on this node.",

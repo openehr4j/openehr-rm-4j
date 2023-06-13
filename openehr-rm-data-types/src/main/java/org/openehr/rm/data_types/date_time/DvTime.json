@@ -49,7 +49,7 @@
             "return_type": "DV_DURATION"
         },
         {
-            "meaning": "True if this time object is less than `_other_`, based on comparison of `_magnitude()_`.",
+            "meaning": "True if `_other_` is less than this Quantified object. Based on comparison of `_magnitude_`.",
             "name": "less_than",
             "parameters": [
                 {

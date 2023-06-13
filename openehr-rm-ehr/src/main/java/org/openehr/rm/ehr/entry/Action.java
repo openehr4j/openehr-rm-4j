@@ -1,17 +1,14 @@
 package org.openehr.rm.ehr.entry;
 
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_types.date_time.DvDateTime;
-import org.openehr.rm_ehr.entry.CareEntry;
-import org.openehr.rm_ehr.entry.InstructionDetails;
-import org.openehr.rm_ehr.entry.IsmTransition;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.date_time.DvDateTime;
 
 /**
  * Used to record a clinical action that has been performed, which may have been ad hoc, or due to the execution of an Activity in an Instruction workflow. Every Action corresponds to a careflow step of some kind or another.
  */
 public interface Action extends CareEntry {
   /**
-   * Point in time at which this action completed. To indicate an unknown time, use a `DV_DATE_TIME` instance with `_value_` set to the time of creation (or some other known time before which the Action is known to have occurred, e.g. data accession timestamp from integration engine), and `_magnitude_status_` set to `<`.
+   * Point in time at which this action completed.
    */
   DvDateTime getTime();
 

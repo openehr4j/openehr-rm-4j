@@ -1,23 +1,36 @@
 package org.openehr.rm.demographic;
 
-import org.openehr.base_foundation_types.primitive_types.String;
+import org.openehr.base_base_types.identification.PartyRef;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.text.DvText;
 
 /**
- * A relationship between parties. In BFO terms, a Relational quality, i.e. a Quality that s-depends on the parties of the relation.
+ * Generic description of a relationship between parties.
  */
-public interface PartyRelationship extends EntityRelationship {
+public interface PartyRelationship {
+// FIXME public interface PartyRelationship extends Locatable {
   /**
-   * The Accountability type defining the scope of this relationship; typically a job post.
+   * The detailed description of the relationship.
    */
-  String getScoper();
-
-  /**
-   * Source of relationship, may be understood as 'owner' of relationship.
-   */
-  String getSource();
+  ItemStructure getDetails();
 
   /**
    * Target of relationship.
    */
-  String getTarget();
+  PartyRef getTarget();
+
+  /**
+   * Valid time interval for this relationship.
+   */
+  Object getTimeValidity();
+
+  /**
+   * Source of relationship.
+   */
+  PartyRef getSource();
+
+  /**
+   * Type of relationship, such as  employment,  authority,  health provision
+   */
+  DvText type();
 }

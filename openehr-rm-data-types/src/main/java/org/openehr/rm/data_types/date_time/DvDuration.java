@@ -1,13 +1,12 @@
 package org.openehr.rm.data_types.date_time;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.Double;
-import org.openehr.base_foundation_types.primitive_types.String;
 import org.openehr.base_foundation_types.time_types.Iso8601Duration;
-import org.openehr.rm_data_types.quantity.DvAmount;
+import org.openehr.rm.data_types.quantity.DvAmount;
 
 /**
  * Represents a period of time with respect to a notional point in time, which is not specified. A sign may be used to indicate the duration is  backwards  in time rather than forwards.
+ *
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_duration_class">specifications.openehr.org</a>
  */
 public interface DvDuration extends DvAmount, Iso8601Duration {
   /**
@@ -18,32 +17,32 @@ public interface DvDuration extends DvAmount, Iso8601Duration {
   /**
    * Sum of this Duration and `_other_`.
    */
-  org.openehr.rm_data_types.date_time.DvDuration add(Object other);
+  DvDuration add(DvDuration other);
 
   /**
    * Difference of this Duration and `_other_`.
    */
-  org.openehr.rm_data_types.date_time.DvDuration subtract(Object other);
+  DvDuration subtract(DvDuration other);
 
   /**
    * Product of this Duration and `_factor_`.
    */
-  org.openehr.rm_data_types.date_time.DvDuration multiply(Object factor);
+  DvDuration multiply(DvDuration factor);
 
   /**
-   * True if this duration object is less than `_other_`, based on comparison of `_magnitude()_`.
+   * True if `_other_` is less than this Quantified object. Based on comparison of `_magnitude_`.
    */
-  Boolean lessThan(Object other);
+  Boolean lessThan(DvDuration other);
 
   /**
    * True, for any two Durations.
    */
-  Boolean isStrictlyComparableTo(Object other);
+  Boolean isStrictlyComparableTo(DvDuration other);
 
   /**
    * Negated version of current duration.
    */
-  org.openehr.rm_data_types.date_time.DvDuration negative();
+  DvDuration negative();
 
   /**
    * Numeric value of the duration as a number of seconds. Computed using the method `_to_seconds()_` inherited from `Iso8601_duration`.

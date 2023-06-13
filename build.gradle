@@ -26,8 +26,22 @@ subprojects {
     sourceCompatibility = 1.8
     targetCompatibility = 1.8
 
+    repositories {
+        maven {
+            url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-base-java')
+            credentials {
+                username = project.findProperty('gpr.user')
+                password = project.findProperty('gpr.key')
+            }
+        }
+    }
+
     task sourceJar(type: Jar) {
         from sourceSets.main.allJava
+    }
+
+    javadoc {
+        failOnError = false
     }
 
     java {

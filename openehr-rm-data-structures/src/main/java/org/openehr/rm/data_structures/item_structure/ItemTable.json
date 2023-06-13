@@ -4,7 +4,7 @@
             "description": "Physical representation of the table as a list of `CLUSTERs`, each containing the data of one row of the table.",
             "multiplicity": "0..1",
             "name": "rows",
-            "type": "List<CLUSTER>"
+            "type": "List"
         }
     ],
     "constants": [],
@@ -25,13 +25,13 @@
             "meaning": "Return set of row names.",
             "name": "row_names",
             "parameters": [],
-            "return_type": "List<DV_TEXT>"
+            "return_type": "List"
         },
         {
             "meaning": "Return set of column names.",
             "name": "column_names",
             "parameters": [],
-            "return_type": "List<DV_TEXT>"
+            "return_type": "List"
         },
         {
             "meaning": "Return i-th row.",

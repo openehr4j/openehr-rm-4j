@@ -3,10 +3,8 @@ package org.openehr.rm.common.change_control;
 import org.openehr.base_base_types.identification.HierObjectId;
 import org.openehr.base_base_types.identification.ObjectRef;
 import org.openehr.base_base_types.identification.ObjectVersionId;
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.generic.AuditDetails;
-import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm.common.generic.AuditDetails;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * Abstract model of one Version within a Version container, containing data, commit audit trail, and the identifier of its Contribution.
@@ -40,7 +38,7 @@ public interface Version {
   /**
    * The data of this Version.
    */
-  T data();
+  Object data();
 
   /**
    * Lifecycle state of this version; coded by openEHR vocabulary `version lifecycle state`.

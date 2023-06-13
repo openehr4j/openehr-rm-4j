@@ -4,7 +4,7 @@
             "description": "Ordered list of content items under this section, which may include:",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<CONTENT_ITEM>"
+            "type": "List"
         }
     ],
     "constants": [],

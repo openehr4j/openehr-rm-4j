@@ -10,13 +10,13 @@
             "description": "Optional normal range.",
             "multiplicity": "1..1",
             "name": "normal_range",
-            "type": "DV_INTERVAL<DV_COUNT>"
+            "type": "DV_INTERVALDV_COUNT>"
         },
         {
             "description": "Optional tagged other reference ranges for this value in its particular measurement context.",
             "multiplicity": "1..1",
             "name": "other_reference_ranges",
-            "type": "List<REFERENCE_RANGE<DV_COUNT>>"
+            "type": "List"
         }
     ],
     "constants": [],
@@ -55,7 +55,7 @@
             "return_type": "DV_COUNT"
         },
         {
-            "meaning": "True if this Quantified object is less than `_other_`, based on comparison of `_magnitude_`.",
+            "meaning": "True if `_other_` is less than this Quantified object. Based on comparison of `_magnitude_`.",
             "name": "less_than",
             "parameters": [
                 {

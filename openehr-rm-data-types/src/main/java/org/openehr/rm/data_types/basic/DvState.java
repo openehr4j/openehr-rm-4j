@@ -1,8 +1,6 @@
 package org.openehr.rm.data_types.basic;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.rm_data_types.basic.DataValue;
-import org.openehr.rm_data_types.text.DvCodedText;
+import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * For representing state values which obey a defined state machine, such as a variable  representing the states of an instruction or care process.

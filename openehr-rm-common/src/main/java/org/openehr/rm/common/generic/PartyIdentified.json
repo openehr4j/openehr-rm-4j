@@ -10,7 +10,7 @@
             "description": "One or more formal identifiers (possibly computable).",
             "multiplicity": "0..1",
             "name": "identifiers",
-            "type": "List<DV_IDENTIFIER>"
+            "type": "List"
         }
     ],
     "constants": [],

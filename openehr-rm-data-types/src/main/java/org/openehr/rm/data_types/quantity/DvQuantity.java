@@ -1,10 +1,11 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
+import java.lang.Boolean;
+import java.lang.Object;
+import java.lang.String;
+import java.util.List;
 import org.openehr.base_foundation_types.primitive_types.Integer;
 import org.openehr.base_foundation_types.primitive_types.Real;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.quantity.DvAmount;
 
 /**
  * Quantitified type representing  scientific  quantities, i.e. quantities expressed as a magnitude and units. Units are expressed in the UCUM syntax (http://unitsofmeasure.org/ucum.html[Unified Code for Units of Measure (UCUM)], by Gunther Schadow and Clement J. McDonald of The Regenstrief Institute)  (case-sensitive form) by default, or another system if `_units_system_` is set.
@@ -38,30 +39,30 @@ public interface DvQuantity extends DvAmount {
   /**
    * Optional normal range.
    */
-  DvInterval<DvQuantity> getNormalRange();
+  Object getNormalRange();
 
   /**
    * Optional tagged other reference ranges for this value in its particular measurement context.
    */
-  List<ReferenceRange<DvQuantity>> getOtherReferenceRanges();
+  List getOtherReferenceRanges();
 
   /**
    * Sum of this `DV_QUANTITY` and `_other_`.
    */
-  org.openehr.rm_data_types.quantity.DvQuantity add(Object other);
+  DvQuantity add(Object other);
 
   /**
    * Difference of this `DV_QUANTITY` and `_other_`.
    */
-  org.openehr.rm_data_types.quantity.DvQuantity subtract(Object other);
+  DvQuantity subtract(Object other);
 
   /**
    * Product of this `DV_QUANTITY` and `_factor_`.
    */
-  org.openehr.rm_data_types.quantity.DvQuantity multiply(Object factor);
+  DvQuantity multiply(Object factor);
 
   /**
-   * True if this Quantity object is less than `_other_`, based on comparison of `_magnitude_`. Only valid if `_is_strictly_comparable_to()_` is True.
+   * True if this Quantified object is less than `_other_`. Based on comparison of `_magnitude_`. Only valid if `_is_strictly_comparable_to()_` is True.
    */
   Boolean lessThan(Object other);
 

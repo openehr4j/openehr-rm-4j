@@ -1,53 +1,30 @@
 package org.openehr.rm.ehr_extract.sync_extract;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_types.text.DvCodedText;
-import org.openehr.rm_ehr_extract.common.ExtractManifest;
-import org.openehr.rm_ehr_extract.common.ExtractVersionSpec;
+import java.lang.Boolean;
+import java.util.List;
+import org.openehr.rm.data_types.date_time.DvDateTime;
 
 /**
- * Specification of an Extract's contents. Subtypes can be used to add details specific to the type of Extract. The specification consists of attributes specifying the directory, and two further groups of attributes in their own classes, namely a version specfication (which versions of information items are to be included) and a manifest (which entities are to be included in the extract).
+ * Details of specification of Extract, used in a request to specify an Extract, or in a response, to describe what is actually in the Extract.
  */
-public interface ExtractSpec {
+public interface SyncExtractSpec {
   /**
-   * Specification of which versions of information items to include in the Extract. If Void, the default is latest versions only (which is reasonable for non-versioning systems as well).
+   * True if the Versions from the Contribution are included; False if just the Contribution and its Audit are included.
    */
-  ExtractVersionSpec getVersionSpec();
+  Boolean getIncludesVersions();
 
   /**
-   * Specification of entities (e.g. records) to include in the Extract.
+   * List of Contributions to include / that are included in the Extract.
    */
-  ExtractManifest getManifest();
+  List getContributionList();
 
   /**
-   * Coded term indicating the type of content required, e.g.
+   * Specify Contributions included in Extract by threshold date.
    */
-  DvCodedText getExtractType();
+  DvDateTime getContributionsSince();
 
   /**
-   * Indicates whether in-line instances of `DV_MULTIMEDIA` in the source data are included or not.
+   * True if all Contributions in the record are included.
    */
-  Boolean getIncludeMultimedia();
-
-  /**
-   * Requested priority of this request to be handled by server. Priority schemes are likely to be local, and use values agreed by both ends.
-   */
-  Integer getPriority();
-
-  /**
-   * Degree of links to follow emanating from content items specified for inclusion. The kind of links to follow is dependent on the type of Extract.
-   */
-  Integer getLinkDepth();
-
-  /**
-   * Queries specifying the contents of this Extract.
-   */
-  List<DvParsable> getCriteria();
-
-  /**
-   * Other specification items. Archetypable.
-   */
-  ItemStructure getOtherDetails();
+  Boolean getAllContributions();
 }

@@ -1,9 +1,7 @@
 package org.openehr.rm.ehr_extract.openehr_extract;
 
-import org.openehr.rm_common.change_control.VersionedObject;
-
 /**
- * Version container for `EHR_STATUS` instance.
+ * Form of `X_VERSIONED_OBJECT` for `EHR_STATUS` EHR object.
  */
-public interface VersionedEhrStatus extends VersionedObject {
+public interface XVersionedEhrStatus extends XVersionedObject {
 }

@@ -19,3 +19,9 @@ publishing {
     }
   }
 }
+
+dependencies {
+  api project(':openehr-rm-common')
+  api project(':openehr-rm-data-structures')
+  api project(':openehr-rm-data-types')
+}

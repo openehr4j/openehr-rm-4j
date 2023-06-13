@@ -1,8 +1,8 @@
 package org.openehr.rm.ehr_extract.sync_extract;
 
-import org.openehr.rm_ehr_extract.sync_extract.SyncExtractSpec;
+import java.util.List;
 
-public interface SyncExtract extends MessageContent {
+public interface SyncExtract {
   /**
    * Details of specification of this Extract.
    */
@@ -11,5 +11,5 @@ public interface SyncExtract extends MessageContent {
   /**
    * Content, in the form of a serialised Contributions.
    */
-  List<XContribution> getItems();
+  List getItems();
 }

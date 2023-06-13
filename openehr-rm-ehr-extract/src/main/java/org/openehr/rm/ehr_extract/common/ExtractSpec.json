@@ -40,7 +40,7 @@
             "description": "Queries specifying the contents of this Extract.",
             "multiplicity": "0..1",
             "name": "criteria",
-            "type": "List<DV_PARSABLE>"
+            "type": "List"
         },
         {
             "description": "Other specification items. Archetypable.",

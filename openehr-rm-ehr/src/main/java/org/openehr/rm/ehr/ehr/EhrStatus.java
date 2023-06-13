@@ -1,9 +1,9 @@
 package org.openehr.rm.ehr.ehr;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.rm_common.archetyped.Locatable;
-import org.openehr.rm_common.generic.PartySelf;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
+import java.lang.Boolean;
+import org.openehr.rm.common.archetyped.Locatable;
+import org.openehr.rm.common.generic.PartySelf;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
 
 /**
  * Single object per EHR containing various EHR-wide status flags and settings, including whether this EHR can be queried, modified etc. This object is always modifiable, in order to change the status of the EHR as a whole.

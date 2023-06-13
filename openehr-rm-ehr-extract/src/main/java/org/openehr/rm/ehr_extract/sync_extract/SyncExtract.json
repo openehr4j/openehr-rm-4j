@@ -10,7 +10,7 @@
             "description": "Content, in the form of a serialised Contributions.",
             "multiplicity": "0..1",
             "name": "items",
-            "type": "List<X_CONTRIBUTION>"
+            "type": "List"
         }
     ],
     "constants": [],

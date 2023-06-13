@@ -1,14 +1,13 @@
 package org.openehr.rm.ehr.entry;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_common.archetyped.Locatable;
-import org.openehr.rm_data_structures.item_structure.ItemStructure;
-import org.openehr.rm_data_types.encapsulated.DvParsable;
+import org.openehr.rm.data_structures.item_structure.ItemStructure;
+import org.openehr.rm.data_types.encapsulated.DvParsable;
 
 /**
  * Defines a single activity within an Instruction, such as a medication administration.
  */
-public interface Activity extends Locatable {
+public interface Activity {
+// FIXME public interface Activity extends Locatable {
   /**
    * Timing of the activity, in the form of a parsable string. If used, the preferred syntax is ISO8601 'R' format, but other formats may be used including HL7 GTS.
    */

@@ -1,7 +1,6 @@
 package org.openehr.rm.data_types.uri;
 
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.basic.DataValue;
+import org.openehr.rm.data_types.basic.DataValue;
 
 /**
  * A reference to an object which structurally conforms to the Universal Resource Identifier (URI) RFC-3986 standard. The reference is contained in the `_value_` attribute, which is a `String`. So-called 'plain-text URIs' that contain RFC-3986 forbidden characters such as spaces etc, are allowed on the basis that they need to be RFC-3986 encoded prior to use in e.g. REST APIs or other contexts relying on machine-level conformance.

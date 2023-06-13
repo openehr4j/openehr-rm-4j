@@ -1,9 +1,6 @@
 package org.openehr.rm.data_types.time_specification;
 
-import org.openehr.base_foundation_types.primitive_types.Boolean;
-import org.openehr.base_foundation_types.primitive_types.String;
-import org.openehr.rm_data_types.date_time.DvDuration;
-import org.openehr.rm_data_types.time_specification.DvTimeSpecification;
+import org.openehr.rm.data_types.date_time.DvDuration;
 
 /**
  * Specifies periodic points in time, linked to the calendar (phase-linked), or a real world repeating event, such as  breakfast  (event-linked). Based on the HL7v3 data types `PIVL<T>` and `EIVL<T>`.

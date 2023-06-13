@@ -1,51 +1,13 @@
 {
-    "attributes": [
-        {
-            "description": "Identities used by the party to identify itself, such as legal name, stage names, aliases, nicknames and so on.",
-            "multiplicity": "1..1",
-            "name": "identities",
-            "type": "List<PARTY_IDENTITY>"
-        },
-        {
-            "description": "Contacts for this party.",
-            "multiplicity": "0..1",
-            "name": "contacts",
-            "type": "List<CONTACT>"
-        },
-        {
-            "description": "All other details for this Party.",
-            "multiplicity": "0..1",
-            "name": "details",
-            "type": "ITEM_STRUCTURE"
-        },
-        {
-            "description": "References to relationships in which this Party takes part as target.",
-            "multiplicity": "0..1",
-            "name": "reverse_relationships",
-            "type": "List<LOCATABLE_REF>"
-        },
-        {
-            "description": "Relationships in which this Party takes part as source.",
-            "multiplicity": "0..1",
-            "name": "relationships",
-            "type": "List<PARTY_RELATIONSHIP>"
-        }
-    ],
+    "attributes": [],
     "constants": [],
-    "functions": [
-        {
-            "meaning": "Type of party, such as  `PERSON`,  `ORGANISATION`, etc. Role name, e.g.  general practitioner ,  nurse ,  private citizen . Taken from inherited `_name_` attribute.",
-            "name": "type",
-            "parameters": [],
-            "return_type": "DV_TEXT"
-        }
-    ],
+    "functions": [],
     "meta_info": {
         "base_types": [
-            "LOCATABLE"
+            "VERSIONED_OBJECT"
         ],
         "classifier": "Class",
-        "description": "Ancestor of all Party types, including real world entities and their roles. A Party is any entity which can participate in an activity. The `_name_` attribute inherited from `LOCATABLE` is used to indicate the actual type of party (note that the actual names, i.e. identities of parties are indicated in the `_identities_` attribute, not the `_name_` attribute).",
-        "name": "PARTY"
+        "description": "Static type formed by binding generic parameter of `VERSIONED_OBJECT<T>` to `PARTY`.",
+        "name": "VERSIONED_PARTY"
     }
 }

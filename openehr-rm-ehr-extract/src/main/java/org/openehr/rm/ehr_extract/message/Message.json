@@ -23,7 +23,7 @@
         {
             "description": "Party responsible for the message content, who may or may not be technically responsible for its creation (e.g. by data entry etc).",
             "name": "author",
-            "type": "link:/releases/RM/{rm_release}/common.html#_party_proxy_class[PARTY_PROXY^]"
+            "type": "PARTY_PROXY"
         }
     ],
     "functions": [],
