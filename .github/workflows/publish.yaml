@@ -17,4 +17,7 @@ jobs:
       - run: ./gradlew publish -Pgpr.user=${{ secrets.GITHUB_ACTOR }} -Pgpr.key=${{ secrets.GITHUB_TOKEN }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "github-action-bot@experimental-software.com"
       - run: ./update_javadocs.sh
