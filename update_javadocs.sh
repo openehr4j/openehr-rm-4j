@@ -21,11 +21,11 @@ done
 
 # Commit
 git checkout gh-pages
-
 if [[ -d "javadocs" ]]; then
   rm -r javadocs
 fi
-
 cp -r $GH_PAGES_DIR/javadocs* .
 git add .
 git commit -m "Update javadocs"
+
+git push
