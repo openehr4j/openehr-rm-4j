@@ -1,9 +1,11 @@
 #!/bin/bash
 
+set -e
+
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 GH_PAGES_DIR=$(mktemp -d)
 
-git clone -b gh-pages --single-branch git@github.com:openehr-java-api/openehr-rm-java.git ${GH_PAGES_DIR}
+git clone -b gh-pages --single-branch https://github.com/openehr-java-api/openehr-rm-java.git ${GH_PAGES_DIR}
 
 # Remove old javadocs
 if [[ -d $GH_PAGES_DIR/javadocs ]]; then
