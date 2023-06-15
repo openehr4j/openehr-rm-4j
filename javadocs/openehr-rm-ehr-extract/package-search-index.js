@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.openehr.rm.ehr_extract.common"},{"l":"org.openehr.rm.ehr_extract.generic_extract"},{"l":"org.openehr.rm.ehr_extract.message"},{"l":"org.openehr.rm.ehr_extract.openehr_extract"},{"l":"org.openehr.rm.ehr_extract.sync_extract"}];updateSearchResults();

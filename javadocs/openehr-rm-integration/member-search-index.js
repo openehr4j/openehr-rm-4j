@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"org.openehr.rm.integration","c":"GenericEntry","l":"getData()"}];updateSearchResults();
