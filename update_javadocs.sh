@@ -21,7 +21,7 @@ done
 
 # Commit
 git checkout gh-pages
-# rm -r .
-# cp -r $GH_PAGES_DIR/* .
-# git add .
-# git commit -m "Update javadocs"
+rm -r .
+cp -r $GH_PAGES_DIR/* .
+git add .
+git commit -m "Update javadocs"
