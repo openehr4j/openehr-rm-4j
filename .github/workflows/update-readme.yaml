@@ -1,10 +1,5 @@
 name: Update README
-on:
-  workflow_dispatch:
-    version:
-      description: 'Current version number'
-      type: environment
-      required: true
+on: workflow_dispatch
   
 jobs:
   publish:
@@ -15,7 +10,7 @@ jobs:
           fetch-depth: 0
       - name: Update README
         env:
-          CURRENT_VERSION: ${{ inputs.version }}
+          CURRENT_VERSION: 1.1.0-alpha-11
         run: |
           ./.github/scripts/update_readme.sh ${CURRENT_VERSION}
           git add README
