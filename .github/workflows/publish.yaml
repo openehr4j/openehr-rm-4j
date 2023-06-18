@@ -27,11 +27,11 @@ jobs:
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
         run: |
+          git fetch origin
+          git checkout master
           ./.github/scripts/update_readme.sh ${CURRENT_VERSION}
           git add README.md
           git commit -m "docs: update latest version number"
-          git fetch origin
-          git merge origin/master
           git push origin master
       - name: Update Javadocs on GitHub pages
         run: |
