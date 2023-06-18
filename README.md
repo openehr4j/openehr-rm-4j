@@ -1,6 +1,6 @@
 # openehr-rm-j3x [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
-This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the respective specification of the openEHR Reference Model component.
+This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the corresponding specifications of the openEHR [Reference Model (RM) component](https://specifications.openehr.org/releases/RM).
 
 ## Dependencies
 
@@ -71,7 +71,7 @@ Then the dependencies to the "openehr-rm-j3x" packages can be declared inside th
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.rm.version>1.1.0-alpha-11</openehr.rm.version>
+        <openehr.rm.version>1.1.0-alpha-15</openehr.rm.version>
     </properties>
 
     <dependencies>
@@ -158,7 +158,7 @@ repositories {
     }
 }
 
-ext['openehrRmVersion'] = '1.1.0-alpha-11'
+ext['openehrRmVersion'] = '1.1.0-alpha-15'
 
 dependencies {
     api "com.experimental-software.java-api:openehr-rm-common:${openehrRmVersion}"
@@ -215,7 +215,7 @@ openEHR is a trademark of [openEHR International](https://openehr.org/about/cont
 The openEHR specifications themselves are distributed under the [Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)](https://creativecommons.org/licenses/by-nd/3.0/deed.en_GB) license.
 This project transpiles them to the Java programming language, under the assumption that it is allowed usage according to the "Principles" section in their Intellectual Property notice: [openehr.org](https://openehr.org/governance/intellectual_property).
 
-This project is not affiliated nor endorsed by openEHR International.
+This project is not affiliated with and not endorsed by openEHR International.
 
 ## References
 
