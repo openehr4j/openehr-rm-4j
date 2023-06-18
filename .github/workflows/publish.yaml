@@ -22,4 +22,4 @@ jobs:
       - run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "github-action-bot@experimental-software.com"
-      - run: ./update_javadocs.sh
+      - run: ./.github/scripts/update_javadocs.sh

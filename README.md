@@ -10,28 +10,124 @@ How to create such an access token is described here: [docs.github.com](https://
 
 ### Maven
 
+For projects that use Maven as build management tool, the personal GitHub access token and "openehr-rm-java" GitHub package repository should be added to the global Maven settings.
+
+`~/.m2/settings.xml`:
+
 ```xml
-<dependency>
-  <groupId>com.experimental-software.java-api</groupId>
-  <artifactId>openehr-rm-data-types</artifactId>
-  <version>1.1.0-alpha-2</version>
-</dependency>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <activeProfiles>
+    <activeProfile>github</activeProfile>
+  </activeProfiles>
+  <profiles>
+    <profile>
+      <id>github</id>
+      <repositories>
+        <repository>
+          <id>central</id>
+          <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+          <id>github</id>
+          <url>https://maven.pkg.github.com/openehr-java-api/openehr-rm-java</url>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
+  <servers>
+    <server>
+      <id>github</id>
+      <username>USERNAME</username>
+      <password>TOKEN</password>
+    </server>
+  </servers>
+</settings>
 ```
+
+Then the dependencies to the "openehr-rm-java" packages can be declared inside the Project Object Model.
+
+`/path/to/project/pom.xml`:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <properties>
+        <openehr.rm.version>1.1.0-alpha-3</openehr.rm.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-common</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-data-structures</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-data-types</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-demographic</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-ehr</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-ehr-extract</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-integration</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.experimental-software.java-api</groupId>
+            <artifactId>openehr-rm-support</artifactId>
+            <version>${openehr.rm.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
+```
+
+**Also see**
+
+- [Working with the Apache Maven registry | docs.github.com](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry)
 
 ### Gradle
 
-For Gradle, the GitHub username and access token should be added to the global Gradle properties.
+For projects that use Maven as build management tool, the personal GitHub username and access token should be added to the global Gradle properties.
 
 `~/.gradle/gradle.properties`:
 
 ```text
-gpr.user=jdoe
-gpr.key=ghp_**********************************
+gpr.user=USERNAME
+gpr.key=TOKEN
 ```
 
-After the configuration of the GitHub Maven repository, the dependency on the required package can be declared as for any other package.
+After the registration of the GitHub Maven repository, the dependency on the required package can be declared as for any other Maven package.
 
-`build.gradle`:
+`/path/to/project/build.gradle`:
 
 ```groovy
 repositories {
