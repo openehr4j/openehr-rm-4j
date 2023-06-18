@@ -1,11 +1,15 @@
 # openehr-rm-java [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
-This repository contains the source code for Maven packages with Java interface types for the openEHR [RM specifications](https://specifications.openehr.org/releases/RM).
+This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the openEHR [RM specifications](https://specifications.openehr.org/releases/RM).
+
+## Dependencies
+
+- [JRE](https://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment) 8+
 
 ## Usage
 
-The packages are published to GitHub Packages.
-So, even though they are publicly available, clients that want to apply package need a GitHub access token with the "read:packages" scope.
+The "openehr-rm-java" packages are published to [GitHub Packages](https://github.com/features/packages).
+So, even though they are publicly available, projects that want to apply those packages need a GitHub access token with the "read:packages" scope.
 How to create such an access token is described here: [docs.github.com](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 
 ### Maven
@@ -124,7 +128,7 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
 
 ### Gradle
 
-For projects that use Maven as build management tool, the personal GitHub username and access token should be added to the global Gradle properties.
+For projects that use Gradle as build management tool, the personal GitHub username and access token should be added to the global Gradle properties.
 
 <details>
   <summary><code>~/.gradle/gradle.properties</code></summary>
@@ -176,7 +180,7 @@ dependencies {
 
 ### Versions
 
-The Package version number consists of two parts: (1) the version number of the corresponding openEHR component and (2) a Package-specific suffix. Those two parts are separated by the first hyphen.
+The "openehr-rm-java" package version number consists of two parts: (1) the version number of the corresponding openEHR component and (2) a package-specific suffix. Those two parts are separated by the first hyphen.
 
 The suffix has four different types:
 
@@ -208,9 +212,8 @@ The packages are automatically published after the creation of a new GitHub rele
 
 openEHR is a trademark of [openEHR International](https://openehr.org/about/contacts).
 
-The specifications are distributed under the [Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)](https://creativecommons.org/licenses/by-nd/3.0/deed.en_GB) license.
-
-This project transpiles the specification to the Java programming language, under the assumption that it is allowed usage according to the "Principles" section in their Intellectual Property notice: https://openehr.org/governance/intellectual_property.
+The openEHR specifications themselves are distributed under the [Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)](https://creativecommons.org/licenses/by-nd/3.0/deed.en_GB) license.
+This project transpiles them to the Java programming language, under the assumption that it is allowed usage according to the "Principles" section in their Intellectual Property notice: [openehr.org](https://openehr.org/governance/intellectual_property).
 
 This project is not affiliated nor endorsed by openEHR International.
 
