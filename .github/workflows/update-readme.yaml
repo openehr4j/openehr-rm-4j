@@ -13,6 +13,8 @@ jobs:
           CURRENT_VERSION: 1.1.0-alpha-11
         run: |
           ./.github/scripts/update_readme.sh ${CURRENT_VERSION}
-          git add README
+          git add README.md
           git commit -m "docs: update latest version number"
+          git fetch origin
+          git merge origin master
           git push origin master
