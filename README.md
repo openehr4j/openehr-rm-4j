@@ -1,6 +1,6 @@
 # openehr-rm-java [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
-This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the respective specification of the openEHR [Reference Model (RM) component](https://specifications.openehr.org/releases/RM).
+This repository contains the source code for Maven packages with Java interface declarations for the classes defined by the corresponding specifications of the openEHR [Reference Model (RM) component](https://specifications.openehr.org/releases/RM).
 
 ## Dependencies
 
@@ -215,7 +215,7 @@ openEHR is a trademark of [openEHR International](https://openehr.org/about/cont
 The openEHR specifications themselves are distributed under the [Attribution-NoDerivs 3.0 Unported (CC BY-ND 3.0)](https://creativecommons.org/licenses/by-nd/3.0/deed.en_GB) license.
 This project transpiles them to the Java programming language, under the assumption that it is allowed usage according to the "Principles" section in their Intellectual Property notice: [openehr.org](https://openehr.org/governance/intellectual_property).
 
-This project is not affiliated nor endorsed by openEHR International.
+This project is not affiliated with and not endorsed by openEHR International.
 
 ## References
 
