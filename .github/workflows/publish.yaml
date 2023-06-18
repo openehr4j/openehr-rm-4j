@@ -23,9 +23,6 @@ jobs:
         run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "github-action-bot@experimental-software.com"
-      - name: Update Javadocs on GitHub pages
-        run: |
-          ./.github/scripts/update_javadocs.sh
       - name: Update README
         env:
           CURRENT_VERSION: ${{ github.ref_name }}
@@ -36,3 +33,6 @@ jobs:
           git fetch origin
           git merge origin master
           git push origin master
+      - name: Update Javadocs on GitHub pages
+        run: |
+          ./.github/scripts/update_javadocs.sh
