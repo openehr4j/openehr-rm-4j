@@ -31,7 +31,7 @@ jobs:
           git add README.md
           git commit -m "docs: update latest version number"
           git fetch origin
-          git merge origin master
+          git merge origin/master
           git push origin master
       - name: Update Javadocs on GitHub pages
         run: |
