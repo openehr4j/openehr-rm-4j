@@ -1,0 +1,5 @@
+org.openehr.rm.ehr_extract.common
+org.openehr.rm.ehr_extract.generic_extract
+org.openehr.rm.ehr_extract.message
+org.openehr.rm.ehr_extract.openehr_extract
+org.openehr.rm.ehr_extract.sync_extract

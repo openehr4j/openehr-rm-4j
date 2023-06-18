@@ -1,0 +1,5 @@
+org.openehr.rm.common.archetyped
+org.openehr.rm.common.change_control
+org.openehr.rm.common.directory
+org.openehr.rm.common.generic
+org.openehr.rm.common.resource

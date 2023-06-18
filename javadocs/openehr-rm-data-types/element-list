@@ -1,0 +1,7 @@
+org.openehr.rm.data_types.basic
+org.openehr.rm.data_types.date_time
+org.openehr.rm.data_types.encapsulated
+org.openehr.rm.data_types.quantity
+org.openehr.rm.data_types.text
+org.openehr.rm.data_types.time_specification
+org.openehr.rm.data_types.uri

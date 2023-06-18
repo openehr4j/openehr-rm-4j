@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.openehr.rm.data_structures"},{"l":"org.openehr.rm.data_structures.history"},{"l":"org.openehr.rm.data_structures.item_structure"},{"l":"org.openehr.rm.data_structures.representation"}];updateSearchResults();

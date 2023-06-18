@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.openehr.rm.common.archetyped"},{"l":"org.openehr.rm.common.change_control"},{"l":"org.openehr.rm.common.directory"},{"l":"org.openehr.rm.common.generic"},{"l":"org.openehr.rm.common.resource"}];updateSearchResults();
