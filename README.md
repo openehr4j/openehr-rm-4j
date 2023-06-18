@@ -12,7 +12,9 @@ How to create such an access token is described here: [docs.github.com](https://
 
 For projects that use Maven as build management tool, the personal GitHub access token and "openehr-rm-java" GitHub package repository should be added to the global Maven settings.
 
-`~/.m2/settings.xml`:
+<details>
+  <summary><code>~/.m2/settings.xml</code></summary>
+<br>
 
 ```xml
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -50,9 +52,13 @@ For projects that use Maven as build management tool, the personal GitHub access
 </settings>
 ```
 
+</details> 
+
 Then the dependencies to the "openehr-rm-java" packages can be declared inside the Project Object Model.
 
-`/path/to/project/pom.xml`:
+<details>
+  <summary><code>/path/to/project/pom.xml</code></summary>
+<br>
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -110,6 +116,8 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
 </project>
 ```
 
+</details> 
+
 **Also see**
 
 - [Working with the Apache Maven registry | docs.github.com](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-apache-maven-registry)
@@ -118,16 +126,22 @@ Then the dependencies to the "openehr-rm-java" packages can be declared inside t
 
 For projects that use Maven as build management tool, the personal GitHub username and access token should be added to the global Gradle properties.
 
-`~/.gradle/gradle.properties`:
+<details>
+  <summary><code>~/.gradle/gradle.properties</code></summary>
+<br>
 
-```text
+```properties
 gpr.user=USERNAME
 gpr.key=TOKEN
 ```
 
+</details> 
+
 After the registration of the GitHub Maven repository, the dependency on the required package can be declared as for any other Maven package.
 
-`/path/to/project/build.gradle`:
+<details>
+  <summary><code>/path/to/project/build.gradle</code></summary>
+<br>
 
 ```groovy
 repositories {
@@ -153,6 +167,8 @@ dependencies {
     api "com.experimental-software.java-api:openehr-rm-support:${openehrRmVersion}"
 }
 ```
+
+</details> 
 
 **Also see**
 
