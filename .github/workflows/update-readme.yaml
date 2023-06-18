@@ -1,0 +1,20 @@
+name: Update README
+on:
+  workflow_dispatch:
+    version:
+      description: 'Current version number'
+      type: environment
+      required: true
+  
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Update README
+        env:
+          CURRENT_VERSION: ${{ inputs.version }}
+        run: |
+          ./.github/scripts/update_readme.sh ${CURRENT_VERSION}
+          git add README
+          git commit -m "docs: update latest version number"
+          git push origin master

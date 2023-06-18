@@ -26,8 +26,10 @@ jobs:
         run: |
           ./.github/scripts/update_javadocs.sh
       - name: Update README
+        env:
+          CURRENT_VERSION: ${{ github.ref_name }}
         run: |
-          ./.github/scripts/update_readme.sh ${{ github.ref_name }}"
+          ./.github/scripts/update_readme.sh ${CURRENT_VERSION}
           git add README
           git commit -m "docs: update latest version number"
           git push origin master
