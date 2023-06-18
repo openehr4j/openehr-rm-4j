@@ -22,4 +22,12 @@ jobs:
       - run: |
           git config --global user.name "GitHub Action Bot"
           git config --global user.email "github-action-bot@experimental-software.com"
-      - run: ./.github/scripts/update_javadocs.sh
+      - name: Update Javadocs on GitHub pages
+        run: |
+          ./.github/scripts/update_javadocs.sh
+      - name: Update README
+        run: |
+          ./.github/scripts/update_readme.sh ${{ github.ref_name }}"
+          git add README
+          git commit -m "docs: update latest version number"
+          git push origin master
