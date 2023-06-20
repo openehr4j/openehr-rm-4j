@@ -71,7 +71,7 @@ Then the dependencies to the "openehr-rm-4j" packages can be declared inside the
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <properties>
-        <openehr.rm.version>1.1.0-alpha-15</openehr.rm.version>
+        <openehr.rm.version>1.1.0-alpha-16</openehr.rm.version>
     </properties>
 
     <dependencies>
@@ -158,7 +158,7 @@ repositories {
     }
 }
 
-ext['openehrRmVersion'] = '1.1.0-alpha-15'
+ext['openehrRmVersion'] = '1.1.0-alpha-16'
 
 dependencies {
     api "com.experimental-software.java-api:openehr-rm-common:${openehrRmVersion}"
