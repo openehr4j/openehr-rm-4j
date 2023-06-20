@@ -161,14 +161,14 @@ repositories {
 ext['openehrRmVersion'] = '1.1.0-alpha-15'
 
 dependencies {
-    implementation "com.experimental-software.java-api:openehr-rm-common:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-data-structures:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-data-types:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-demographic:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-ehr:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-ehr-extract:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-integration:${openehrRmVersion}"
-    implementation "com.experimental-software.java-api:openehr-rm-support:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:common-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:data-structures-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:data-types-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:demographic-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:ehr-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:ehr-extract-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:integration-api:${openehrRmVersion}"
+    implementation "com.experimental-software.rm:support-api:${openehrRmVersion}"
 }
 ```
 
