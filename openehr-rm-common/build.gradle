@@ -1,8 +1,8 @@
 publishing {
   publications {
     mavenJava(MavenPublication) {
-      groupId = 'com.experimental-software.java-api'
-      artifactId = 'openehr-rm-common'
+      groupId = 'com.experimental-software.rm'
+      artifactId = 'common-api'
 
       from components.java
     }
@@ -11,7 +11,7 @@ publishing {
   repositories {
     maven {
       name = 'GitHubPackages'
-      url = 'https://maven.pkg.github.com/openehr-java-api/openehr-rm-java'
+      url = 'https://maven.pkg.github.com/openehr-java-api/openehr-rm-4j'
       credentials {
         username = System.getenv('GITHUB_ACTOR')
         password = System.getenv('GITHUB_TOKEN')
@@ -21,7 +21,7 @@ publishing {
 }
 
 dependencies {
-  api "com.experimental-software.java-api:openehr-base-base-types:${openehrBaseVersion}"
+  api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
 
   api project(':openehr-rm-data-types')
   api project(':openehr-rm-data-structures')
