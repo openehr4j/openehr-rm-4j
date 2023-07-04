@@ -38,7 +38,7 @@ For projects that use Maven as build management tool, the personal GitHub access
         </repository>
         <repository>
           <id>github</id>
-          <url>https://maven.pkg.github.com/openehr-java-api/openehr-rm-4j</url>
+          <url>https://maven.pkg.github.com/openehr4j/openehr-rm-4j</url>
           <snapshots>
             <enabled>true</enabled>
           </snapshots>
@@ -150,7 +150,7 @@ After the registration of the GitHub Maven repository, the dependency on the req
 ```groovy
 repositories {
     maven {
-        url = uri('https://maven.pkg.github.com/openehr-java-api/openehr-rm-4j')
+        url = uri('https://maven.pkg.github.com/openehr4j/openehr-rm-4j')
         credentials {
             username = project.findProperty('gpr.user')
             password = project.findProperty('gpr.key')
