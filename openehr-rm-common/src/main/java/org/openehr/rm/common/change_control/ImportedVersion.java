@@ -1,6 +1,6 @@
 package org.openehr.rm.common.change_control;
 
-import org.openehr.base_base_types.identification.ObjectVersionId;
+import org.openehr.base.base_types.identification.ObjectVersionId;
 import org.openehr.rm.data_types.text.DvCodedText;
 
 /**

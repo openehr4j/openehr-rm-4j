@@ -2,7 +2,7 @@ package org.openehr.rm.common.archetyped;
 
 import java.util.List;
 
-import org.openehr.base_base_types.identification.UidBasedId;
+import org.openehr.base.base_types.identification.UidBasedId;
 import org.openehr.rm.data_types.text.DvText;
 
 /**

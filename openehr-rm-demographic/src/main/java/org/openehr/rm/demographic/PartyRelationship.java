@@ -1,6 +1,6 @@
 package org.openehr.rm.demographic;
 
-import org.openehr.base_base_types.identification.PartyRef;
+import org.openehr.base.base_types.identification.PartyRef;
 import org.openehr.rm.data_structures.item_structure.ItemStructure;
 import org.openehr.rm.data_types.text.DvText;
 

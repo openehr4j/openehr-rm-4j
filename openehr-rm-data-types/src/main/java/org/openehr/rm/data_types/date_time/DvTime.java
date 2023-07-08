@@ -3,8 +3,8 @@ package org.openehr.rm.data_types.date_time;
 import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
-import org.openehr.base_foundation_types.primitive_types.Real;
-import org.openehr.base_foundation_types.time_types.Iso8601Time;
+import org.openehr.base.foundation_types.primitive_types.Real;
+import org.openehr.base.foundation_types.time_types.Iso8601Time;
 
 /**
  * Represents an absolute point in time from an origin usually interpreted as meaning the start of the current day, specified to a fraction of a second. Semantics defined by ISO 8601.

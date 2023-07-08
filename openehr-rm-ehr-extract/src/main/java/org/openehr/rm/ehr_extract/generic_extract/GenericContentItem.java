@@ -2,7 +2,7 @@ package org.openehr.rm.ehr_extract.generic_extract;
 
 import java.util.Map;
 
-import org.openehr.base_foundation_types.time_types.Iso8601DateTime;
+import org.openehr.base.foundation_types.time_types.Iso8601DateTime;
 import org.openehr.rm.common.archetyped.Locatable;
 import org.openehr.rm.data_types.text.DvCodedText;
 import org.openehr.rm.ehr_extract.common.ExtractContentItem;

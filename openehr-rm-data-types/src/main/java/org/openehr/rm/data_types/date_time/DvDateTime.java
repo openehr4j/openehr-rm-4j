@@ -1,7 +1,7 @@
 package org.openehr.rm.data_types.date_time;
 
-import org.openehr.base_foundation_types.primitive_types.Double;
-import org.openehr.base_foundation_types.time_types.Iso8601DateTime;
+import org.openehr.base.foundation_types.primitive_types.Double;
+import org.openehr.base.foundation_types.time_types.Iso8601DateTime;
 
 /**
  * Represents an absolute point in time, specified to the second. Semantics defined by ISO 8601.

@@ -2,7 +2,7 @@ package org.openehr.rm.data_types.quantity;
 
 import java.util.List;
 
-import org.openehr.base_foundation_types.primitive_types.Ordered;
+import org.openehr.base.foundation_types.primitive_types.Ordered;
 import org.openehr.rm.data_types.basic.DataValue;
 import org.openehr.rm.data_types.text.CodePhrase;
 

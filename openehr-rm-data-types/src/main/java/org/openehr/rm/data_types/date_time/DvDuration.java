@@ -1,6 +1,6 @@
 package org.openehr.rm.data_types.date_time;
 
-import org.openehr.base_foundation_types.time_types.Iso8601Duration;
+import org.openehr.base.foundation_types.time_types.Iso8601Duration;
 import org.openehr.rm.data_types.quantity.DvAmount;
 
 /**

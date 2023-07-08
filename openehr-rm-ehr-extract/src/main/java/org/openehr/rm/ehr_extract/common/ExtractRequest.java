@@ -1,6 +1,6 @@
 package org.openehr.rm.ehr_extract.common;
 
-import org.openehr.base_base_types.identification.HierObjectId;
+import org.openehr.base.base_types.identification.HierObjectId;
 import org.openehr.rm.common.archetyped.Locatable;
 
 /**
