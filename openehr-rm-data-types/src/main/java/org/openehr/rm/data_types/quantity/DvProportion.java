@@ -3,8 +3,8 @@ package org.openehr.rm.data_types.quantity;
 import java.lang.Boolean;
 import java.lang.Object;
 import java.util.List;
-import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.base_foundation_types.primitive_types.Real;
+import org.openehr.base.foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**
  * Models a ratio of values, i.e. where the numerator and denominator are both pure numbers. The `_valid_proportion_kind_` property of the `PROPORTION_KIND` class is used to control the type attribute to be one of a defined set.

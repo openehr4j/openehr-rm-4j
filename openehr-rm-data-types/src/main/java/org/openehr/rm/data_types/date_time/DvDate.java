@@ -3,8 +3,8 @@ package org.openehr.rm.data_types.date_time;
 import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
-import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.base_foundation_types.time_types.Iso8601Date;
+import org.openehr.base.foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.time_types.Iso8601Date;
 
 /**
  * Represents an absolute point in time, as measured on the Gregorian calendar, and specified only to the day. Semantics defined by ISO 8601. Used for recording dates in real world time. The partial form is used for approximate birth dates, dates of death, etc.

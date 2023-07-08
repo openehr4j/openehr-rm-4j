@@ -2,9 +2,9 @@ package org.openehr.rm.common.change_control;
 
 import java.util.List;
 
-import org.openehr.base_base_types.identification.HierObjectId;
-import org.openehr.base_base_types.identification.ObjectRef;
-import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base.base_types.identification.HierObjectId;
+import org.openehr.base.base_types.identification.ObjectRef;
+import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.rm.common.generic.RevisionHistory;
 import org.openehr.rm.data_types.date_time.DvDateTime;
 import org.openehr.rm.data_types.text.DvCodedText;

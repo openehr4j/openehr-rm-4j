@@ -1,6 +1,6 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base_foundation_types.primitive_types.Real;
+import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**
  * Abstract class defining the concept of relative quantified  'amounts'. For relative quantities, the  `+` and  `-` operators are defined (unlike descendants of `DV_ABSOLUTE_QUANTITY`, such as the date/time types).

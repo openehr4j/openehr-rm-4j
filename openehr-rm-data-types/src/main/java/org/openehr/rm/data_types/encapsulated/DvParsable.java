@@ -1,6 +1,6 @@
 package org.openehr.rm.data_types.encapsulated;
 
-import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.primitive_types.Integer;
 
 /**
  * Encapsulated data expressed as a parsable String. The internal model of the data item is not described in the openEHR model in common with other encapsulated types, but in this case, the form of the data is assumed to be plaintext, rather than compressed or other types of large binary data.

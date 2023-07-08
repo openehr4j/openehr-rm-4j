@@ -1,8 +1,8 @@
 package org.openehr.rm.ehr.ehr;
 
 import java.util.List;
-import org.openehr.base_base_types.identification.HierObjectId;
-import org.openehr.base_base_types.identification.ObjectRef;
+import org.openehr.base.base_types.identification.HierObjectId;
+import org.openehr.base.base_types.identification.ObjectRef;
 import org.openehr.rm.data_types.date_time.DvDateTime;
 
 /**

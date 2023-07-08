@@ -4,8 +4,8 @@ import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
 import java.util.List;
-import org.openehr.base_foundation_types.primitive_types.Integer;
-import org.openehr.base_foundation_types.primitive_types.Real;
+import org.openehr.base.foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**
  * Quantitified type representing  scientific  quantities, i.e. quantities expressed as a magnitude and units. Units are expressed in the UCUM syntax (http://unitsofmeasure.org/ucum.html[Unified Code for Units of Measure (UCUM)], by Gunther Schadow and Clement J. McDonald of The Regenstrief Institute)  (case-sensitive form) by default, or another system if `_units_system_` is set.

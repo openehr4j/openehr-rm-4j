@@ -2,7 +2,7 @@ package org.openehr.rm.ehr_extract.message;
 
 import java.util.List;
 
-import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.primitive_types.Integer;
 
 /**
  * The concept of a message addressed to nominated recipients.

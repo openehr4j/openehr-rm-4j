@@ -2,7 +2,7 @@ package org.openehr.rm.data_structures.item_structure;
 
 import java.util.List;
 
-import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.rm.data_structures.representation.Cluster;
 import org.openehr.rm.data_structures.representation.Element;
 

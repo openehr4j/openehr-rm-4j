@@ -1,7 +1,7 @@
 package org.openehr.rm.common.generic;
 
 import java.util.List;
-import org.openehr.base_base_types.identification.ObjectVersionId;
+import org.openehr.base.base_types.identification.ObjectVersionId;
 
 /**
  * An entry in a revision history, corresponding to a version from a versioned container. Consists of `AUDIT_DETAILS` instances with revision identifier of the revision to which the `AUDIT_DETAILS` instance belongs.

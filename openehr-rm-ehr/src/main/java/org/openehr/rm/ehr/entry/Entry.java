@@ -2,7 +2,7 @@ package org.openehr.rm.ehr.entry;
 
 import java.util.List;
 
-import org.openehr.base_base_types.identification.ObjectRef;
+import org.openehr.base.base_types.identification.ObjectRef;
 import org.openehr.rm.common.generic.PartyProxy;
 import org.openehr.rm.data_types.text.CodePhrase;
 import org.openehr.rm.ehr.content.ContentItem;

@@ -2,7 +2,7 @@ package org.openehr.rm.data_types.encapsulated;
 
 import java.util.List;
 
-import org.openehr.base_foundation_types.primitive_types.Integer;
+import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.rm.data_types.text.CodePhrase;
 import org.openehr.rm.data_types.uri.DvUri;
 

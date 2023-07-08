@@ -1,8 +1,8 @@
 package org.openehr.rm.common.change_control;
 
-import org.openehr.base_base_types.identification.HierObjectId;
-import org.openehr.base_base_types.identification.ObjectRef;
-import org.openehr.base_base_types.identification.ObjectVersionId;
+import org.openehr.base.base_types.identification.HierObjectId;
+import org.openehr.base.base_types.identification.ObjectRef;
+import org.openehr.base.base_types.identification.ObjectVersionId;
 import org.openehr.rm.common.generic.AuditDetails;
 import org.openehr.rm.data_types.text.DvCodedText;
 

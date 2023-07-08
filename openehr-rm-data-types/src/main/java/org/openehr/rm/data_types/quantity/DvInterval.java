@@ -1,6 +1,6 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base_foundation_types.interval.Interval;
+import org.openehr.base.foundation_types.interval.Interval;
 import org.openehr.rm.data_types.basic.DataValue;
 
 /**
