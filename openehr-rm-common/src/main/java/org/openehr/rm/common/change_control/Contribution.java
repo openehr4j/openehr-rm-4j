@@ -3,6 +3,7 @@ package org.openehr.rm.common.change_control;
 import java.util.List;
 
 import org.openehr.base.base_types.identification.HierObjectId;
+import org.openehr.base.base_types.identification.ObjectRef;
 import org.openehr.rm.common.generic.AuditDetails;
 
 /**
@@ -17,7 +18,7 @@ public interface Contribution {
   /**
    * Set of references to Versions causing changes to this EHR. Each contribution contains a list of versions, which may include paths pointing to any number of versionable items, i.e. items of types such as `COMPOSITION` and `FOLDER`.
    */
-  List getVersions();
+  List<ObjectRef> getVersions();
 
   /**
    * Audit trail corresponding to the committal of this Contribution.

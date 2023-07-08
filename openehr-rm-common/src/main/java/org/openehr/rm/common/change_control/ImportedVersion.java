@@ -6,11 +6,11 @@ import org.openehr.rm.data_types.text.DvCodedText;
 /**
  * Versions whose content is an `ORIGINAL_VERSION` copied from another location; this class inherits `_commit_audit_` and `_contribution_` from `VERSION<T>`, providing imported versions with their own audit trail and Contribution, distinct from those of the imported `ORIGINAL_VERSION`.
  */
-public interface ImportedVersion extends Version {
+public interface ImportedVersion<T> extends Version<T> {
   /**
    * The `ORIGINAL_VERSION` object that was imported.
    */
-  OriginalVersion getItem();
+  OriginalVersion<T> getItem();
 
   /**
    * Computed version of inheritance precursor, derived as `_item.uid_`.
@@ -30,5 +30,5 @@ public interface ImportedVersion extends Version {
   /**
    * Original content of this Version.
    */
-  Object data();
+  T data();
 }

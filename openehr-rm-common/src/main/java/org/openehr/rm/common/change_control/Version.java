@@ -9,7 +9,7 @@ import org.openehr.rm.data_types.text.DvCodedText;
 /**
  * Abstract model of one Version within a Version container, containing data, commit audit trail, and the identifier of its Contribution.
  */
-public interface Version {
+public interface Version<T> {
   /**
    * Contribution in which this version was added.
    */
@@ -38,7 +38,7 @@ public interface Version {
   /**
    * The data of this Version.
    */
-  Object data();
+  T data();
 
   /**
    * Lifecycle state of this version; coded by openEHR vocabulary `version lifecycle state`.
