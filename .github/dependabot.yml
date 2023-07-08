@@ -1,0 +1,39 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-common"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-data-structures"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-data-types"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-demographic"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-ehr"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-ehr-extract"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-integration"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "gradle"
+    directory: "/openehr-rm-support"
+    schedule:
+      interval: "daily"
+      
