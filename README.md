@@ -202,6 +202,22 @@ For testing purposes, the packages of this project can be published to [Maven Lo
 find ~/.m2/repository/com/experimental-software
 ```
 
+By adding `mavenLocal()` to the repository declaration in the `build.gradle` file of the implementing app, the locally built package can be used without it being accessible on the Internet.
+
+```
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url = uri('https://maven.pkg.github.com/openehr4j/openehr-rm-4j')
+        credentials {
+            username = project.findProperty('gpr.user')
+            password = project.findProperty('gpr.key')
+        }
+    }
+}
+```
+
 ## Maintenance
 
 ### Publish to GitHub Packages

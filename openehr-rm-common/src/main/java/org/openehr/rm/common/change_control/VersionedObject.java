@@ -5,7 +5,6 @@ import java.util.List;
 import org.openehr.base.base_types.identification.HierObjectId;
 import org.openehr.base.base_types.identification.ObjectRef;
 import org.openehr.base.base_types.identification.ObjectVersionId;
-import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.rm.common.generic.Attestation;
 import org.openehr.rm.common.generic.AuditDetails;
 import org.openehr.rm.common.generic.RevisionHistory;
@@ -14,6 +13,8 @@ import org.openehr.rm.data_types.text.DvCodedText;
 
 /**
  * Version control abstraction, defining semantics for versioning one complex object.
+ *
+ * @see <a href="https://specifications.openehr.org/releases/RM/latest/common.html#_versioned_object_class">VERSIONED_OBJECT Class</a>
  */
 public interface VersionedObject<T> {
   /**
@@ -44,32 +45,32 @@ public interface VersionedObject<T> {
   /**
    * Return a list of all versions in this object.
    */
-  List<Version> allVersions();
+  List<Version<T>> allVersions();
 
   /**
    * True if a version for time  `_a_time_` exists.
    */
-  Boolean hasVersionAtTime(Object aTime);
+  Boolean hasVersionAtTime(DvDateTime aTime);
 
   /**
    * True if a version with `_a_version_uid_` exists.
    */
-  Boolean hasVersionId(Object aVersionUid);
+  Boolean hasVersionId(ObjectVersionId aVersionUid);
 
   /**
    * Return the version with `_uid_` =  `_a_version_uid_`.
    */
-  Version versionWithId(Object aVersionUid);
+  Version<T> versionWithId(ObjectVersionId aVersionUid);
 
   /**
    * True if version with `_a_version_uid_` is an `ORIGINAL_VERSION`.
    */
-  Boolean isOriginalVersion(Object aVersionUid);
+  Boolean isOriginalVersion(ObjectVersionId aVersionUid);
 
   /**
    * Return the version for time  `_a_time_`.
    */
-  Version versionAtTime(Object aTime);
+  Version<T> versionAtTime(DvDateTime aTime);
 
   /**
    * History of all audits and attestations in this versioned repository.
@@ -79,12 +80,12 @@ public interface VersionedObject<T> {
   /**
    * Return the most recently added version (i.e. on trunk or any branch).
    */
-  Version latestVersion();
+  Version<T> latestVersion();
 
   /**
    * Return the most recently added trunk version.
    */
-  Version latestTrunkVersion();
+  Version<T> latestTrunkVersion();
 
   /**
    * Return the lifecycle state from the latest trunk version. Useful for determining if the version container is logically deleted.
@@ -108,7 +109,7 @@ public interface VersionedObject<T> {
   /**
    * Add a new imported version. Details of version id etc come from the `ORIGINAL_VERSION` being committed.
    */
-  void commitImportedVersion(Object aContribution, Object anAudit, Object aVersion);
+  void commitImportedVersion(ObjectRef aContribution, AuditDetails anAudit, OriginalVersion<T> aVersion);
 
   /**
    * Add a new attestation to a specified original version. Attestations can only be added to Original versions.

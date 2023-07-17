@@ -2,7 +2,6 @@ package org.openehr.rm.data_types.encapsulated;
 
 import java.util.List;
 
-import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.rm.data_types.text.CodePhrase;
 import org.openehr.rm.data_types.uri.DvUri;
 
@@ -23,7 +22,7 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * The actual data found at `_uri_`, if supplied inline.
    */
-  List getData();
+  List<Byte> getData();
 
   /**
    * Data media type coded from openEHR code set  media types  (interface for the IANA MIME types code set).
@@ -38,7 +37,7 @@ public interface DvMultimedia extends DvEncapsulated {
   /**
    * Binary cryptographic integrity checksum.
    */
-  List getIntegrityCheck();
+  List<Byte> getIntegrityCheck();
 
   /**
    * Type of integrity check, a coded value from the openEHR `Integrity check` code set.

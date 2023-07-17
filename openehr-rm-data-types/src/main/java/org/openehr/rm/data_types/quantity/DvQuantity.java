@@ -4,7 +4,6 @@ import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
 import java.util.List;
-import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**

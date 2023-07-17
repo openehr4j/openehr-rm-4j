@@ -3,7 +3,6 @@ package org.openehr.rm.data_types.date_time;
 import java.lang.Boolean;
 import java.lang.Object;
 import java.lang.String;
-import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.base.foundation_types.time_types.Iso8601Date;
 
 /**
