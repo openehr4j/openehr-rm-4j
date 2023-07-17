@@ -3,7 +3,6 @@ package org.openehr.rm.data_types.quantity;
 import java.lang.Boolean;
 import java.lang.Object;
 import java.util.List;
-import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.base.foundation_types.primitive_types.Real;
 
 /**

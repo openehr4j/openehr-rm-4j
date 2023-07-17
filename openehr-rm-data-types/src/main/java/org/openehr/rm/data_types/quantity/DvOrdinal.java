@@ -1,6 +1,5 @@
 package org.openehr.rm.data_types.quantity;
 
-import org.openehr.base.foundation_types.primitive_types.Integer;
 import org.openehr.rm.data_types.text.DvCodedText;
 
 /**

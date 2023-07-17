@@ -15,5 +15,5 @@ public interface RevisionHistoryItem {
   /**
    * The audits for this revision; there will always be at least one commit audit (which may itself be an `ATTESTATION`), there may also be further attestations.
    */
-  List getAudits();
+  List<AuditDetails> getAudits();
 }

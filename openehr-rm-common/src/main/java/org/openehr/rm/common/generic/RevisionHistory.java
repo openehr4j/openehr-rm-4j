@@ -10,7 +10,7 @@ public interface RevisionHistory {
   /**
    * The items in this history in most-recent-last order.
    */
-  List getItems();
+  List<RevisionHistoryItem> getItems();
 
   /**
    * The version id of the most recent item, as a String.
