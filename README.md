@@ -236,5 +236,5 @@ This project is not affiliated with and not endorsed by openEHR International.
 
 ## References
 
-- https://specifications.openehr.org/releases/RM/Release-1.1.0
+- https://specifications.openehr.org/releases/RM/latest
 - https://github.com/openEHR/specifications-RM
