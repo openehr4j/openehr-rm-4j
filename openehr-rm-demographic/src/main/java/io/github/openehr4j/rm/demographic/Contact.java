@@ -8,10 +8,8 @@ import io.github.openehr4j.rm.data_types.text.DvText;
  * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/demographic.html#_contact_class">specifications.openehr.org</a>
  */
 public interface Contact {
-/**
- * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/demographic.html#_contact_class">specifications.openehr.org</a>
- */
-// FIXME public interface Contact extends Locatable {
+
+// FIXME public interface Contact extends Locatable
 
   List getAddresses();
 

@@ -7,10 +7,8 @@ import io.github.openehr4j.rm.data_types.text.DvText;
  * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/demographic.html#_address_class">specifications.openehr.org</a>
  */
 public interface Address {
-/**
- * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/demographic.html#_address_class">specifications.openehr.org</a>
- */
-// FIXME public interface Address extends Locatable {
+
+// FIXME public interface Address extends Locatable
 
   ItemStructure getDetails();
 
