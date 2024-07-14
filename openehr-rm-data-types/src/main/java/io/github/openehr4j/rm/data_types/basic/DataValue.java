@@ -2,5 +2,8 @@ package io.github.openehr4j.rm.data_types.basic;
 
 import org.openehr.base.base_types.definitions.OpenehrDefinitions;
 
+/**
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_data_value_class">specifications.openehr.org</a>
+ */
 public interface DataValue extends OpenehrDefinitions {
 }

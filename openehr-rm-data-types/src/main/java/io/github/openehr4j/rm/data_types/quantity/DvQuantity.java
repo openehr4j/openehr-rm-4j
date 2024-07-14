@@ -6,6 +6,9 @@ import java.lang.String;
 import java.util.List;
 import org.openehr.base.foundation_types.primitive_types.Real;
 
+/**
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_quantity_class">specifications.openehr.org</a>
+ */
 public interface DvQuantity extends DvAmount {
 
   Real getMagnitude();

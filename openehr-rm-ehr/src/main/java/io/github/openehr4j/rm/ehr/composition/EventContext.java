@@ -8,6 +8,9 @@ import io.github.openehr4j.rm.data_structures.item_structure.ItemStructure;
 import io.github.openehr4j.rm.data_types.date_time.DvDateTime;
 import io.github.openehr4j.rm.data_types.text.DvCodedText;
 
+/**
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/ehr.html#_event_context_class">specifications.openehr.org</a>
+ */
 public interface EventContext extends Pathable {
 
   DvDateTime getStartTime();
