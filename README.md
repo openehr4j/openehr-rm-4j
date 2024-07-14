@@ -4,7 +4,8 @@ This repository contains the source code for Maven packages with Java interface 
 
 ## Dependencies
 
-- [JRE](https://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment) 8+
+- Clients of this package need to use [Java](ttps://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment)) version 8 or later
+- For the build of this package the current LTS version of Java should be used
 
 ## Usage
 
@@ -222,7 +223,7 @@ repositories {
 
 ### Publish to GitHub Packages
 
-The packages are automatically published after the creation of a new GitHub release.
+The packages are automatically published to GitHub Packages after the creation of a new GitHub release.
 
 ## Legal notice
 
