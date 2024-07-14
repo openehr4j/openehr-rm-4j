@@ -77,42 +77,42 @@ Then the dependencies to the "openehr-rm-4j" packages can be declared inside the
 
     <dependencies>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-common</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-data-structures</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-data-types</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-demographic</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-ehr</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-ehr-extract</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-integration</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.experimental-software.java-api</groupId>
+            <groupId>io.github.openehr4j.java-api</groupId>
             <artifactId>openehr-rm-support</artifactId>
             <version>${openehr.rm.version}</version>
         </dependency>
@@ -162,14 +162,14 @@ repositories {
 ext['openehrRmVersion'] = '1.1.0-alpha-18'
 
 dependencies {
-    implementation "com.experimental-software.rm:common-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:data-structures-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:data-types-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:demographic-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:ehr-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:ehr-extract-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:integration-api:${openehrRmVersion}"
-    implementation "com.experimental-software.rm:support-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:common-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:data-structures-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:data-types-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:demographic-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:ehr-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:ehr-extract-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:integration-api:${openehrRmVersion}"
+    implementation "io.github.openehr4j.rm:support-api:${openehrRmVersion}"
 }
 ```
 

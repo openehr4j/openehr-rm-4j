@@ -1,7 +1,7 @@
 publishing {
   publications {
     mavenJava(MavenPublication) {
-      groupId = 'com.experimental-software.rm'
+      groupId = 'io.github.openehr4j.rm'
       artifactId = 'common-api'
 
       from components.java
@@ -21,7 +21,7 @@ publishing {
 }
 
 dependencies {
-  api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
+  api "io.github.openehr4j.base:base-types-api:${openehrBaseVersion}"
 
   api project(':openehr-rm-data-types')
   api project(':openehr-rm-data-structures')

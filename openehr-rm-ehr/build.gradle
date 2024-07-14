@@ -1,7 +1,7 @@
 publishing {
   publications {
     mavenJava(MavenPublication) {
-      groupId = 'com.experimental-software.rm'
+      groupId = 'io.github.openehr4j.rm'
       artifactId = 'ehr-api'
 
       from components.java

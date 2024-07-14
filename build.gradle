@@ -15,7 +15,7 @@ scmVersion {
 }
 
 allprojects  {
-    group = 'com.experimental-software.java-api'
+    group = 'io.github.openehr4j.java-api'
     project.version = scmVersion.version
 }
 
