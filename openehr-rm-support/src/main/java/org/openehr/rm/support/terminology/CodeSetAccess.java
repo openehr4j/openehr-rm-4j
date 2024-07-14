@@ -5,27 +5,13 @@ import java.lang.Object;
 import java.lang.String;
 import java.util.List;
 
-
-
-
 public interface CodeSetAccess {
-
-
 
   String id();
 
-
-
-
   List allCodes();
 
-
-
-
   Boolean hasLang(Object aLang);
-
-
-
 
   Boolean hasCode(Object aCode);
 }

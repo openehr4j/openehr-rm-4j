@@ -8,42 +8,19 @@ import org.openehr.rm.data_structures.item_structure.ItemStructure;
 import org.openehr.rm.data_types.date_time.DvDateTime;
 import org.openehr.rm.data_types.text.DvCodedText;
 
-
-
-
 public interface EventContext extends Pathable {
-
-
 
   DvDateTime getStartTime();
 
-
-
-
   DvDateTime getEndTime();
-
-
-
 
   String getLocation();
 
-
-
-
   DvCodedText getSetting();
-
-
-
 
   ItemStructure getOtherContext();
 
-
-
-
   PartyIdentified getHealthCareFacility();
-
-
-
 
   List getParticipations();
 }

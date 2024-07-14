@@ -4,12 +4,7 @@ import java.util.List;
 
 public interface SyncExtract {
 
-
-
   SyncExtractSpec getSpecification();
-
-
-
 
   List getItems();
 }
