@@ -4,7 +4,7 @@ This repository contains the source code for Maven packages with Java interface 
 
 ## Dependencies
 
-- Clients of this package need to use [Java](ttps://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment)) version 8 or later
+- Clients of this package need to use [Java](https://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment) version 8 or later
 - For the build of this package the current LTS version of Java should be used
 
 ## Usage
