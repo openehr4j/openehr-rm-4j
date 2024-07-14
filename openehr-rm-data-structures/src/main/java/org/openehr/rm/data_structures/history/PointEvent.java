@@ -1,4 +1,0 @@
-package org.openehr.rm.data_structures.history;
-
-public interface PointEvent extends Event {
-}
