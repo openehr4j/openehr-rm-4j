@@ -1,5 +1,5 @@
-org.openehr.rm.common.archetyped
-org.openehr.rm.common.change_control
-org.openehr.rm.common.directory
-org.openehr.rm.common.generic
-org.openehr.rm.common.resource
+io.github.openehr4j.rm.common.archetyped
+io.github.openehr4j.rm.common.change_control
+io.github.openehr4j.rm.common.directory
+io.github.openehr4j.rm.common.generic
+io.github.openehr4j.rm.common.resource

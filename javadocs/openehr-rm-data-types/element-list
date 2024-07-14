@@ -1,7 +1,7 @@
-org.openehr.rm.data_types.basic
-org.openehr.rm.data_types.date_time
-org.openehr.rm.data_types.encapsulated
-org.openehr.rm.data_types.quantity
-org.openehr.rm.data_types.text
-org.openehr.rm.data_types.time_specification
-org.openehr.rm.data_types.uri
+io.github.openehr4j.rm.data_types.basic
+io.github.openehr4j.rm.data_types.date_time
+io.github.openehr4j.rm.data_types.encapsulated
+io.github.openehr4j.rm.data_types.quantity
+io.github.openehr4j.rm.data_types.text
+io.github.openehr4j.rm.data_types.time_specification
+io.github.openehr4j.rm.data_types.uri

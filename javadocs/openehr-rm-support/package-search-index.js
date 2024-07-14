@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.openehr.rm.support.measurement"},{"l":"org.openehr.rm.support.support"},{"l":"org.openehr.rm.support.terminology"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"io.github.openehr4j.rm.support.measurement"},{"l":"io.github.openehr4j.rm.support.support"},{"l":"io.github.openehr4j.rm.support.terminology"}];updateSearchResults();

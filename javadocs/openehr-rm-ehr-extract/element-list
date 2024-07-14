@@ -1,5 +1,5 @@
-org.openehr.rm.ehr_extract.common
-org.openehr.rm.ehr_extract.generic_extract
-org.openehr.rm.ehr_extract.message
-org.openehr.rm.ehr_extract.openehr_extract
-org.openehr.rm.ehr_extract.sync_extract
+io.github.openehr4j.rm.ehr_extract.common
+io.github.openehr4j.rm.ehr_extract.generic_extract
+io.github.openehr4j.rm.ehr_extract.message
+io.github.openehr4j.rm.ehr_extract.openehr_extract
+io.github.openehr4j.rm.ehr_extract.sync_extract

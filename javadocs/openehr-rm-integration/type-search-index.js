@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"org.openehr.rm.integration","l":"GenericEntry"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"io.github.openehr4j.rm.integration","l":"GenericEntry"}];updateSearchResults();

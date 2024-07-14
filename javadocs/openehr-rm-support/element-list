@@ -1,3 +1,3 @@
-org.openehr.rm.support.measurement
-org.openehr.rm.support.support
-org.openehr.rm.support.terminology
+io.github.openehr4j.rm.support.measurement
+io.github.openehr4j.rm.support.support
+io.github.openehr4j.rm.support.terminology

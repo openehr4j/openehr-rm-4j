@@ -1,1 +1,1 @@
-memberSearchIndex = [{"p":"org.openehr.rm.integration","c":"GenericEntry","l":"getData()"}];updateSearchResults();
+memberSearchIndex = [{"p":"io.github.openehr4j.rm.integration","c":"GenericEntry","l":"getData()"}];updateSearchResults();

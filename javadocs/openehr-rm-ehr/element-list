@@ -1,5 +1,5 @@
-org.openehr.rm.ehr.composition
-org.openehr.rm.ehr.content
-org.openehr.rm.ehr.ehr
-org.openehr.rm.ehr.entry
-org.openehr.rm.ehr.navigation
+io.github.openehr4j.rm.ehr.composition
+io.github.openehr4j.rm.ehr.content
+io.github.openehr4j.rm.ehr.ehr
+io.github.openehr4j.rm.ehr.entry
+io.github.openehr4j.rm.ehr.navigation
