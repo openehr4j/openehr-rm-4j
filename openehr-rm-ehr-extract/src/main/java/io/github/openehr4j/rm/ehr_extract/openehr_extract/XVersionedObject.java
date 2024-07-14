@@ -6,6 +6,9 @@ import org.openehr.base.base_types.identification.ObjectRef;
 import io.github.openehr4j.rm.common.generic.RevisionHistory;
 import io.github.openehr4j.rm.data_types.date_time.DvDateTime;
 
+/**
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/ehr_extract.html#_x_versioned_object_class">specifications.openehr.org</a>
+ */
 public interface XVersionedObject {
 
   HierObjectId getUid();

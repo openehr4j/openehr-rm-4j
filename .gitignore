@@ -37,3 +37,4 @@ create_interface.sh
 *.orig
 *.hprof
 .DS_Store
+*.json

@@ -5,6 +5,9 @@ import java.lang.Object;
 import java.lang.String;
 import org.openehr.base.foundation_types.time_types.Iso8601Date;
 
+/**
+ * @see <a href="https://specifications.openehr.org/releases/RM/Release-1.1.0/data_types.html#_dv_date_class">specifications.openehr.org</a>
+ */
 public interface DvDate extends DvTemporal, Iso8601Date {
 
   String getValue();
