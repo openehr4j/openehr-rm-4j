@@ -21,7 +21,7 @@ publishing {
 }
 
 dependencies {
-    api "io.github.openehr4j.base:base-types-api:${openehrBaseVersion}"
+    api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
 
     api project(':openehr-rm-common')
     api project(':openehr-rm-data-types')
