@@ -5,11 +5,7 @@ This repository contains the source code for Maven packages with Java interface 
 ## Dependencies
 
 - Clients of this package need to use [Java](https://en.wikipedia.org/wiki/Java_(software_platform)#Java_Runtime_Environment) version 8 or later
-
-**Development**
-
 - For the build of this package the current LTS version of Java should be used
-- Maven needs to be installed
 
 ## Usage
 
@@ -202,15 +198,32 @@ Except for the `RELEASE` which is terminal, each type is followed by another hyp
 
 For testing purposes, the packages of this project can be published to [Maven Local](https://www.baeldung.com/maven-local-repository).
 
-```sh
-mvn install
+```
+./gradlew publishToMavenLocal
+find ~/.m2/repository/com/experimental-software
+```
+
+By adding `mavenLocal()` to the repository declaration in the `build.gradle` file of the implementing app, the locally built package can be used without it being accessible on the Internet.
+
+```
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        url = uri('https://maven.pkg.github.com/openehr4j/openehr-rm-4j')
+        credentials {
+            username = project.findProperty('gpr.user')
+            password = project.findProperty('gpr.key')
+        }
+    }
+}
 ```
 
 ## Maintenance
 
 ### Publish to GitHub Packages
 
-TBD
+The packages are automatically published to GitHub Packages after the creation of a new GitHub release.
 
 ## Legal notice
 

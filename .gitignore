@@ -2,10 +2,6 @@
 .gradle/
 build/
 
-# Maven
-.mvn/
-target/
-
 # IntelliJ
 .idea/
 *.iml
