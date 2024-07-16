@@ -24,5 +24,4 @@ dependencies {
   api "com.experimental-software.base:base-types-api:${openehrBaseVersion}"
 
   api project(':openehr-rm-data-types')
-  api project(':openehr-rm-data-structures')
 }
