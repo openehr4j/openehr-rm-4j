@@ -205,7 +205,7 @@ find ~/.m2/repository/com/experimental-software
 
 By adding `mavenLocal()` to the repository declaration in the `build.gradle` file of the implementing app, the locally built package can be used without it being accessible on the Internet.
 
-```
+```groovy
 repositories {
     mavenLocal()
     mavenCentral()
@@ -224,6 +224,13 @@ repositories {
 ### Publish to GitHub Packages
 
 The packages are automatically published to GitHub Packages after the creation of a new GitHub release.
+
+### Update Gradle Wrapper
+
+```sh
+sdk list java
+./gradlew wrapper --gradle-version $VERSION
+```
 
 ## Legal notice
 

@@ -8,7 +8,6 @@ pluginManagement {
 rootProject.name = 'openehr-rm-java'
 
 include('openehr-rm-common')
-include('openehr-rm-data-structures')
 include('openehr-rm-data-types')
 include('openehr-rm-demographic')
 include('openehr-rm-ehr')
