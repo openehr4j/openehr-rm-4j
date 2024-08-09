@@ -5,7 +5,7 @@ buildscript {
 }
 
 plugins {
-    id 'pl.allegro.tech.build.axion-release' version '1.18.2'
+    id 'pl.allegro.tech.build.axion-release' version '1.18.4'
 }
 
 scmVersion {
